@@ -1,0 +1,86 @@
+table,td,th {
+table-layout:fixed;
+border:0.5px #00f0f0 solid;
+}
+
+div#ekzemplaro
+{
+background-color: #e0e0e0;
+text-align: center;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+}
+
+div#items
+{
+background-color: #e0e0e0;
+text-align: center;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+}
+
+
+
+div#column
+{
+background-color: #e0e0e0;
+text-align: center;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+}
+
+
+div#myself
+{
+background-color: #e0e0e0;
+text-align: center;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+}
+
+
+div#english
+{
+text-align: right;
+}
+
+div#japanese
+{
+text-align: right;
+}
+
+
+span#english{
+color: blue;
+}
+
+
+span#magenta{color: magenta}
+span#green{color: green}
+span#blue{color: blue}
+
+div.visitors
+{
+background-color: #fff0f0;
+height: 500px;
+float: top;
+overflow: auto;
+}
+
+div.column_twitter
+{
+background-color: #f0f0f0;
+height: 600px;
+float: top;
+overflow: auto;
+}
+
+iframe
+{
+width:	600px;
+height:	250px;
+}

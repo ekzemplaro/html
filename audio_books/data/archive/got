@@ -1,0 +1,7 @@
+#
+rm -f data_archive.json
+#
+./fetch_audio_archive.js works_test.json
+#
+jq . data_archive.json
+#

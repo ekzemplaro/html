@@ -1,0 +1,41 @@
+<h2>
+soundconverter を使う方法
+</h2>
+
+<blockquote>
+soundconverter は、音声の変換ソフトです。<p />
+</blockquote>
+Arch Linux<p />
+<blockquote>
+# pacman -S soundconverter<p />
+$ pacman -Q soundconverter<br />
+soundconverter 2.1.6-2<p />
+</blockquote>
+
+Ubuntu にインストールしておく必要があるパッケージ<p />
+<blockquote>
+<pre>
+ii  soundconverter   1.4.4-2     GNOME application to convert audio files into other formats
+ii  gstreamer0.10-plugins-bad-multiverse    0.10.21-1      GStreamer plugins from the "bad" set (Multiverse Variant)
+ii  gstreamer0.10-plugins-ugly-multiverse   0.10.17-1      GStreamer plugins from the "ugly" set (Multiverse Variant)
+</pre>
+</blockquote>
+
+次のように、タイプします。<p />
+
+<blockquote>
+$ soundconverter<p />
+</blockquote>
+
+ wavを、mp3に変換できます。<p />
+
+<blockquote>
+<img src="image/soundconverter_001.png"><p />
+</blockquote>
+
+設定で、フォーマットをmp3にして下さい。<p />
+<blockquote>
+<img src="image/soundconverter_002.png"><p />
+</blockquote>
+
+<hr />

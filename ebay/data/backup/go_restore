@@ -1,0 +1,4 @@
+#
+FILE_BACKUP=ebay_feb23_2017.sql
+#
+mysql -uscott -ptiger ebay < $FILE_BACKUP

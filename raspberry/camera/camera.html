@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi Camera</title>
+</head>
+<body>
+
+<h2>Camera の使い方</h2>
+
+video グループに加える<p />
+<blockquote>
+	# sudo gpasswd -a user video<p />
+	<blockquote>
+	* failed to open vchiq instance というエラーが出なくなる<p />
+	</blockquote>
+</blockquote>
+
+<h2>ラズベリーパイ用カメラモジュール</h2><p />
+
+写真を取る<p />
+	<blockquote>
+	$ raspistill -o a01.jpg<p />
+	</blockquote>
+
+python3 で写真を取る<p />
+	<blockquote>
+	# apt install python3-picamera<p />
+	</blockquote>
+
+
+<h2>USB カメラ</h2><p />
+USB で認識されているか調べる<p />
+	<blockquote>
+	<pre>
+	$ lsusb
+	Bus 001 Device 006: ID 0411:0260 BUFFALO INC. (formerly MelCo., Inc.)
+	</pre>
+	</blockquote>
+
+ソフトのインストール<p />
+	<blockquote>
+	# apt install fswebcam<p />
+	</blockquote>
+
+写真を撮る<p />
+	<blockquote>
+	$ fswebcam photo.jpg<p />
+	</blockquote>
+
+	<blockquote>
+	</blockquote>
+
+	<blockquote>
+	</blockquote>
+
+<hr />
+<a href="../">Return</a><p />
+Jun/06/2017<p />
+</body>
+</html>

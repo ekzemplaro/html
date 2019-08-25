@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi 2 & 3</title>
+</head>
+<body>
+
+<h2>Rasberry Pi 2 & 3</h2>
+
+<a href="./raspbian">Raspbian をインストールする方法</a><p />
+<a href="./arch_linux">Arch Linux をインストールする方法</a><p />
+<blockquote>
+	Linux 4.9.13-1-ARCH armv7l<p />
+	Linux 4.10.1-1-ARCH aarch64<p />
+</blockquote>
+
+
+
+<blockquote>
+</blockquote>
+
+<hr />
+<a href="gpio">gpio の使い方</a><p />
+<a href="spi">spi の使い方</a><p />
+<a href="pwm">pwm の使い方</a><p />
+<a href="i2c">i2c の使い方</a><p />
+<a href="camera">camera の使い方</a><p />
+
+ユーザーの作成<p />
+<blockquote>
+# adduser --uid 1200 uchida<br />
+# gpasswd -a uchida sudo<br />
+</blockquote>
+
+ユーザーの削除<p />
+<blockquote>
+# deluser uchida --remove-home<p />
+</blockquote>
+
+
+ホスト名の変更<p />
+<blockquote>
+/etc/hostname を変更<br />
+/etc/hosts の　127.0.1.1 を変更<br />
+</blockquote>
+
+総てのユーザーに共通の環境設定<p />
+<blockquote>
+/etc/profile<p />
+</blockquote>
+
+sudo でPath を引き継ぐ<p />
+<blockquote>
+visudo<p />
+<pre>
+	Defaults    env_keep += "PATH"
+</pre>
+</blockquote>
+
+公式タッチディスプレイの表示が上下逆さまになる場合の解決方法<p />
+<blockquote>
+	/boot/config.txt<p />
+	<blockquote>
+	lcd_rotate=2<p />
+	</blockquote>
+</blockquote>
+
+<a href="mount_sd/">SD カードのマウント</a><p />
+
+<blockquote>
+</blockquote>
+
+
+<blockquote>
+</blockquote>
+
+
+<hr />
+<a href="https://www.raspberrypi.org/documentation/usage/">Usage</a><p />
+<hr />
+<a href="../">戻る</a><p />
+
+Jun/06/2017<br />
+</body>
+</html>

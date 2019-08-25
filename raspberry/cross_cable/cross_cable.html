@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi 2 Cross Cable</title>
+</head>
+<body>
+
+<h2>Rasberry Pi 2 クロスケーブル</h2>
+
+Rasberry Pi 2 と Arch Linux を、クロスケーブルで接続する方法<p />
+
+
+Rasberry 側<p />
+<blockquote>
+/etc/network/interfaces<p />
+	<blockquote>
+	auto lo<br />
+	<br />
+	iface lo inet loopback<br />
+	# iface eth0 inet dhcp<br />
+	iface eth0 inet static<br />
+	address 192.168.0.10<br />
+	netmask 255.255.255.0<br />
+	gateway 192.168.0.1<br />
+	<br />
+	allow-hotplug wlan0<br />
+	iface wlan0 inet manual<br />
+	wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf<br />
+	#<br />
+	# iface default inet dhcp<br />
+	</blockquote>
+
+/etc/rc.local<p />
+	<blockquote>
+	ifup eth0<p />
+	</blockquote>
+/etc/resolv.conf<p />
+	<blockquote>
+	nameserver 8.8.8.8<p />
+	</blockquote>
+
+SSH サーバー<p />
+	<blockquote>
+	# systemctl start ssh<p />
+
+	ヘッドレスで ssh をスタートさせるには、/boot に、ssh という名前のファイルを置く。<p />
+	<blockquote>
+	<a href="https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/">A security update for Raspbian PIXEL</a><p />
+
+	<blockquote>
+	If you want to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory. The contents of the file don’t matter: it can contain any text you like, or even nothing at all. When the Pi boots, it looks for this file; if it finds it, it enables SSH and then deletes the file. 
+	</blockquote>
+
+	</blockquote>
+	</blockquote>
+</blockquote>
+
+Arch Linux 側<p />
+<blockquote>
+/etc/netctl/profile<p />
+	<blockquote>
+	Description='A basic static ethernet connection'<br />
+	Interface=enp3s0f2<br />
+	Connection=ethernet<br />
+	IP=static<br />
+	Address=('192.168.0.1/24')<br />
+	# Routes=('192.168.0.1/24 via 192.168.0.10')<br />
+	# Gateway='192.168.0.10'<br />
+	</blockquote>
+起動<p />
+	<blockquote>
+	# systemctl start profile<p />
+	もし、RTNETLINK answers: File exists　というエラーが出たら<p />
+		<blockquote>
+		# ip addr flush dev enp3s0f2<p />
+		</blockquote>
+	</blockquote>
+
+Enable packet forwarding<p />
+	<blockquote>
+	# sysctl net.ipv4.ip_forward=1<br />
+	</blockquote>
+Enable NAT<p />
+	<blockquote>
+# iptables -t nat -A POSTROUTING -o wlp2s0 -j MASQUERADE<br />
+# iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT<br />
+# iptables -A FORWARD -i enp3s0f2 -o wlp2s0 -j ACCEPT<br />
+	</blockquote>
+ルーティング　（参考）
+	<blockquote>
+<pre>
+$ netstat -r
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         pocketwifi.home 0.0.0.0         UG        0 0          0 wlp2s0
+192.168.0.0     0.0.0.0         255.255.255.0   U         0 0          0 enp3s0f2
+192.168.1.0     0.0.0.0         255.255.255.0   U         0 0          0 wlp2s0
+
+</pre>
+	</blockquote>
+</blockquote>
+<hr />
+<a href="../">Return</a><p />
+Sep/20/2016<p />
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi gpio</title>
+</head>
+<body>
+
+<h2>gpio の使い方</h2>
+<img src="gpio-numbers-pi2.png"></img><p />
+root でなくて、gpio を使う方法<p />
+<blockquote>
+	gpio グループに所属する<p />
+	<blockquote>
+	# gpasswd -a user_aa gpio<p />
+	</blockquote>
+</blockquote>
+
+<h2>out</h2>
+<blockquote>
+gpio12,gpio16,gpio26 を使えるようにする。<p />
+<blockquote>
+$ cd /sys/class/gpio<br />
+$ echo 12 > export<br />
+$ echo 16 > export<br />
+$ echo 26 > export<br />
+</blockquote>
+
+gpio12 を、ON,OFF する。<p />
+<blockquote>
+$ cd /sys/class/gpio/gpio12<br />
+$ echo out > direction<br />
+$ echo 1 > value<br />
+$ echo 0 > value<br />
+</blockquote>
+
+gpio12,gpio16,gpio26 を解放<p />
+<blockquote>
+$ cd /sys/class/gpio<br />
+$ echo 12 > unexport<br />
+$ echo 16 > unexport<br />
+$ echo 26 > unexport<br />
+</blockquote>
+
+
+gpio コマンドを使う。<p />
+<blockquote>
+$ gpio -g mode 12 out<br />
+$ gpio -g write 12 1<br />
+$ gpio -g write 12 0<br />
+</blockquote>
+
+python<p />
+	<blockquote>
+	# apt install python3-rpi.gpio<p />
+	import RPi.GPIO as GPIO<br />
+	GPIO.setmode (GPIO.BCM)<br />
+	GPIO.setup (16,GPIO.OUT)<br />
+	GPIO.output (16,1)<br />
+	GPIO.output (16,0)<br />
+	GPIO.cleanup ()<br />
+	</blockquote>
+
+gpiozero<p />
+	<blockquote>
+	# apt install python3-gpiozero<p />
+	from gpiozero import LED<br />
+	led = LED(16)<br />
+	led.on ()<br />
+	led.off ()<br />
+	</blockquote>
+c<p />
+	<blockquote>
+	<a href="cc/led01.c.txt">led01.c</a><p />
+	<a href="cc/Makefile.txt">Makefile</a><p />
+	</blockquote>
+
+node.js<p />
+	<blockquote>
+	<a href="node/led12.js.txt">led12.js</a><p />
+	</blockquote>
+
+node.js<p />
+	<blockquote>
+	# npm install onoff<p />
+
+	var Gpio = require('onoff').Gpio,led = new Gpio(16, 'out')<br />
+	led.writeSync(1)<p />
+
+	var Gpio = require('onoff').Gpio,led = new Gpio(16, 'out')<br />
+	led.writeSync(0)<p />
+	</blockquote>
+
+</blockquote>
+<h2>In</h2>
+<blockquote>
+スイッチの状態を読む。<p />
+<blockquote>
+$ cd /sys/class/gpio<br />
+$ echo 19 > export<br />
+$ cd /sys/class/gpio/gpio19<br />
+$ echo in > direction<br />
+$ cat value<br />
+</blockquote>
+
+gpio コマンドでスイッチの状態を読む。<p />
+	<blockquote>
+	$ gpio -g mode 19 in<br />
+	$ gpio -g read 19<br />
+	</blockquote>
+
+python<p />
+	<blockquote>
+	import RPi.GPIO as GPIO<br />
+	GPIO.setmode (GPIO.BCM)<br />
+	GPIO.setup (19,GPIO.IN)<br />
+	GPIO.input (19)<br />
+	GPIO.cleanup ()<br />
+	</blockquote>
+
+gpiozero<p />
+	<blockquote>
+	from gpiozero import LED<br />
+	button = Button(19)<br />
+	button.value<br />
+	</blockquote>
+
+</blockquote>
+
+総ての状態を表示<p />
+<blockquote>
+gpio readall<br />
+</blockquote>
+
+<hr />
+<a href="../">Return</a><p />
+Dec/27/2017<p />
+</body>
+</html>

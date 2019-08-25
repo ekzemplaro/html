@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Raspbian</title>
+</head>
+<body>
+
+<h2>Raspbian</h2>
+最新のカーネル<br />
+<blockquote>
+Linux tulip 4.14.98-v7+ #1200 SMP Tue Feb 12 20:27:48 GMT 2019 armv7l GNU/Linux<p />
+</blockquote>
+
+<hr />
+micro SDカードの書き込み<p />
+<blockquote>
+# umount /dev/mmcblk0p1<br />
+# dd bs=4M if=2018-11-13-raspbian-stretch-full.img of=/dev/mmcblk0<br />
+1263+0 レコード入力<br />
+1263+0 レコード出力<br />
+5297405952 bytes (5.3 GB, 4.9 GiB) copied, 483.155 s, 11.0 MB/s<br />
+</blockquote>
+
+<blockquote>
+SDカードによって、書き込み時間がかなり異なります。<br />
+	<blockquote>
+	5297405952 bytes (5.3 GB, 4.9 GiB) copied, 125.362 s, 42.3 MB/s<br />
+	</blockquote>
+</blockquote>
+
+SDカードのマウント<p />
+<blockquote>
+# mount /dev/mmcblk0p1 /mnt/sd<p />
+</blockquote>
+
+<blockquote>
+マイクロSD は、底面に挿入します。<p />
+</blockquote>
+
+インストール直後のカーネル<p />
+<blockquote>
+$ uname -a<br />
+Linux tulip 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux<br />
+</blockquote>
+
+<p />
+
+<a href="../midi_to_vga">VGA ディスプレイを使う方法</a><p />
+<a href="../cross_cable">Arch Linux と、クロスケーブルで接続する方法</a><p />
+<a href="headless/">ヘッドレス　インストール</a><p />
+
+インターネットに接続してから行った事<p />
+<blockquote>
+システムの更新<p />
+<blockquote>
+	# apt update<br />
+	# apt upgrade<br />
+	# apt dist-upgrade<p />
+	# shutdown -r now<p />
+
+$ uname -a<p />
+<blockquote>
+Linux tulip 4.9.35-v7+ #1014 SMP Fri Jun 30 14:47:43 BST 2017 armv7l GNU/Linux<p />
+</blockquote>
+
+</blockquote>
+</blockquote>
+
+<a href="nginx/">Nginx のインストール</a><p />
+<a href="mariadb/">MariaDB のインストール</a><p />
+
+Python から、GPIO を使えるようにする<p />
+<blockquote>
+	# apt install python3-rpi.gpio<p />
+</blockquote>
+
+</blockquote>
+
+<hr />
+<blockquote>
+# rpi-update<p />
+</blockquote>
+
+Arch Linux から、vnc で接続<p />
+<blockquote>
+Raspberry 側<p />
+	<blockquote>
+	# apt install tightvncserver<p />
+	$ tightvncserver<p />
+	</blockquote>
+
+# pacman -S gtk-vnc<p />
+$ gvncviewer host_raspberry:1<p />
+</blockquote>
+
+
+
+<hr />
+<a href="../wifi">wifi の設定</a><p />
+<a href="nodejs">Node.js を最新にする方法</a><p />
+<a href="chrome">Chrome をインストールする方法</a><p />
+<a href="softether">SoftEther Client をインストールする方法</a><p />
+
+
+<hr />
+追加インストール<p />
+<blockquote>
+	# apt install jq<p />
+	# apt install inetutils-ftp<p />
+</blockquote>
+
+
+<blockquote>
+</blockquote>
+
+Avahi を使っての接続<p />
+<blockquote>
+	Raspberry Pi で、avahi-daemon が走っていることを確認<br />
+	<blockquote>
+	sudo systemctl status avahi-daemon<p />
+	</blockquote>
+	接続<br />
+	<blockquote>
+	$ ping -c 3 pansy.local<p />
+	$ ssh pansy.local<p />
+	</blockquote>
+</blockquote>
+
+<hr />
+
+オートログインユーザーの設定<p /?
+<blockquote>
+	/etc/lightdm/lightdm.conf<p />
+	<blockquote>
+	# autologin-user=pi<br />
+	autologin-user=uchida<br />
+	</blockquote>
+</blockquote>
+
+<blockquote>
+</blockquote>
+
+
+
+<a href="../">戻る</a><p />
+
+Feb/25/2019<br />
+</body>
+</html>

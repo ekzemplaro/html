@@ -1,0 +1,34 @@
+<h2>
+parole を、Ubuntuで使う方法
+</h2>
+
+<blockquote>
+parole は、mp3 の再生ソフトです。<p />
+Ubuntu 11.04 64 bit で確認した方法です。<p />
+</blockquote>
+
+Ubuntu にインストールしておく必要があるパッケージ<br />
+<blockquote>
+<pre>
+ii  parole      0.2.0.2-3ubuntu2    media player based on GStreamer framework
+</pre>
+</blockquote>
+
+次のように、タイプします。<p />
+
+<blockquote>
+$ parole<p />
+</blockquote>
+
+再生するデータを選択します。<p />
+<blockquote>
+<img src="image/parole_select.png"><p />
+</blockquote>
+
+選択されたデータが再生されます。<p />
+<blockquote>
+<img src="image/parole01.png"><p />
+</blockquote>
+
+
+<hr />

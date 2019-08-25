@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi pwm</title>
+</head>
+<body>
+
+<h2>pwm の使い方</h2>
+
+Python
+<blockquote>
+	GPIO21 を使って、サーボモーター　SG90,SG92R を動かす<p />
+	<a href="./gpio21.py.txt">gpio21.py</a><p />
+</blockquote>
+
+
+
+gpiozero<p />
+	<blockquote>
+	GPIO21 を使って、サーボモーター　SG90,SG92R を動かす<p />
+	<a href="./gpiozero21.py.txt">gpiozero21.py</a><p />
+	</blockquote>
+
+ハードウェアPWM<p />
+	<blockquote>
+	WiringPi のインストール<p />
+		<blockquote>
+		$ git clone https://github.com/Gadgetoid/WiringPi2-Python.git<p />
+		$ cd WiringPi2-Python<p />
+		# python setup.py install<p />
+		</blockquote>
+	</blockquote>
+	<blockquote>
+	GPIO18 を使って、サーボモーター　SG90,SG92R を動かす<p />
+		<blockquote>
+		茶: グランド<br />
+		赤: 5V<br />
+		橙: GPIO18<p />
+		<a href="./pwm_gpio18.py.txt">pwm_gpio18.py</a><p />
+		</blockquote>
+	</blockquote>
+
+
+
+<hr />
+<a href="../">Return</a><p />
+Feb/20/2017<p />
+</body>
+</html>

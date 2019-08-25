@@ -1,0 +1,40 @@
+<h2>
+mpg123 を使う方法
+</h2>
+
+<blockquote>
+mpg123 は、mp3 の再生及び変換ソフトです。<p />
+</blockquote>
+Arch Linux<p />
+<blockquote>
+# pacman -S mpg123<p />
+$ pacman -Q mpg123<br />
+mpg123 1.23.6-1<p />
+</blockquote>
+
+Ubuntu<p />
+<blockquote>
+<pre>
+ii  mpg123              1.23.8-1   amd64    MPEG layer 1/2/3 audio player
+ii  libmpg123-0:amd64   1.23.8-1   amd64    MPEG layer 1/2/3 audio decoder (shared library)
+</pre>
+</blockquote>
+
+再生するには、*.mp3 が入っているフォルダーで、
+次のように、タイプします。<p />
+
+<blockquote>
+$ mpg123 sample.mp3<p />
+</blockquote>
+
+wav に変換する時は、<p />
+<blockquote>
+$ mpg123 -w sample.wav sample.mp3<p />
+</blockquote>
+
+
+<blockquote>
+<img src="image/mpg123.png"><p />
+</blockquote>
+
+<hr />

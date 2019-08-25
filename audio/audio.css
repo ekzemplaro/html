@@ -1,0 +1,6 @@
+table,td,th {
+table-layout:fixed;
+border:0.5px #00f0f0 solid;
+}
+
+span#green{color: green}

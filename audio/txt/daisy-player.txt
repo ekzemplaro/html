@@ -1,0 +1,31 @@
+<h2>
+daisy-player を、Ubuntuにインストールする方法
+</h2>
+
+<blockquote>
+daisy-player は、daisy 再生ソフトです。<p />
+Ubuntu 14.04 64 bit で確認した方法です。<p />
+<blockquote>
+<pre>
+ii  daisy-player    8.5.1-1   amd64     player for DAISY Digital Talking Books
+</pre>
+</blockquote>
+
+使い方 (フォルダー名を引数として与えます。）<p />
+<blockquote>
+$ daisy-player Koho_shimotsuke_may_2014<p />
+<blockquote>
+<img src="image/daisy-player.png"><p />
+</blockquote>
+
+</blockquote>
+zip のままでも聴くことができます。<br />
+<blockquote>
+$ daisy-player kohoS1408MP3.zip<p />
+</blockquote>
+</blockquote>
+
+
+
+
+<hr />

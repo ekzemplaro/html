@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi spi</title>
+</head>
+<body>
+
+<h2>spi の使い方</h2>
+<blockquote>
+	3線式のシリアル通信インターフェース（同期式）<p />
+</blockquote>
+
+SPI が有効か確認<p />
+<blockquote>
+	$ ls /dev/spi*<br />
+	/dev/spidev0.0  /dev/spidev0.1<br />
+</blockquote>
+
+spidevとspi_bcm2835が有効になっているか確認<p />
+<blockquote>
+	<pre>
+	$ lsmod | grep spi
+	spidev                  7373  0 
+	spi_bcm2835             7596  0
+	</pre>
+</blockquote>
+
+Python<p />
+<blockquote>
+<a href="./spi01.py.txt">spi01.py</a><p />
+</blockquote>
+
+
+
+gpiozero<p />
+	<blockquote>
+	<a href="./gpiozero01.py.txt">gpiozero01.py</a><p />
+	</blockquote>
+
+
+
+<hr />
+<a href="../">Return</a><p />
+Jan/22/2018<p />
+</body>
+</html>

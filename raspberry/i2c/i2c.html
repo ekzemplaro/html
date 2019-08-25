@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi i2c</title>
+</head>
+<body>
+
+<h2>i2c の使い方</h2>
+<blockquote>
+	2線式のシリアル通信インターフェース（同期式）<p />
+</blockquote>
+
+<a href="http://kzhishu.hatenablog.jp/entry/2016/07/19/090000">IOエキスパンダ（MCP23017）</a><p />
+
+ユーザーをi2cグループに追加して、sudoなしでもアクセスできるようにする<br />
+<blockquote>
+# gpasswd -a uchida i2c<p />
+</blockquote>
+
+アドレスを調べる<p />
+<blockquote>
+<pre>
+$ i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --
+</pre>
+</blockquote>
+
+
+
+ポートのON/OFF<p />
+	<blockquote>
+	使用GPIOピンの初期化<br />
+	$ i2cset -y 1 0x20 0x00 0x00<p />
+	LED点灯（GPA7, GPA6, GPA5, GPA4 を オン）<br />
+	$ i2cset -y 1 0x20 0x14 0xf0<p />
+	LED消灯（GPA7, GPA6, GPA5, GPA4 を オフ）<br />
+	$ i2cset -y 1 0x20 0x14 0x00<p />
+	</blockquote>
+
+Python<p />
+	<blockquote>
+	<a href="i2c01.py.txt">i2c01.py</a><p />
+	<a href="i2c02.py.txt">i2c02.py</a><p />
+	</blockquote>
+
+
+<hr />
+<a href="../">Return</a><p />
+Jan/02/2018<p />
+</body>
+</html>

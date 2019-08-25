@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi ヘッド レス</title>
+</head>
+<body>
+
+<h2>Rasberry Pi ヘッド レス インストール</h2>
+
+Rasberry Pi を、ディスプレイ、キーボードを使わないでインストールする方法<p />
+<blockquote>
+	Wifi で接続する設定をします。<p />
+</blockquote>
+
+SD への書き込み<p />
+<blockquote>
+<pre>
+# dd bs=4M if=2018-06-27-raspbian-stretch.img of=/dev/mmcblk0
+1150+0 レコード入力
+1150+0 レコード出力
+4823449600 bytes (4.8 GB, 4.5 GiB) copied, 254.681 s, 18.9 MB/s
+</pre>
+</blockquote>
+
+書き込みが完了した SD を、fdisk で見ると<p />
+<blockquote>
+<pre>
+# fdisk /dev/mmcblk0
+
+ディスク /dev/mmcblk0: 14.9 GiB, 15931539456 バイト, 31116288 セクタ
+単位: セクタ (1 * 512 = 512 バイト)
+セクタサイズ (論理 / 物理): 512 バイト / 512 バイト
+I/O サイズ (最小 / 推奨): 512 バイト / 512 バイト
+ディスクラベルのタイプ: dos
+ディスク識別子: 0x377d1fa5
+
+デバイス       起動 開始位置 最後から   セクタ サイズ Id タイプ
+/dev/mmcblk0p1          8192    93814    85623  41.8M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2         94208 31116287 31022080  14.8G 83 Linux
+</pre>
+</blockquote>
+
+
+SD をマウントする<p />
+<blockquote>
+<pre>
+# mount /dev/mmcblk0p2 /mnt/sdp2
+# ls /mnt/sdp2
+bin   dev  home  lost+found  mnt  proc	run   srv  tmp	var
+boot  etc  lib	 media	     opt  root	sbin  sys  usr
+</pre>
+</blockquote>
+
+
+無線LAN の場合は次のファイルの設定が必要です。<br />
+<blockquote>
+	/etc/wpa_supplicant/wpa_supplicant.conf<p />
+	<blockquote>
+<pre>
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=JP
+
+network={
+	ssid="HW02G-699999"
+	psk="******"
+	key_mgmt=WPA-PSK
+}
+</pre>
+	</blockquote>
+
+	/etc/hostname<p />
+	<blockquote>
+		Avahi で接続する為にホスト名を変更します。<p />
+	</blockquote>
+
+	/etc/hosts<p />
+	<blockquote>
+		127.0.1.1	ホスト名
+	</blockquote>
+</blockquote>
+
+
+
+/boot を、マウントする<p />
+<pre>
+# mount /dev/mmcblk0p1 /mnt/sdp1
+# ls /mnt/sdp1
+bcm2708-rpi-0-w.dtb	bootcode.bin   fixup_x.dat	 start_cd.elf
+bcm2708-rpi-b.dtb	cmdline.txt    issue.txt	 start_db.elf
+bcm2708-rpi-b-plus.dtb	config.txt     kernel7.img	 start.elf
+bcm2708-rpi-cm.dtb	COPYING.linux  kernel.img	 start_x.elf
+bcm2709-rpi-2-b.dtb	fixup_cd.dat   LICENCE.broadcom
+bcm2710-rpi-3-b.dtb	fixup.dat      LICENSE.oracle
+bcm2710-rpi-cm3.dtb	fixup_db.dat   overlays
+</pre>
+
+
+ブート時にSSH サーバーを起動するようにする。<p />
+
+	<blockquote>
+	cd /mnt/sdp1<br />
+	touch ssh<p />
+	</blockquote>
+
+	<blockquote>
+	ヘッドレスで ssh をスタートさせるには、/boot に、ssh という名前のファイルを置く。<p />
+	<blockquote>
+	<a href="https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/">A security update for Raspbian PIXEL</a><p />
+
+	<blockquote>
+	If you want to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory. The contents of the file don’t matter: it can contain any text you like, or even nothing at all. When the Pi boots, it looks for this file; if it finds it, it enables SSH and then deletes the file. 
+	</blockquote>
+
+	</blockquote>
+	</blockquote>
+</blockquote>
+
+Raspberry Pi に SD を装着してからブート<p />
+
+ssh でログイン<p />
+<blockquote>
+$ ssh pi@tulip.local<p />
+</blockquote>
+
+
+ログインしてから、ssh サーバーの状態を確認<p />
+<blockquote>
+<pre>
+# systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Fri 2017-12-29 05:16:26 UTC; 4h 13min ago
+  Process: 476 ExecReload=/bin/kill -HUP $MAINPID (code=exited, status=0/SUCCESS
+  Process: 471 ExecReload=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+  Process: 393 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 452 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─452 /usr/sbin/sshd -D
+</pre>
+</blockquote>
+
+
+<hr />
+
+
+
+
+有線ネットワークの設定 (固定アドレス)<p />
+<blockquote>
+/mnt/sdp2/etc/network/interfaces<p />
+	<blockquote>
+	auto lo<br />
+	<br />
+	iface lo inet loopback<br />
+	iface eth0 inet static<br />
+	address 192.168.0.10<br />
+	netmask 255.255.255.0<br />
+	gateway 192.168.0.1<br />
+	</blockquote>
+
+/mnt/sdp2/etc/rc.local<p />
+	<blockquote>
+	ifup eth0<p />
+	</blockquote>
+
+Raspberry Pi に SD を装着してからブート<p />
+
+ssh でログイン<p />
+	<blockquote>
+	$ ssh pi@192.168.0.10<p />
+	</blockquote>
+
+</blockquote>
+
+
+
+<hr />
+<a href="../">Return</a><p />
+Apr/30/2019<p />
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>MariaDB on Raspbian</title>
+</head>
+<body>
+
+<h2>MariaDB on Raspbian</h2>
+
+
+MariaDB のインストール<p />
+<blockquote>
+	# apt install mariadb-server<p />
+	<blockquote>
+		root のパスワードを覚えておいて下さい。<p />
+	</blockquote>
+
+	# apt install python3-mysql.connector<p />
+	# apt install php7.0-mysql<p />
+
+	/etc/mysql/conf.d/mariadb.cnf を修正<p />
+	<blockquote>
+	<pre>
+	[client]
+	default-character-set = utf8
+	#
+	[mysqld]
+	character-set-server  = utf8
+	collation-server      = utf8_general_ci
+	character_set_server  = utf8
+	collation_server      = utf8_general_ci
+	</pre>
+	</blockquote>
+</blockquote>
+
+走っているかの確認<p />
+<blockquote>
+	# systemctl status mysql<p />
+</blockquote>
+
+<blockquote>
+</blockquote>
+
+
+<hr />
+
+<a href="../">戻る</a><p />
+
+Jan/01/2018<br />
+</body>
+</html>

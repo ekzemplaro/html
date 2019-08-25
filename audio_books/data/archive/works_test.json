@@ -1,0 +1,22 @@
+{
+"w00001": {"title_jp": "思い出",
+	"title_en": "Omoide",
+	"url_archive": "omoide_dazai",
+	"author": "a41002",
+	"txt_src": []},
+"w00002": {"title_jp": "グスコーブドリの伝記",
+	"title_en": "Gusukoubudori no denki",
+	"url_archive": "gusukoubudorinodenki",
+	"author": "a72002",
+	"txt_src": []},
+"w00003": {"title_jp": "最後の胡弓弾き",
+	"title_en": "Saigo no Kokyuuhiki",
+	"url_archive": "saigonokokyuuhiki",
+	"author": "a52001",
+	"txt_src": []},
+"w00004": {"title_jp": "ヴィヨンの妻",
+	"title_en": "Villon no tsuma",
+	"url_archive": "villonnotsuma_dazai",
+	"author": "a41002",
+	"txt_src": []}
+}

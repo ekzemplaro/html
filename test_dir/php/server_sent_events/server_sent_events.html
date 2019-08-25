@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Server Sent Events</title>
+</head>
+<body>
+<ul id="eventList"></ul>
+<script>
+        var es = new EventSource('api.php');
+
+        es.addEventListener('message', function (event) {
+            console.log(event.data);
+
+            var newElement = document.createElement("li");
+            var eventList = document.getElementById('eventList');
+
+            newElement.innerHTML = "message: " + event.data;
+            eventList.appendChild(newElement);
+        });
+</script>
+Mar/21/2018<p />
+</body>
+</html>

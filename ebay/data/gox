@@ -1,0 +1,6 @@
+#
+./csv_to_mariadb.py iwamoto_feb01.csv
+./csv_to_mariadb.py nagata_feb01.csv
+./csv_to_mariadb.py takimoto_feb01.csv
+./csv_to_mariadb.py yamamoto_feb01.csv
+#

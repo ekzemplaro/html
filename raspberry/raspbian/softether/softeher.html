@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>SoftEther Client for Rasberry Pi</title>
+</head>
+<body>
+
+<h2>SoftEther for Raspbian</h2>
+
+インストール<p />
+<blockquote>
+	$ wget http://jp.softether-download.com/files/softether/v4.25-9656-rtm-2018.01.15-tree/Linux/SoftEther_VPN_Client/32bit_-_ARM_EABI/softether-vpnclient-v4.25-9656-rtm-2018.01.15-linux-arm_eabi-32bit.tar.gz<p />
+
+	$ tar xvfz softether-vpnclient-v4.25-9656-rtm-2018.01.15-linux-arm_eabi-32bit.tar.gz<p />
+
+	$ cd vpnclient<p />	
+	$ make<p />
+
+	# cd ..<p />
+	# mv vpnclient /usr/local<p />
+</blockquote>
+
+設定<p />
+<blockquote>
+	# cd /usr/local/vpnclient<p />
+
+	# vpnclient start<p />
+
+	# vpncmd /client<p />
+	<blockquote>
+	<pre>
+	Connected to VPN Client "localhost".
+
+VPN Client>NicCreate tun0
+NicCreate command - Create New Virtual Network Adapter
+The command completed successfully.
+
+VPN Client>AccountCreate tun0
+AccountCreate command - Create New VPN Connection Setting
+Destination VPN Server Host Name and Port Number: *.*.*.*:443
+
+Destination Virtual Hub Name: DEFAULT
+
+Connecting User Name: test
+
+Used Virtual Network Adapter Name: test
+
+The command completed successfully.
+
+VPN Client>NicEnable tun0
+NicEnable command - Enable Virtual Network Adapter
+The command completed successfully.
+
+VPN Client>AccountUsernameSet tun0
+AccountUsernameSet command - Set User Name of User to Use Connection of VPN Connection Setting
+Connecting User Name: test
+
+The command completed successfully.
+
+VPN Client>AccountPasswordSet tun0
+AccountPasswordSet command - Set User Authentication Type of VPN Connection Setting to Password Authentication
+Please enter the password. To cancel press the Ctrl+D key.
+
+Password: ******
+Confirm input: ******
+
+Specify standard or radius: standard
+
+The command completed successfully.
+
+VPN Client>AccountConnect tun0
+AccountConnect command - Start Connection to VPN Server using VPN Connection Setting
+The command completed successfully.
+
+	</pre>
+	</blockquote>
+</blockquote>
+
+アドレスの取得<p />
+	<blockquote>
+	# dhclient vpn_tun0<p />
+	</blockquote>
+
+ゲートウェイの修正<p />
+	<blockquote>
+	# route -n<p /> 
+	# ip route  del default via 192.168.30.1<p />
+	# route -n<p />
+	</blockquote>
+<hr />
+vpnclient を、systemctl で起動するには<p />
+	<blockquote>
+	<a href="systemctl/vpnclient.service.txt">/etc/systemd/system/vpnclient.service</a> を作成する。<p />
+	</blockquote>
+<hr />
+<a href="../">Return</a><p />
+Feb/02/2017<p />
+</body>
+</html>

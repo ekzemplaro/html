@@ -1,0 +1,5 @@
+#
+curl https://archive.org/details/omoide_dazai&output=json > l01.json
+#
+#
+

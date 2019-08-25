@@ -1,0 +1,34 @@
+<h2>
+audacity を使う方法
+</h2>
+
+<blockquote>
+audacity は、mp3,wav の再生及び編集ソフトです。<p />
+</blockquote>
+
+Arch Linux<p />
+<blockquote>
+# pacman -S audacity<p />
+$ pacman -Q audacity<br />
+audacity 2.1.2-3<p />
+</blockquote>
+
+Ubuntu<p />
+<blockquote>
+<pre>
+ii  audacity   2.0.5-1ubuntu3   amd64   fast, cross-platform audio editor
+</pre>
+</blockquote>
+
+次のように、タイプします。<br />
+
+<blockquote>
+    $ audacity<br />
+</blockquote>
+
+ファイルを開いたところ<br />
+<blockquote>
+<img src="image/audacity.png"><p />
+</blockquote>
+
+<hr />

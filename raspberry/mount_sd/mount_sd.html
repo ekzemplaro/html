@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi Mount SD Card</title>
+</head>
+<body>
+
+<h2>SD Card のマウント</h2>
+
+lsblk で状態を調べる<p />
+<blockquote>
+<pre>
+# lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    0 298.1G  0 disk 
+├─sda1        8:1    0   100G  0 part 
+├─sda2        8:2    0    90G  0 part /
+├─sda3        8:3    0    80G  0 part /home
+├─sda4        8:4    0     1K  0 part 
+└─sda5        8:5    0  28.1G  0 part [SWAP]
+sr0          11:0    1  1024M  0 rom  
+mmcblk0     179:0    0  14.6G  0 disk 
+├─mmcblk0p1 179:1    0    63M  0 part 
+└─mmcblk0p2 179:2    0  14.5G  0 part /mnt/sd
+</pre>
+</blockquote>
+
+fdisk で状態を調べる<p />
+<blockquote>
+<pre>
+# fdisk -l
+ディスク /dev/sda: 298.1 GiB, 320072933376 バイト, 625142448 セクタ
+単位: セクタ (1 * 512 = 512 バイト)
+セクタサイズ (論理 / 物理): 512 バイト / 4096 バイト
+I/O サイズ (最小 / 推奨): 4096 バイト / 4096 バイト
+ディスクラベルのタイプ: dos
+ディスク識別子: 0x000ef2d4
+
+デバイス   起動  開始位置  最後から    セクタ サイズ Id タイプ
+/dev/sda1  *         2048 209716891 209714844   100G 83 Linux
+/dev/sda2       209717248 398460927 188743680    90G 83 Linux
+/dev/sda3       398460928 566233087 167772160    80G 83 Linux
+/dev/sda4       566235134 625142447  58907314  28.1G  5 拡張領域
+/dev/sda5       566235136 625142447  58907312  28.1G 82 Linux スワップ / Solaris
+
+パーティション 4 は物理セクタの境界で始まっていません。
+
+
+ディスク /dev/mmcblk0: 14.6 GiB, 15640559616 バイト, 30547968 セクタ
+単位: セクタ (1 * 512 = 512 バイト)
+セクタサイズ (論理 / 物理): 512 バイト / 512 バイト
+I/O サイズ (最小 / 推奨): 512 バイト / 512 バイト
+ディスクラベルのタイプ: dos
+ディスク識別子: 0x1891a225
+
+デバイス       起動 開始位置 最後から   セクタ サイズ Id タイプ
+/dev/mmcblk0p1          8192   137215   129024    63M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2        137216 30547967 30410752  14.5G 83 Linux
+</pre>
+</blockquote>
+
+マウントする<p />
+<blockquote>
+<pre>
+# mount /dev/mmcblk0p2 /mnt/sd<p />
+</pre>
+</blockquote>
+
+
+
+
+<blockquote>
+<pre>
+</pre>
+</blockquote>
+
+
+
+
+<hr />
+<a href="../">Return</a><p />
+Jun/05/2017<p />
+</body>
+</html>

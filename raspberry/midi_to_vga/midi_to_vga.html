@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi VGA</title>
+</head>
+<body>
+<h2>Rasberry Pi VGA</h2>
+
+Rasberry Pi 2 をVGA ディスプレイで使う方法<p />
+<blockquote>
+	HDMI to VGA 変換アダプターが必要です。<p />
+	私は、1280 x 1024 のVGA ディスプレイを使いました。<p />
+</blockquote>
+
+SD カードをマウントした状態で、 /boot/config.txt の設定を変更する。<p />
+<blockquote>
+この設定をしないとブート後、画面に何も写りません。<p />
+
+<blockquote>
+<a href="./config.txt">/boot/config.txt</a><p />
+hdmi_mode で解像度を調整します。<p />
+	<blockquote>
+	hdmi_force_hotplug=1<br />
+	hdmi_group=2<br />
+	hdmi_mode=35<br />
+	hdmi_drive=2<br />
+	</blockquote>
+</blockquote>
+</blockquote>
+<hr />
+<a href="../">Return</a><p />
+Oct/25/2016<p />
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="ja">
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<meta name="description" content="Audio books" />
+<meta name="author" content="Uchida Masatomo" />
+<meta content="Japanese,Literature,Community Audio" name="keyword">
+<script src="/js/angular.min.js"></script>
+<script src="authors.js"></script>
+<link href="audio_books.css" rel="stylesheet" />
+<title>Authors</title>
+</head>
+<body ng-controller="MainController">
+<h2>Authors</h2>
+
+<table>
+<tr ng-repeat="(key,value) in items">
+	<td>{{$index + 1}}</td>
+	<td>{{key}}</td>
+	<td>{{value.name_jp}}</td>
+	<td>{{value.name_en}}</td>
+</tr>
+</table>
+<p />
+<hr />
+
+Jan/04/2017<br />
+</body>
+</html>

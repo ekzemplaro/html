@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Arch Linux on Rasberry Pi</title>
+</head>
+<body>
+
+<h2>Raspberry Pi に Arch Linux をインストールする</h2>
+参考になるページ<p />
+<blockquote>
+<a href="https://archlinuxarm.org/platforms/armv6/raspberry-pi">Raspberry Pi</a><p />
+<a href=""></a><p />
+</blockquote>
+
+ダウンロードするファイル<p />
+<blockquote>
+	ArchLinuxARM-rpi-2-latest.tar.gz<p />
+	Raspberry Pi 3 で、64 bit をインストールする場合<p />
+	<blockquote>
+	ArchLinuxARM-rpi-3-latest.tar.gz<p />
+	</blockquote>
+
+</blockquote>
+
+<h3>マイクロSD カードの作成</h3>
+
+パーティションの削除と作成<p />
+<blockquote>
+	# fdisk /dev/mmcblk0
+	<blockquote>
+<pre>
+Command (m for help): p
+Disk /dev/mmcblk0: 30 GiB, 32227983360 bytes, 62945280 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x21af11bf
+
+Device         Boot  Start      End  Sectors  Size Id Type
+/dev/mmcblk0p1        2048   206847   204800  100M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2      206848 62945279 62738432 29.9G 83 Linux
+</pre>
+	</blockquote>
+</blockquote>
+
+ファイルシステムの作成<p />
+<blockquote>
+# mkfs.vfat /dev/mmcblk0p1<br />
+# mkfs.ext4 /dev/mmcblk0p2<br />
+</blockquote>
+
+マウントポイントの作成<p />
+<blockquote>
+	# mkdir /mnt/raspberry<p />
+	# mkdir /mnt/raspberry/boot<br />
+	# mkdir /mnt/raspberry/root<br />
+</blockquote>
+
+マウント<p />
+<blockquote>
+	# cd /mnt/raspberry<p />
+	# mount /dev/mmcblk0p1 boot<br />
+	# mount /dev/mmcblk0p2 root<br />
+</blockquote>
+
+ダウロードしたファイルの展開<p />
+<blockquote>
+	# cd /mnt/raspberry<p />
+	# bsdtar -xpf ArchLinuxARM-rpi-2-latest.tar.gz -C root<p />
+	# sync<p />
+</blockquote>
+
+rootフォルダーから bootフォルダーへファイルを移動<p />
+<blockquote>
+	mv root/boot/* boot<p />
+</blockquote>
+
+boot/config.txt の編集<p />
+<blockquote>
+	gpu_mem=64<p />
+
+	hdmi_force_hotplug=1<br />
+	hdmi_group=2<br />
+	hdmi_mode=35<br />
+	hdmi_drive=2<br />
+</blockquote>
+
+アンマウント<p />
+<blockquote>
+	# umount /dev/mmcblk0p1<br />
+	# umount /dev/mmcblk0p2<br />
+</blockquote>
+
+<h3>MicroSD カードを、Raspberry Pi の底面に差して、電源を入れる。</h3>
+
+ブート後<p />
+<blockquote>
+alarm のパスワードは、alarm<br />
+root のパスワードは、root<br />
+</blockquote>
+
+ユーザーの作成<p />
+<blockquote>
+	# useradd -u 1200 -m -g wheel uchida<br />
+	# groupadd -g 1200 uchida<br />
+	# passwd uchida<br />
+</blockquote>
+
+
+固定アドレスの設定<p />
+<blockquote>
+# cp /etc/netctl/examples/ethernet-static /etc/netctl/profile<p />
+/etc/netctl/profile<p />
+	<blockquote>
+	Description='A basic static ethernet connection'<br />
+	Interface=eth0<br />
+	Connection=ethernet<br />
+	IP=static<br />
+	Address=('192.168.0.12/24')<br />
+	Gateway='192.168.0.1'<br />
+	DNS=('192.168.1.1')<br />
+	</blockquote>
+# ip link set eth0 down<p />
+# netctl start profile<p />
+</blockquote>
+
+yaourt のインストール<p />
+<blockquote>
+	/etc/pacman.conf につけ加える<p />
+	<blockquote>
+	[archlinuxfr]<br />
+	SigLevel = Optional<br />
+	Server = http://repo.archlinux.fr/arm<br />
+	</blockquote>
+
+	# pacman -S base-devel<p />
+
+	package-query を、手動でインストール<p />
+	<blockquote>
+	$ curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz<br />
+	$ tar zxvf package-query.tar.gz<br />
+	$ cd package-query<br />
+	$ makepkg -si<br />
+	</blockquote>
+	# pacman -S yaourt<p />
+</blockquote>
+
+Python から GPIO ピンを使えるようにする。<p />
+<blockquote>
+	# pacman -S python-setup-tools<p />
+	$ yaourt -Sb python-raspberry-gpio<p />
+</blockquote>
+
+GPIO コマンドを使えるようにする。<p />
+<blockquote>
+# pacman -S wiringpi<p />
+</blockquote>
+
+<blockquote>
+</blockquote>
+
+<hr />
+
+32 ビット版のカーネル<p />
+<blockquote>
+	Linux **** 4.9.13-1-ARCH #1 SMP Mon Feb 27 19:43:33 MST 2017 armv7l GNU/Linux<p />
+</blockquote>
+
+64 ビット版のカーネル<p />
+<blockquote>
+	Linux **** 4.10.1-1-ARCH #1 SMP Sun Feb 26 18:30:04 MST 2017 aarch64 GNU/Linux<p />
+</blockquote>
+
+<hr />
+<a href="../">Return</a><p />
+Mar/02/2017<p />
+</body>
+</html>

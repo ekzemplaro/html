@@ -1,0 +1,12 @@
+jplayer のサンプル<p />
+<blockquote>
+左の三角をクリックして下さい。<p />
+<audio controls>
+	<source src="sound_data/mp3/jul28_2011.mp3">
+	<source src="sound_data/ogg/jul28_2011.ogg">
+	<source src="sound_data/wav/jul28_2011.wav">
+jul28_2011.wav</audio><p />
+</blockquote>
+
+
+

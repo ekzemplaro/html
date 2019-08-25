@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>OSMC</title>
+</head>
+<body>
+
+<h2>OSMC</h2>
+
+<a href="https://discourse.osmc.tv/t/howto-install-osmc-on-audiophonics-raspdac/37567">Install OSMC on Audiophonics RaspDAC</a><p />
+<hr />
+micro SDカードの書き込み<p />
+<blockquote>
+# umount /dev/mmcblk0p1<br />
+# dd bs=4M if=OSMC_TGT_rbp2_20170615.img of=/dev/mmcblk0<br />
+64+0 レコード入力<br />
+64+0 レコード出力<br />
+268435456 bytes (268 MB, 256 MiB) copied, 26.04 s, 10.3 MB/s<br />
+</blockquote>
+
+config.txt<p />
+<blockquote>
+<pre>
+disable_overscan=1
+framebuffer_depth=32
+gpu_mem=16
+</pre>
+</blockquote>
+
+<blockquote>
+マイクロSD は、底面に挿入します。<p />
+</blockquote>
+
+<a href="../midi_to_vga">VGA ディスプレイを使う方法</a><p />
+<a href="../cross_cable">Arch Linux と、クロスケーブルで接続する方法</a><p />
+
+インターネットに接続してから行った事<p />
+<blockquote>
+システムの更新<p />
+<blockquote>
+	# apt update<br />
+	# apt upgrade<br />
+	# apt dist-upgrade<p />
+	# shutdown -r now<p />
+
+$ uname -a<p />
+<blockquote>
+Linux sunflower 4.9.28-v7+ #998 SMP Mon May 15 16:55:39 BST 2017 armv7l GNU/Linux<p />
+</blockquote>
+
+</blockquote>
+</blockquote>
+
+<a href="nginx/">Nginx のインストール</a><p />
+<a href="mariadb/">MariaDB のインストール</a><p />
+
+Python から、GPIO を使えるようにする<p />
+<blockquote>
+	# apt install python3-rpi.gpio<p />
+</blockquote>
+
+</blockquote>
+
+<hr />
+<blockquote>
+# rpi-update<p />
+</blockquote>
+
+Arch Linux から、vnc で接続<p />
+<blockquote>
+Raspberry 側<p />
+	<blockquote>
+	# apt install tightvncserver<p />
+	$ tightvncserver<p />
+	</blockquote>
+
+# pacman -S gtk-vnc<p />
+$ gvncviewer host_raspberry:1<p />
+</blockquote>
+
+
+
+<hr />
+<a href="../wifi">wifi の設定</a><p />
+<a href="nodejs">Node.js を最新にする方法</a><p />
+<a href="chrome">Chrome をインストールする方法</a><p />
+<a href="softether">SoftEther Client をインストールする方法</a><p />
+
+
+<hr />
+追加インストール<p />
+<blockquote>
+	# apt install jq<p />
+	# apt install inetutils-ftp<p />
+</blockquote>
+
+
+<blockquote>
+</blockquote>
+
+
+<hr />
+
+<a href="../">戻る</a><p />
+
+Jun/26/2017<br />
+</body>
+</html>

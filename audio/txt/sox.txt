@@ -1,0 +1,36 @@
+<h2>
+sox を使う方法
+</h2>
+
+<blockquote>
+sox は、音声の変換ソフトです。<p />
+</blockquote>
+
+Arch Linux<p />
+<blockquote>
+# pacman -S sox<p />
+$ pacman -Q sox<br />
+sox 14.4.2-1<p />
+</blockquote>
+
+Ubuntu にインストールしておく必要があるパッケージ<p />
+<blockquote>
+<pre>
+ii  sox   14.3.2-1ubuntu1      Swiss army knife of sound processing
+</pre>
+</blockquote>
+
+次のように、タイプします。<br />
+
+<blockquote>
+    $ sox a000001.mp3 a000001.ogg<p />
+<blockquote>
+	MP3形式からOGG形式に変換されます。<p />
+</blockquote>
+
+</blockquote>
+
+<blockquote>
+</blockquote>
+
+<hr />

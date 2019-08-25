@@ -1,0 +1,7 @@
+#
+curl https://be-api.us.archive.org/views/v1/short/omoide_dazai > t01.json
+#
+curl https://be-api.us.archive.org/views/v1/short/gusukoubudorinodenki > t02.json
+curl https://be-api.us.archive.org/views/v1/short/saigonokokyuuhiki > t03.json
+#
+

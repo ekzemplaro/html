@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Rasberry Pi wifi</title>
+</head>
+<body>
+
+<h2>wifi の設定</h2>
+/etc/network/interfaces<p/>
+<blockquote>
+<pre>
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+	wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+#
+</pre>
+</blockquote>
+
+/etc/wpa_supplicant/wpa_supplicant.conf<p />
+<blockquote>
+<pre>
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=JP
+network={
+	ssid="GP01-SSID"
+	psk="secretabc"
+        }
+</pre>
+</blockquote>
+
+SSIDを探す方法<p />
+<blockquote>
+# iwlist wlan0 scan | grep ESSID<p />
+</blockquote>
+
+手動で設定を有効にする<p />
+<blockquote>
+# wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf<p />
+	<blockquote>
+	<pre>
+	# wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+	Successfully initialized wpa_supplicant
+	Line 8: Invalid passphrase length 5 (expected: 8..63) '12345"'.
+	Line 8: failed to parse psk '"12345"'.
+	Line 9: failed to parse network block.
+	Failed to read or parse configuration '/etc/wpa_supplicant/wpa_supplicant.conf'.
+	</pre>
+	</blockquote>
+</blockquote>
+
+参考になるページ<p />
+<blockquote>
+	<a href="https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md">Setting WiFi up via the command line</a><p />
+</blockquote>
+
+
+<blockquote>
+</blockquote>
+
+<hr />
+<a href="../">Return</a><p />
+Jan/31/2018<p />
+</body>
+</html>
