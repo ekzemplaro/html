@@ -339,8 +339,8 @@ function filter_proc (rec,id_select)
 			tag_targets = ['Raspberry','RaspberryPi']
 			break
 
-		case 'ChromBook':
-			tag_targets = ['Chrombook']
+		case 'ChromeBook':
+			tag_targets = ['Chromebook']
 			break
 
 		}
