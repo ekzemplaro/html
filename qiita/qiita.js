@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jun/06/2019
+//					Nov/18/2019
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -337,6 +337,10 @@ function filter_proc (rec,id_select)
 
 		case 'Raspberry':
 			tag_targets = ['Raspberry','RaspberryPi']
+			break
+
+		case 'ChromBook':
+			tag_targets = ['Chrombook']
 			break
 
 		}
