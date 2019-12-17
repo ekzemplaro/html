@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Nov/18/2019
+//					Dec/17/2019
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -309,6 +309,10 @@ function filter_proc (rec,id_select)
 
 		case 'Tutorial':
 			tag_targets = ['tutorial']
+			break
+
+		case 'SoftEther':
+			tag_targets = ['SoftEther_VPN','vpncmd']
 			break
 
 		case 'pandas':
