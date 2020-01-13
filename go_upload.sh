@@ -1,10 +1,10 @@
 #
 #
 git add --all
-git commit -m "Commit on Dec/28/2019"
+git commit -m "Commit on Jan/13/2020"
 
-sudo ufw default allow outgoing
+# sudo ufw default allow outgoing
 git push -u origin master
 #
-sudo ufw default deny outgoing
+# sudo ufw default deny outgoing
 #
