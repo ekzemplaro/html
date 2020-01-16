@@ -1,10 +1,10 @@
-#! /usr/bin/python
+#! /usr/bin/ruby
 # -*- coding: utf-8 -*-
 #
+#	hello.rb
+#
+#						Jan/16/2020
 # ---------------------------------------------------------------
-print("Content-Type: text/html")
-print("")
-print("Good Morning<p />")
-print("Good Morning<p />")
-print("Good Morning<p />")
+puts "Content-type: text/plain\n\n"
+puts "Hello World."
 # ---------------------------------------------------------------
