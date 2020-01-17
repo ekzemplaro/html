@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Dec/17/2019
+//					Jan/20/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -301,6 +301,10 @@ function filter_proc (rec,id_select)
 
 		case 'OCR':
 			tag_targets = ['OCR']
+			break
+
+		case 'WebAPI':
+			tag_targets = ['WebAPI']
 			break
 
 		case 'Operation':
