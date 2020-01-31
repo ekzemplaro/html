@@ -1,1 +1,6 @@
 .env
+*.jar
+*.dll
+*.pyc
+*.class
+__pycache__
