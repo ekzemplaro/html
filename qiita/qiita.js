@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jan/20/2020
+//					Feb/01/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -191,6 +191,10 @@ function filter_proc (rec,id_select)
 			tag_targets = ['DynamoDB']
 			break
 
+		case 'FireStore':
+			tag_targets = ['Firestore']
+			break
+
 		case 'MongoDB':
 			tag_targets = ['MongoDB']
 			break
@@ -289,6 +293,10 @@ function filter_proc (rec,id_select)
 
 		case 'HTTP':
 			tag_targets = ['HTTP','HttpClient']
+			break
+
+		case 'Rest-API':
+			tag_targets = ['REST-API']
 			break
 
 		case 'mail':
