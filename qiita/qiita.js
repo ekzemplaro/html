@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/01/2020
+//					Feb/07/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -297,6 +297,10 @@ function filter_proc (rec,id_select)
 
 		case 'Rest-API':
 			tag_targets = ['REST-API']
+			break
+
+		case 'gRPC':
+			tag_targets = ['gRPC']
 			break
 
 		case 'mail':
