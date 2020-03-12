@@ -1,19 +1,23 @@
 // ------------------------------------------------------------------------
 //	map_library.js
 //
-//						mar/08/2018
+//						mar/10/2018
 // ------------------------------------------------------------------------
 const file_json = "tochigi.json"
+const file_library = "library.json"
 
 jQuery.getJSON(file_json,function (data)
 	{
-	jQuery("#outarea_aa").text ("*** start ***")
-	draw_map_proc(data)
-	jQuery("#outarea_hh").text ("*** end ***")
+	jQuery.getJSON(file_library,function (library)
+		{
+		jQuery("#outarea_aa").text ("*** start ***")
+		draw_map_proc(data,library)
+		jQuery("#outarea_hh").text ("*** end ***")
+		})
 	})
 
 // ------------------------------------------------------------------------
-function draw_map_proc(data_in)
+function draw_map_proc(data_in,library_in)
 {
 	const WIDTH = 700
 	const HEIGHT = 560
@@ -38,10 +42,14 @@ function draw_map_proc(data_in)
 		.append('path')
 		.attr('d', path)
 		.attr('class', 'area')
-		.attr('data-address', function(d) {
+		.attr('name', function(d) {
 			const pp = d.properties;
-           		this.style.fill = add_color_proc(pp)
-			return pp.N03_007 + " " + pp.N03_004;
+           		this.style.fill = add_color_proc(pp,library_in)
+			return pp.N03_004;
+			})
+		.attr('key', function(d) {
+			const pp = d.properties;
+			return pp.N03_007
 			})
 /*
 		.on('mouseover', function() {
@@ -53,43 +61,32 @@ function draw_map_proc(data_in)
 */
             .on('click', function() {
                 this.style.fill = 'blue';
-	jQuery("#outarea_bb").text (this)
-	jQuery("#outarea_cc").text (this.getAttribute('data-address'))
-//		console.log(this)
+		const key = this.getAttribute('key')
+		const name = this.getAttribute('name')
+		const url = library_in[key].url
+		var str_out = key + "<br />"
+		str_out += name + "<br />"
+		str_out += url + "<br />"
+		jQuery("#outarea_cc").html (str_out)
             })
 
 }
 
 // ------------------------------------------------------------------------
-function add_color_proc(pp)
+function add_color_proc(pp,library_in)
 {
 	var color = 'silver'
 
-	switch (pp.N03_007)
-		{
- 		case "09201":
- 		case "09203":
- 		case "09204":
- 		case "09208":
- 		case "09209":
- 		case "09214":
- 		case "09215":
-		case "09343":
-		case "09344":
- 		case "09361":
- 		case "09386":
-			color = 'red'
-			break
+	const key = pp.N03_007
 
- 		case "09202":
- 		case "09205":
-		case "09216":
-		case "09301":
-		case "09342":
-		case "09345":
-		case "09364":
+	if (key in library_in)
+		{
+		const status = library_in[key].status
+
+		if (status == 1)
 			color = 'green'
-			break
+		else if (status == -1)
+			color = 'red'
 		}
 
 	return	color
