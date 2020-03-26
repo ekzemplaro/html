@@ -1,7 +1,8 @@
 #
 wget https://code.jquery.com/jquery-3.4.1.min.js
 #
-wget https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js
+#wget https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js
+#wget https://github.com/chartjs/Chart.js/releases/tag/v2.9.3/Chart.min.js
 #
 wget https://d3js.org/d3.v5.min.js
 #

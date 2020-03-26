@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/20/2020
+//					Feb/26/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -185,6 +185,14 @@ function filter_proc (rec,id_select)
 
 		case 'GitHub':
 			tag_targets = ['GitHub']
+			break
+
+		case 'COTOHA':
+			tag_targets = ['COTOHA']
+			break
+
+		case 'Kaggle':
+			tag_targets = ['Kaggle']
 			break
 
 		case 'DynamoDB':
