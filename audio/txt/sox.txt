@@ -16,7 +16,8 @@ sox 14.4.2-1<p />
 Ubuntu にインストールしておく必要があるパッケージ<p />
 <blockquote>
 <pre>
-ii  sox   14.3.2-1ubuntu1      Swiss army knife of sound processing
+sox   14.4.2+git20190427-1build1      Swiss army knife of sound processing
+libsox-fmt-mp3:amd64     14.4.2+git20190427-1build1    SoX MP2 and MP3 format library
 </pre>
 </blockquote>
 

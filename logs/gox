@@ -1,4 +1,0 @@
-#
-tail -n 100 visitors_log.txt > t01
-sudo cp t01 visitors_log.txt 
-#
