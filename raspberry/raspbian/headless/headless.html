@@ -17,10 +17,10 @@ Rasberry Pi を、ディスプレイ、キーボードを使わないでイン�
 SD への書き込み<p />
 <blockquote>
 <pre>
-# dd bs=4M if=2018-06-27-raspbian-stretch.img of=/dev/mmcblk0
-1150+0 レコード入力
-1150+0 レコード出力
-4823449600 bytes (4.8 GB, 4.5 GiB) copied, 254.681 s, 18.9 MB/s
+# dd bs=4M if=2020-02-13-raspbian-buster-lite.img of=/dev/mmcblk0
+441+0 records in
+441+0 records out
+1849688064 bytes (1.8 GB, 1.7 GiB) copied, 504.393 s, 3.7 MB/s
 </pre>
 </blockquote>
 
@@ -113,8 +113,8 @@ bcm2710-rpi-cm3.dtb	fixup_db.dat   overlays
 	<blockquote>
 	If you want to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory. The contents of the file don’t matter: it can contain any text you like, or even nothing at all. When the Pi boots, it looks for this file; if it finds it, it enables SSH and then deletes the file. 
 	</blockquote>
-
 	</blockquote>
+	wpa_supplicant.conf も置く。<p />
 	</blockquote>
 </blockquote>
 
@@ -179,6 +179,6 @@ ssh でログイン<p />
 
 <hr />
 <a href="../">Return</a><p />
-Apr/30/2019<p />
+Apr/18/2020<p />
 </body>
 </html>

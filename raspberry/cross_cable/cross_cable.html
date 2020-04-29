@@ -3,33 +3,21 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
-<title>Rasberry Pi 2 Cross Cable</title>
+<title>Rasberry Pi 4 Cross Cable</title>
 </head>
 <body>
 
-<h2>Rasberry Pi 2 クロスケーブル</h2>
+<h2>Rasberry Pi 4 クロスケーブル</h2>
 
-Rasberry Pi 2 と Arch Linux を、クロスケーブルで接続する方法<p />
+Rasberry Pi 4 と Arch Linux を、クロスケーブルで接続する方法<p />
 
 
 Rasberry 側<p />
 <blockquote>
-/etc/network/interfaces<p />
+/etc/dhcpcd.conf に次を加える<p />
 	<blockquote>
-	auto lo<br />
-	<br />
-	iface lo inet loopback<br />
-	# iface eth0 inet dhcp<br />
-	iface eth0 inet static<br />
-	address 192.168.0.10<br />
-	netmask 255.255.255.0<br />
-	gateway 192.168.0.1<br />
-	<br />
-	allow-hotplug wlan0<br />
-	iface wlan0 inet manual<br />
-	wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf<br />
-	#<br />
-	# iface default inet dhcp<br />
+	interface eth0<br />
+	static ip_address=192.168.0.13/24<br />
 	</blockquote>
 
 /etc/rc.local<p />
@@ -65,13 +53,11 @@ Arch Linux 側<p />
 	Interface=enp3s0f2<br />
 	Connection=ethernet<br />
 	IP=static<br />
-	Address=('192.168.0.1/24')<br />
-	# Routes=('192.168.0.1/24 via 192.168.0.10')<br />
-	# Gateway='192.168.0.10'<br />
+	Address=('192.168.0.10/24')<br />
 	</blockquote>
 起動<p />
 	<blockquote>
-	# systemctl start profile<p />
+	# netctl start profile<p />
 	もし、RTNETLINK answers: File exists　というエラーが出たら<p />
 		<blockquote>
 		# ip addr flush dev enp3s0f2<p />
@@ -103,6 +89,6 @@ default         pocketwifi.home 0.0.0.0         UG        0 0          0 wlp2s0
 </blockquote>
 <hr />
 <a href="../">Return</a><p />
-Sep/20/2016<p />
+Apr/24/2020<p />
 </body>
 </html>

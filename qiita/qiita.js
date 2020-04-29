@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/26/2020
+//					Apr/29/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -337,6 +337,10 @@ function filter_proc (rec,id_select)
 
 		case 'SoftEther':
 			tag_targets = ['SoftEther_VPN','vpncmd']
+			break
+
+		case 'covid19':
+			tag_targets = ['コロナウイルス']
 			break
 
 		case 'pandas':
