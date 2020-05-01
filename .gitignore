@@ -5,3 +5,4 @@
 *.class
 __pycache__
 logs
+qiita/qiita_out.json
