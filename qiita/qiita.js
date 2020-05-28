@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					May/05/2020
+//					May/16/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -105,6 +105,10 @@ function filter_proc (rec,id_select)
 
 		case 'TypeScript':
 			tag_targets = ['TypeScript']
+			break
+
+		case 'Deno':
+			tag_targets = ['deno']
 			break
 
 		case 'jQuery':
