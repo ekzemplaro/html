@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					May/16/2020
+//					Jun/05/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -157,6 +157,10 @@ function filter_proc (rec,id_select)
 
 		case 'AWS':
 			tag_targets = ['AWS','aws-cli','APIGateway']
+			break
+
+		case 'Lambda':
+			tag_targets = ['lambda']
 			break
 
 		case 'Bluemix':
