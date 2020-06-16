@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>Apache2 on Raspbian</title>
+</head>
+<body>
+
+<h2>Apache2 on Raspbian</h2>
+
+
+Apache2 のインストール<p />
+<blockquote>
+	sudo apt install apache2<p />
+	sudo systemctl status apache2<p />
+
+	<blockquote>
+	/var/www/html/index.html<p />
+	</blockquote>
+</blockquote>
+
+php をインストール<p />
+	<blockquote>
+
+	<ol>
+	<li>パッケージのインストール</li>
+	sudo apt install php php-cli php-curl<p />
+	<li>バージョンの確認</li>
+	<pre>
+$ php --version
+PHP 7.3.14-1~deb10u1 (cli) (built: Feb 16 2020 15:07:23) ( NTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.14, Copyright (c) 1998-2018 Zend Technologies
+    with Zend OPcache v7.3.14-1~deb10u1, Copyright (c) 1999-2018, by Zend Technologies
+	</pre>
+	</ol>
+</blockquote>
+
+
+Perl をインストール<p />
+<blockquote>
+	<ol>
+	<li>バージョンの確認</li>
+	<pre>
+$ perl --version
+
+This is perl 5, version 28, subversion 1 (v5.28.1) built for arm-linux-gnueabihf-thread-multi-64int
+(with 61 registered patches, see perl -V for more detail)
+
+Copyright 1987-2018, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+	</pre>
+
+	<li>CGI を有効にする</li>
+<blockquote>
+sudo a2enmod cgid<p />
+sudo systemctl restart apache2<p />
+</blockquote>
+
+<blockquote>
+/etc/apache2/apache2.conf<p />
+	<blockquote>
+	AddHandler cgi-script .cgi .pl<p />
+	</blockquote>
+
+</blockquote>
+
+	<li>ページにアクセス</li>
+<blockquote>
+<pre>
+Forbidden
+
+You don't have permission to access this resource.
+Apache/2.4.38 (Raspbian) Server at tulip.local Port 80
+</pre>
+</blockquote>
+
+	<li>設定の変更</li>
+<blockquote>
+/etc/apache2/apache2.conf<p />
+	<blockquote>
+<pre>
+&lt;Directory /var/www/&gt;
+        Options Indexes FollowSymLinks ExecCGI
+        AllowOverride None
+        Require all granted
+&lt;/Directory&gt;
+</pre>
+	</blockquote>
+</ol>
+</blockquote>
+
+
+<hr />
+
+<a href="../">戻る</a><p />
+
+Jun/16/2020<br />
+</body>
+</html>

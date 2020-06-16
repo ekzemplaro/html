@@ -13,12 +13,9 @@
 MariaDB のインストール<p />
 <blockquote>
 	# apt install mariadb-server<p />
-	<blockquote>
-		root のパスワードを覚えておいて下さい。<p />
-	</blockquote>
 
 	# apt install python3-mysql.connector<p />
-	# apt install php7.0-mysql<p />
+	# apt install php-mysql<p />
 
 	/etc/mysql/conf.d/mariadb.cnf を修正<p />
 	<blockquote>
@@ -40,7 +37,9 @@ MariaDB のインストール<p />
 	# systemctl status mysql<p />
 </blockquote>
 
+接続<p />
 <blockquote>
+	sudo mysql -uroot<p />
 </blockquote>
 
 
@@ -48,6 +47,6 @@ MariaDB のインストール<p />
 
 <a href="../">戻る</a><p />
 
-Jan/01/2018<br />
+Jun/07/2020<br />
 </body>
 </html>
