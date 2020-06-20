@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jun/05/2020
+//					Jun/21/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -97,6 +97,10 @@ function filter_proc (rec,id_select)
 
 		case 'php':
 			tag_targets = ['PHP','PHP7']
+			break
+
+		case 'perl':
+			tag_targets = ['Perl']
 			break
 
 		case 'nodejs':
@@ -301,6 +305,10 @@ function filter_proc (rec,id_select)
 
 		case 'Nginx':
 			tag_targets = ['nginx']
+			break
+
+		case 'Apache':
+			tag_targets = ['Apache','Apache2.4']
 			break
 
 		case 'uWSGI':
