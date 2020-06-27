@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jun/21/2020
+//					Jun/27/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -309,6 +309,10 @@ function filter_proc (rec,id_select)
 
 		case 'Apache':
 			tag_targets = ['Apache','Apache2.4']
+			break
+
+		case 'Tomcat':
+			tag_targets = ['Tomcat','tomcat9']
 			break
 
 		case 'uWSGI':
