@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jun/27/2020
+//					Jul/10/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -157,6 +157,10 @@ function filter_proc (rec,id_select)
 
 		case 'curl':
 			tag_targets = ['curl']
+			break
+
+		case 'rust':
+			tag_targets = ['Rust']
 			break
 
 		case 'AWS':
