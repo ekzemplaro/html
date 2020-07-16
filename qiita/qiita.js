@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jul/10/2020
+//					Jul/16/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -200,7 +200,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'chatwork':
-			tag_targets = ['chatwork']
+			tag_targets = ['Chatwork']
 			break
 
 		case 'GitHub':
