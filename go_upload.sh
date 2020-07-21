@@ -1,7 +1,7 @@
 #
 #
 git add --all
-git commit -m "Commit on Jul/17/2020"
+git commit -m "Commit on Jul/21/2020"
 
 # sudo ufw default allow outgoing
 git push -u origin master

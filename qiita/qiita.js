@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jul/16/2020
+//					Jul/21/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -353,6 +353,10 @@ function filter_proc (rec,id_select)
 
 		case 'WebAPI':
 			tag_targets = ['WebAPI']
+			break
+
+		case 'LetsEncrypt':
+			tag_targets = ['letsencrypt']
 			break
 
 		case 'Operation':
