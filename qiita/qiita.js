@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jul/21/2020
+//					Jul/26/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -225,6 +225,10 @@ function filter_proc (rec,id_select)
 
 		case 'MongoDB':
 			tag_targets = ['MongoDB']
+			break
+
+		case 'CouchDB':
+			tag_targets = ['CouchDB']
 			break
 
 		case 'Redis':
