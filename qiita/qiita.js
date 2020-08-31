@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jul/26/2020
+//					Aug/31/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -176,7 +176,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'gcloud':
-			tag_targets = ['gcloud','GoogleCloudPlatform','GoogleSpreadSheet']
+			tag_targets = ['gcloud','GoogleCloudPlatform']
 			break
 
 		case 'Azure':
@@ -257,6 +257,10 @@ function filter_proc (rec,id_select)
 
 		case 'Excel':
 			tag_targets = ['Excel','XLSX']
+			break
+
+		case 'GoogleSpreadSheet':
+			tag_targets = ['GoogleSpreadSheet']
 			break
 
 		case 'PDF':
