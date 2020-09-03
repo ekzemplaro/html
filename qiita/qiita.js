@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Aug/31/2020
+//					Sep/03/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -381,6 +381,10 @@ function filter_proc (rec,id_select)
 
 		case 'covid19':
 			tag_targets = ['コロナウイルス']
+			break
+
+		case 'machine_learning':
+			tag_targets = ['機械学習']
 			break
 
 		case 'pandas':
