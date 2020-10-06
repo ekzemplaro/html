@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Sep/03/2020
+//					Oct/06/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -385,6 +385,10 @@ function filter_proc (rec,id_select)
 
 		case 'machine_learning':
 			tag_targets = ['機械学習']
+			break
+
+		case 'audio':
+			tag_targets = ['audio']
 			break
 
 		case 'pandas':
