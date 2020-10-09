@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Oct/06/2020
+//					Oct/09/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -391,6 +391,10 @@ function filter_proc (rec,id_select)
 			tag_targets = ['audio']
 			break
 
+		case '仮想環境':
+			tag_targets = ['仮想環境','lxd']
+			break
+
 		case 'pandas':
 			tag_targets = ['pandas']
 			break
@@ -412,7 +416,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'CentOS':
-			tag_targets = ['centos7']
+			tag_targets = ['centos7','CentOS']
 			break
 
 		case 'Raspberry':
