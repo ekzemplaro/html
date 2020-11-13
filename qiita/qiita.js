@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Oct/09/2020
+//					Nov/13/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -273,6 +273,10 @@ function filter_proc (rec,id_select)
 
 		case 'Flask':
 			tag_targets = ['Flask']
+			break
+
+		case 'Bottle':
+			tag_targets = ['bottle']
 			break
 
 		case 'Laravel':
