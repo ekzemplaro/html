@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Nov/13/2020
+//					Nov/25/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -29,7 +29,7 @@ function button_click_monitor(rec)
 		{
 		const id_select = this.id
 
-		jQuery("#outarea_bb").text (this.id)
+		jQuery("#outarea_bb").text ("this.id = " + this.id)
 
 		jQuery ("button").css ("color","black")
 		jQuery ("#" + this.id).css ("color","blue")
@@ -397,6 +397,10 @@ function filter_proc (rec,id_select)
 
 		case '仮想環境':
 			tag_targets = ['仮想環境','lxd']
+			break
+
+		case '翻訳':
+			tag_targets = ['翻訳']
 			break
 
 		case 'pandas':
