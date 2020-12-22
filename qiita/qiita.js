@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Nov/25/2020
+//					Dec/22/2020
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -304,7 +304,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'Vue.js':
-			tag_targets = ['Vue.js']
+			tag_targets = ['Vue.js','nuxt.js']
 			break
 
 		case 'React.js':
