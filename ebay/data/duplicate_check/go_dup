@@ -1,2 +1,0 @@
-awk -f aw_sql_gen tmp01 > dup_update.sql
-mysql -uscott -ptiger < dup_update.sql

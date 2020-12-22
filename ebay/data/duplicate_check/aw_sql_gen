@@ -1,2 +1,0 @@
-BEGIN{print "use ebay;"}
-{print "update parts set dup = 1 where id = '"$1"';"}
