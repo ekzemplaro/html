@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Dec/22/2020
+//					Jan/07/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -280,7 +280,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'Laravel':
-			tag_targets = ['laravel5.6']
+			tag_targets = ['laravel5.6','Laravel']
 			break
 
 		case 'FuelPHP':
@@ -293,6 +293,10 @@ function filter_proc (rec,id_select)
 
 		case 'Express':
 			tag_targets = ['Express']
+			break
+
+		case 'Koa.js':
+			tag_targets = ['Koa.js']
 			break
 
 		case 'Node-RED':
