@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jan/07/2021
+//					Jan/10/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -161,6 +161,10 @@ function filter_proc (rec,id_select)
 
 		case 'rust':
 			tag_targets = ['Rust']
+			break
+
+		case 'Dart':
+			tag_targets = ['Dart']
 			break
 
 		case 'AWS':
@@ -345,6 +349,10 @@ function filter_proc (rec,id_select)
 
 		case 'HTTP':
 			tag_targets = ['HTTP','HttpClient']
+			break
+
+		case 'mqtt':
+			tag_targets = ['mqtt','paho-mqtt','mosquitto']
 			break
 
 		case 'Rest-API':
