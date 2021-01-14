@@ -352,7 +352,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'mqtt':
-			tag_targets = ['mqtt','paho-mqtt','mosquitto']
+			tag_targets = ['mqtt','paho-mqtt','mosquitto','paho']
 			break
 
 		case 'Rest-API':
