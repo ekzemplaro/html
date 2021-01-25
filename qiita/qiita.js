@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jan/15/2021
+//					Jan/25/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -352,7 +352,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'mqtt':
-			tag_targets = ['mqtt','paho-mqtt','mosquitto','paho','AzureIoTHub']
+			tag_targets = ['mqtt','mqtts','paho-mqtt','mosquitto','paho','AzureIoTHub']
 			break
 
 		case 'Rest-API':
