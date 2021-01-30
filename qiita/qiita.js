@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jan/25/2021
+//					Jan/31/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -240,7 +240,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'MariaDB':
-			tag_targets = ['mariadb']
+			tag_targets = ['mariadb','MySQL']
 			break
 
 		case 'PostgreSQL':
@@ -309,6 +309,10 @@ function filter_proc (rec,id_select)
 
 		case 'Echo':
 			tag_targets = ['echo']
+			break
+
+		case 'Gin':
+			tag_targets = ['gin']
 			break
 
 		case 'Vue.js':
