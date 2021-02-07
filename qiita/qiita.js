@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jan/31/2021
+//					Feb/07/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -385,6 +385,10 @@ function filter_proc (rec,id_select)
 
 		case 'LetsEncrypt':
 			tag_targets = ['letsencrypt']
+			break
+
+		case 'JWT':
+			tag_targets = ['JWT']
 			break
 
 		case 'Operation':
