@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/07/2021
+//					Feb/10/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -301,6 +301,10 @@ function filter_proc (rec,id_select)
 
 		case 'Koa.js':
 			tag_targets = ['Koa.js']
+			break
+
+		case 'Nest.js':
+			tag_targets = ['NestJS']
 			break
 
 		case 'Node-RED':
