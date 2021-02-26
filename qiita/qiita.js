@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/10/2021
+//					Feb/26/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -420,7 +420,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case '仮想環境':
-			tag_targets = ['仮想環境','lxc','lxd']
+			tag_targets = ['仮想環境','lxc','lxd','Docker']
 			break
 
 		case '翻訳':
