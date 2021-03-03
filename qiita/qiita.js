@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/26/2021
+//					Mar/03/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -357,6 +357,10 @@ function filter_proc (rec,id_select)
 
 		case 'HTTP':
 			tag_targets = ['HTTP','HttpClient']
+			break
+
+		case 'WebDAV':
+			tag_targets = ['webdav']
 			break
 
 		case 'mqtt':
