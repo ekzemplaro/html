@@ -1,5 +1,5 @@
 #
-wget https://code.jquery.com/jquery-3.5.1.min.js
+wget https://code.jquery.com/jquery-3.6.0.min.js
 #
 #wget https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js
 #wget https://github.com/chartjs/Chart.js/releases/tag/v2.9.3/Chart.min.js

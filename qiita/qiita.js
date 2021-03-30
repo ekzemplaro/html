@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Mar/03/2021
+//					Mar/30/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -397,6 +397,10 @@ function filter_proc (rec,id_select)
 
 		case 'JWT':
 			tag_targets = ['JWT']
+			break
+
+		case 'deb':
+			tag_targets = ['deb']
 			break
 
 		case 'Operation':
