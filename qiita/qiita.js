@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Mar/30/2021
+//					Apr/11/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -401,6 +401,10 @@ function filter_proc (rec,id_select)
 
 		case 'deb':
 			tag_targets = ['deb']
+			break
+
+		case 'upload':
+			tag_targets = ['upload']
 			break
 
 		case 'Operation':
