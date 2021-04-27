@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Apr/11/2021
+//					Apr/27/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -405,6 +405,10 @@ function filter_proc (rec,id_select)
 
 		case 'upload':
 			tag_targets = ['upload']
+			break
+
+		case 'cookie':
+			tag_targets = ['cookie']
 			break
 
 		case 'Operation':

@@ -1,19 +1,18 @@
 // -----------------------------------------------------------------------
 //	index_visitors.js
 //
-//					Jun/17/2011
+//					Apr/25/2021
 //
 // -----------------------------------------------------------------------
 jQuery (function ()
 {
-	var url_php = "./index_visitors.php";
+	const url_php = "./index_visitors.php"
 
 	jQuery.get (url_php,function (data_received)
                 {
-		jQuery("#visitors").html (data_received);
-		});
+		jQuery("#visitors").html (data_received)
+		})
 
-
-});
+})
 
 // -----------------------------------------------------------------------
