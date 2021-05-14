@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Apr/27/2021
+//					May/14/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -268,7 +268,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'PDF':
-			tag_targets = ['PDF']
+			tag_targets = ['PDF','mpdf']
 			break
 
 		case 'Django':
