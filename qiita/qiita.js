@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					May/14/2021
+//					May/28/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -433,6 +433,10 @@ function filter_proc (rec,id_select)
 
 		case 'audio':
 			tag_targets = ['audio']
+			break
+
+		case 'TextToSpeech':
+			tag_targets = ['TextToSpeech']
 			break
 
 		case '仮想環境':
