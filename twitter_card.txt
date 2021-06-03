@@ -1,0 +1,6 @@
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ekzemplaro" />
+<meta property="og:url" content="https://corona.ekzemplaro.org/" />
+<meta property="og:title" content="コロナウイルス関連のページ" />
+<meta property="og:description" content="Covid19" />
+<meta property="og:image" content="https://ekzemplaro.org/png/linux_logo.png" />
