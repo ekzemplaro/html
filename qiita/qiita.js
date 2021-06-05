@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jun/03/2021
+//					Jun/05/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -281,6 +281,10 @@ function filter_proc (rec,id_select)
 
 		case 'Bottle':
 			tag_targets = ['bottle']
+			break
+
+		case 'FastAPI':
+			tag_targets = ['FastAPI']
 			break
 
 		case 'Laravel':
