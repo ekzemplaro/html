@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	audio.js
 //
-//					Sep/21/2016
+//					Jun/13/2021
 //
 // -----------------------------------------------------------------------
 jQuery (function ()
@@ -18,6 +18,8 @@ jQuery (function ()
 	jQuery ("button").click (function ()
 	{
 	var title = this.id
+	jQuery ("button").css ("color","black")
+	jQuery ("#" + this.id).css ("color","blue")
 
 	file_text = "txt/" + title + ".txt"
 
