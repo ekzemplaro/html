@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jun/05/2021
+//					Jul/09/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -477,6 +477,10 @@ function filter_proc (rec,id_select)
 
 		case 'CentOS':
 			tag_targets = ['centos7','CentOS']
+			break
+
+		case 'Alpine':
+			tag_targets = ['alpine']
 			break
 
 		case 'Raspberry':
