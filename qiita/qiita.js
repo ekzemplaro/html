@@ -487,6 +487,10 @@ function filter_proc (rec,id_select)
 			tag_targets = ['Raspberry','RaspberryPi']
 			break
 
+		case 'Arduino':
+			tag_targets = ['Arduino','ArduinoUno']
+			break
+
 		case 'ChromeBook':
 			tag_targets = ['Chromebook']
 			break
