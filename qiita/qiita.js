@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jul/09/2021
+//					Jul/26/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -217,6 +217,10 @@ function filter_proc (rec,id_select)
 
 		case 'Kaggle':
 			tag_targets = ['Kaggle']
+			break
+
+		case 'SORACOM':
+			tag_targets = ['SORACOM','SoracomHarvest']
 			break
 
 		case 'DynamoDB':
