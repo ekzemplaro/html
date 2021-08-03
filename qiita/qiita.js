@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jul/26/2021
+//					Aug/03/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -337,6 +337,10 @@ function filter_proc (rec,id_select)
 
 		case 'WordPress':
 			tag_targets = ['WordPress']
+			break
+
+		case 'Grafana':
+			tag_targets = ['grafana']
 			break
 
 		case 'Scraping':
