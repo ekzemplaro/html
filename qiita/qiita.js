@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Aug/17/2021
+//					Aug/30/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -377,6 +377,10 @@ function filter_proc (rec,id_select)
 
 		case 'WebDAV':
 			tag_targets = ['webdav']
+			break
+
+		case 'udp':
+			tag_targets = ['udp']
 			break
 
 		case 'mqtt':
