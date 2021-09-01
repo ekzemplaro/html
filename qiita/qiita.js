@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Aug/30/2021
+//					Sep/01/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -505,6 +505,14 @@ function filter_proc (rec,id_select)
 
 		case 'Arduino':
 			tag_targets = ['Arduino','ArduinoUno']
+			break
+
+		case 'WioLTE':
+			tag_targets = ['WioLTE']
+			break
+
+		case 'M5Stack':
+			tag_targets = ['M5stackCore2']
 			break
 
 		case 'ChromeBook':
