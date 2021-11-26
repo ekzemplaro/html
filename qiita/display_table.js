@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita/display_table.js
 //
-//					Jan/25/2019
+//					Nov/26/2021
 //
 // -----------------------------------------------------------------------
 // [4]:
@@ -15,7 +15,7 @@ function display_table_proc (rec)
 	str_out += "<tr>"
 	str_out += "<th>no</th>"
 	str_out += "<th>title</th>"
-	str_out += "<th>likes</th>"
+	str_out += "<th>LGTM</th>"
 	str_out += "<th>updated_at</th>"
 	str_out += "</tr>"
 
@@ -57,7 +57,7 @@ function display_table_proc (rec)
 	str_out += "</table>"
 
 	var str_tmp = "Items: " + count_articles + "&nbsp;&nbsp;"
-	str_tmp += "Likes: " + sum_likes
+	str_tmp += "LGTM: " + sum_likes
 	jQuery("#area_likes").html(str_tmp)
 
 	return	str_out

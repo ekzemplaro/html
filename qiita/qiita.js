@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Sep/12/2021
+//					Nov/26/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -25,7 +25,8 @@ jQuery  (function ()
 // [8]:
 function button_click_monitor(rec)
 {
-	jQuery ("button").click (function ()
+//	jQuery ("button").click (function ()
+	jQuery ("button").on ("click", function ()
 		{
 		const id_select = this.id
 
