@@ -471,6 +471,10 @@ function filter_proc (rec,id_select)
 		case '翻訳':
 			tag_targets = ['翻訳']
 			break
+			
+		case '自然言語処理':
+			tag_targets = ['自然言語処理','mecab','GiNZA']
+			break
 
 		case 'pandas':
 			tag_targets = ['pandas']
