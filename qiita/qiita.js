@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Nov/26/2021
+//					Dec/12/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -476,6 +476,10 @@ function filter_proc (rec,id_select)
 			tag_targets = ['自然言語処理','mecab','GiNZA']
 			break
 
+		case 'Graphics':
+			tag_targets = ['graph','d5.js','chart.js','canvas']
+			break
+			
 		case 'pandas':
 			tag_targets = ['pandas']
 			break
