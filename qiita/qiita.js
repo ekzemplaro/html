@@ -477,7 +477,8 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'Graphics':
-			tag_targets = ['graph','d5.js','chart.js','canvas']
+			tag_targets = ['graph','d5.js','chart.js','canvas',
+				'grafana','Kibana']
 			break
 			
 		case 'pandas':
