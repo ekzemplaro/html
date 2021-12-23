@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Dec/12/2021
+//					Dec/23/2021
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -166,6 +166,10 @@ function filter_proc (rec,id_select)
 
 		case 'Dart':
 			tag_targets = ['Dart']
+			break
+
+		case 'Julia':
+			tag_targets = ['Julia']
 			break
 
 		case 'AWS':
