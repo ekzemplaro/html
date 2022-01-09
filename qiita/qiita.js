@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Dec/23/2021
+//					Jan/09/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -306,6 +306,10 @@ function filter_proc (rec,id_select)
 
 		case 'Flight':
 			tag_targets = ['Flight']
+			break
+
+		case 'Genie':
+			tag_targets = ['Genie']
 			break
 
 		case 'Express':
