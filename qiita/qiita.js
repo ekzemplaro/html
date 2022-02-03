@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Jan/09/2022
+//					Feb/03/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -97,7 +97,7 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'php':
-			tag_targets = ['PHP','PHP7']
+			tag_targets = ['PHP','PHP7','PHP8']
 			break
 
 		case 'perl':
