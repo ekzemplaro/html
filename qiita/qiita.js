@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/07/2022
+//					Feb/20/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -446,6 +446,10 @@ function filter_proc (rec,id_select)
 
 		case 'base64':
 			tag_targets = ['base64']
+			break
+
+		case 'GraphQL':
+			tag_targets = ['GraphQL']
 			break
 
 		case 'Operation':
