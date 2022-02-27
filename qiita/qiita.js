@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/20/2022
+//					Feb/28/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -177,7 +177,8 @@ function filter_proc (rec,id_select)
 			break
 
 		case 'AWS':
-			tag_targets = ['AWS','aws-cli','APIGateway','awsIoT']
+			tag_targets = ['AWS','aws-cli','APIGateway','awsIoT',
+				'AppSync']
 			break
 
 		case 'Lambda':
