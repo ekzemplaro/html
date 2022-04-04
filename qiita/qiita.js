@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Feb/28/2022
+//					Apr/04/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -191,6 +191,10 @@ function filter_proc (rec,id_select)
 
 		case 'gcloud':
 			tag_targets = ['gcloud','GoogleCloudPlatform']
+			break
+
+		case 'GoogleCloudFunctions':
+			tag_targets = ['GoogleCloudFunctions']
 			break
 
 		case 'Azure':
