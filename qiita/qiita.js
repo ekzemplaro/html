@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Apr/04/2022
+//					Apr/17/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -118,6 +118,10 @@ function filter_proc (rec,id_select)
 
 		case 'jQuery':
 			tag_targets = ['jQuery']
+			break
+
+		case 'FetchAPI':
+			tag_targets = ['FetchAPI']
 			break
 
 		case 'golang':
