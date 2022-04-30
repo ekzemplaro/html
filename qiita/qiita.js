@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					Apr/17/2022
+//					May/01/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -516,6 +516,10 @@ function filter_proc (rec,id_select)
 
 		case 'beautifulsoup':
 			tag_targets = ['beautifulsoup4']
+			break
+
+		case 'SQLAlchemy':
+			tag_targets = ['sqlalchemy']
 			break
 
 		case 'ArchLinux':
