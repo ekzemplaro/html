@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	qiita.js
 //
-//					May/01/2022
+//					May/07/2022
 //
 // -----------------------------------------------------------------------
 jQuery  (function ()
@@ -227,6 +227,10 @@ function filter_proc (rec,id_select)
 
 		case 'GitHub':
 			tag_targets = ['GitHub']
+			break
+
+		case 'GitLab':
+			tag_targets = ['GitLab']
 			break
 
 		case 'COTOHA':
