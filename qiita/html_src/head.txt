@@ -1,5 +1,0 @@
-<title>qiita</title>
-</head>
-<body>
-<h2>qiita</h2>
-<blockquote>
