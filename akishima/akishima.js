@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	akishima.js
 //
-//						Mar/27/2023
+//						Mar/28/2023
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -28,7 +28,7 @@ function gen_data(no)
 {
 var str_out = ""
 str_out += "<p>第 " + no + " 回</p>" 
-const str_out_aa = '<iframe id="Example_a" title="246.pdf" width="800" height="400" src="http://localhost/uchida/akishima/pdf.js/web/viewer.html?file=../../data/'
+const str_out_aa = '<iframe id="Example_a" title="246.pdf" width="800" height="400" src="https://ekzemplaro.org/akishima/pdf.js/web/viewer.html?file=../../data/'
 const str_out_bb = 'b' + no
 const str_out_cc = '.pdf" > </iframe> <p />'
 
