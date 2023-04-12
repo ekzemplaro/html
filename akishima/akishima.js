@@ -12,7 +12,7 @@ document.querySelector("#outarea_aa").innerText = "*** akishima *** start ***"
 
 var str_out = ""
 
-const array_no = [246,245,244,243,242,241,240,239,238,237,236,235,234,233,232,231,230]
+const array_no = [247,246,245,244,243,242,241,240,239,238,237,236,235,234,233,232,231,230]
 
 array_no.forEach (element => str_out += gen_data(element))
 

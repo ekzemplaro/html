@@ -1,6 +1,7 @@
 #
 #for no in 236 237 238 239 240 241 242 243 244 245 246
-for no in 230 231 232 233 234 235
+# for no in 230 231 232 233 234 235
+for no in 247
 do
 	file_in=${no}".pdf"
 	file_out_a="a"${file_in}
@@ -9,5 +10,5 @@ do
 	./blank_pdf.py 140 ${file_out_a} ${file_out_b}
 done
 
-./blank_pdf.py 170 a234.pdf b234.pdf
+# ./blank_pdf.py 170 a234.pdf b234.pdf
 #
