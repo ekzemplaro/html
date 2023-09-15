@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>広告君</title>
+</head>
+<body>
+<h2>広告君</h2>
+<div class="tab-panel">
+	<!--タブ-->
+	<div class="tab-group">
+		<button class="tab tab-A is-active">Button-A</button>
+		<button class="tab tab-B">Button-B</button>
+		<button class="tab tab-C">Button-C</button>
+		<button class="tab tab-D">Button-D</button>
+		<button class="tab tab-E">Button-E</button>
+	</div>
+
+	<!--タブを切り替えて表示するコンテンツ-->
+    <div class="panel-group">
+		<div class="panel tab-A is-show">Content-A</div>
+		<div class="panel tab-B">Content-B</div>
+		<div class="panel tab-C">Content-C</div>
+		<div class="panel tab-D">Content-C</div>
+		<div class="panel tab-E">Content-C</div>
+	</div>
+</div>
+<blockquote>
+AAA<br />
+BBB<br />
+CCC<p />
+</blockquote>
+
+<hr />
+<div id="outarea_aa">outarea_aa</div>
+<div id="outarea_bb">outarea_bb</div>
+<div id="outarea_cc">outarea_cc</div>
+<div id="outarea_dd">outarea_dd</div>
+<div id="outarea_ee">outarea_ee</div>
+<div id="outarea_ff">outarea_ff</div>
+<div id="outarea_gg">outarea_gg</div>
+<div id="outarea_hh">outarea_hh</div>
+<hr />
+<p>Sep/13/2023 AM 09:00</p>
+<script src="click.js"></script>
+</body>
+</html>
