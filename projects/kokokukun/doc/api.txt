@@ -1,0 +1,53 @@
+<pre>
+@POST("api/v1/device/register")
+    fun registerDevice(@Part("device_id") deviceId: RequestBody,
+                       @Part("device_name") deviceName: RequestBody,
+                       @Part("version_app") versionApp: RequestBody,
+                       @Part("estimate_free_storage") freeStorage: RequestBody
+    ) : Call<EmptyResp>
+</pre>
+
+<blockquote>
+http POST $URL"?device_id="$DEVICE_ID"&device_name="$DEVICE_NAME"&version_app=0.1.3&estimate_free_storage="$STORAGE
+</blockquote>
+
+<pre>
+@GET("api/v1/schedule/list")
+    fun getSchedules(@Query("device_id") deviceId: String): Call<ScheduleRsp>
+</pre>
+
+<blockquote>
+http $SERVER"/api/v1/schedule/list?device_id="$DEVICE_ID
+</blockquote>
+
+<pre>
+@GET("api/v1/app/check-update")
+    fun checkUpdate(@Query("app_version") appVersion: String) : Call<UpdateRsp>
+</pre>
+
+<blockquote>
+http $SERVER"/api/v1/app/check-update?app_version="$VERSION
+</blockquote>
+
+
+<pre>
+@PUT("api/v1/device/update-status")
+    fun updateDeviceStatus(@Query("device_id") deviceId: String,
+                           @Query("status") status: Int,
+                           @Query("estimate_free_storage") freeStorage: Long) : Call<UpdateStatusRsp>
+</pre>
+
+<blockquote>
+http PUT $SERVER"/api/v1/device/update-status?device_id="$DEVICE_ID"&status=1&estimate_free_storage="$STORAGE
+</blockquote>
+
+
+<pre>
+@GET("/api/v1/background")
+    fun getBackGround(): Call<BackgroundRsp>
+</pre>
+
+<blockquote>
+http ${SERVER}/api/v1/background
+</blockquote>
+

@@ -1,0 +1,15 @@
+<h2>コードの用意</h2>
+git clone git@github.com:sknet0183/sknet_backend.git<br />
+cd sknet_backend<br />
+composer clone<br />
+
+<p>.env</env>
+<blockquote>
+APP_URL=http://sknet3.ekzemplaro.org<br />
+<blockquote>
+
+</pre>
+
+<pre>
+
+</pre>

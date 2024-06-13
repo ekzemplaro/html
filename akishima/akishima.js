@@ -27,7 +27,7 @@ function gen_data(no)
 {
 var str_out = ""
 str_out += "<p>第 " + no + " 回</p>" 
-const str_out_aa = '<iframe id="Example_a" title="246.pdf" width="800" height="400" src="./pdf.js/web/viewer.html?file=../../data/'
+const str_out_aa = '<iframe id="Example_a" title="246.pdf" width="800" height="400" src="https://cdnjs.com/libraries/pdf.js/web/viewer.html?file=../../data/'
 const str_out_bb = 'c' + no
 const str_out_cc = '.pdf" > </iframe> <p />'
 

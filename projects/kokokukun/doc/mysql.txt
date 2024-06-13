@@ -1,0 +1,18 @@
+<p>sudo apt install mysql-server</p>
+
+<pre>
+mysql> select version();
++-------------------------+
+| version()               |
++-------------------------+
+| 8.0.35-0ubuntu0.22.04.1 |
++-------------------------+
+1 row in set (0.00 sec)
+</pre>
+
+<pre>
+create schema sknet_signage;
+create user 'sknet_admin'@'localhost' identified by 'Sknet@2021';
+grant all on sknet_signage.* to 'sknet_admin'@'localhost';
+flush privileges;
+</pre>

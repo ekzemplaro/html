@@ -1,0 +1,33 @@
+<pre>
+$ Apachectl -v
+Server version: Apache/2.4.41 (Ubuntu)
+Server built:   2023-03-08T17:32:54
+</pre>
+<p>sudo a2enmod rewrite</p>
+<p>sudo systemctl restart apache2</p>
+
+<pre>
+mkdir storage
+mkdir storage/app
+mkdir storage/framework
+mkdir storage/logs
+chmod 0777 storage/logs
+</pre>
+
+<pre>
+cd storage/framework/
+mkdir -p cache/data
+mkdir -p app/cache
+mkdir sessions
+mkdir views
+</pre>
+
+<pre>
+cd storage/app
+mkdir public
+</pre>
+
+<pre>
+cd public
+ln -s /var/www/html/sknet_backend/storage/app/public .
+</pre>
