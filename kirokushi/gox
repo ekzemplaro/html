@@ -1,0 +1,4 @@
+#export PYTHONIOENCODING='UTF-8'
+#python -m http.server 8000
+#
+http-server
