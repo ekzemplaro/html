@@ -1,1 +1,1 @@
-cp -p ../../concat_json/data_school.json .
+cp -p ../../to_school_dict/dict_school.json .

@@ -1,18 +1,18 @@
 // -----------------------------------------------------------------------
 //	schools.js
 //
-//					Dec/15/2024
+//					Dec/17/2024
 //
 // -----------------------------------------------------------------------
 'use strict'
 
-var array_aa = []
+var dict_aa = []
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
 	document.querySelector("#outarea_aa").innerHTML = "*** schools.js *** start ***"
 
-	const file_json = "./data_school.json"
+	const file_json = "./dict_school.json"
 
 	read_fetch_table_proc(file_json,".contents")
 
@@ -43,11 +43,11 @@ function filter_proc(obj)
 	switch (id_select)
 		{
 	 	case "all":
-			str_out = display_table_proc (array_aa)
+			str_out = display_table_proc(dict_aa)
 			break
 
 		default:
-			data_new = filter_school_proc(array_aa,id_select)
+			data_new = filter_school_proc(dict_aa,id_select)
 			str_out = display_table_proc(data_new)
 			break
 		}
@@ -58,22 +58,19 @@ function filter_proc(obj)
 // -----------------------------------------------------------------------
 function filter_school_proc (rec,id_select)
 {
-	var data_new = []
-	rec.forEach(function(unit)
+	var dict_new = {}
+
+	for (var key in rec)
 		{
-		if (unit.school == id_select)
+		const value = rec[key]
+		const dd = key.split("_")
+		if (dd[0] == id_select)
 			{
-			data_new.push(unit)
+			dict_new[key] = value
 			}
-		})
+		}
 
-	var str_tmp = ""
-	str_tmp += data_new.length + "<br />"
-
-//	jQuery("#outarea_cc").html(str_tmp)
-	document.querySelector("#outarea_dd").innerHTML = str_tmp
-
-	return	data_new
+	return	dict_new
 }
 
 // -----------------------------------------------------------------------

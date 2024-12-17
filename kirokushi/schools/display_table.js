@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	schools/display_table.js
 //
-//					Dec/15/2024
+//					Dec/17/2024
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -13,23 +13,15 @@ function display_table_proc (rec)
 	str_out += "<table>"
 	str_out += header_proc()
 
-	var sum_likes = 0
 	var count_articles = 0
 
-	rec.forEach(function(unit)
+	for (var key in rec)
 		{
-		str_out += "<tr>"
-		str_out += "<td>" + unit.school + "</td>"
-
-		str_out += "<td>" + unit.date_held + "</td>"
-		str_out += "<td>" + unit.class + "</td>"
-		str_out += "<td>" + unit.title + "</td>"
-		str_out += "<td>" + unit.name + "</td>"
-
-		str_out += "</tr>"
+		const value = rec[key]
+		str_out += record_proc(key,value)
 
 		count_articles += 1
-		})
+		}
 
 	str_out += header_proc()
 
@@ -40,6 +32,31 @@ function display_table_proc (rec)
 	document.querySelector("#area_likes").innerHTML = str_tmp
 
 	return	str_out
+}
+
+// -----------------------------------------------------------------------
+// [4-6-4]:
+function record_proc(key,value)
+{
+	const times = value['times']
+
+	const dd = key.split("_")
+	var str_out = "<tr>"
+
+	str_out += "<td rowspan=" + times + ">" + dd[0] + "</td>"
+	str_out += "<td rowspan=" + times + ">" + dd[1] + "</td>"
+
+	value['records'].forEach(function (bbx)
+		{
+//	str_out += "<td>" + bbx['school'] + "</td>"
+//	str_out += "<td>" + bbx['date_held'] + "</td>"
+	str_out += "<td>" + bbx['class'] + "</td>"
+	str_out += "<td>" + bbx['title'] + "</td>"
+	str_out += "<td>" + bbx['name'] + "</td>"
+	str_out += "</tr>"
+		})
+
+	return str_out
 }
 
 // -----------------------------------------------------------------------
