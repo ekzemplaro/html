@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	schools/display_table.js
 //
-//					Dec/17/2024
+//					Dec/21/2024
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -10,7 +10,7 @@
 function display_table_proc (rec)
 {
 	var str_out = ""
-	str_out += "<table>"
+	str_out += '<table class="fixed-table">'
 	str_out += header_proc()
 
 	var count_articles = 0
@@ -64,11 +64,11 @@ function header_proc()
 {
 	var str_out = ""
 	str_out += "<tr>"
-	str_out += "<th>場所</th>"
-	str_out += "<th>年月日</th>"
-	str_out += "<th>対象</th>"
+	str_out += "<th class='school'>場所</th>"
+	str_out += "<th class='date_held'>年月日</th>"
+	str_out += "<th class='target'>対象</th>"
 	str_out += "<th>題名</th>"
-	str_out += "<th>語った人</th>"
+	str_out += "<th class='name'>語った人</th>"
 	str_out += "</tr>"
 
 	return	str_out

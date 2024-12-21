@@ -16,4 +16,19 @@ th {
 	background: #c6c6c6;
 }
 
+.fixed-table {
+    width: 800px;
+    table-layout: fixed;
+}
+
+.school, .target {
+    width: 100px;
+    table-layout: fixed;
+}
+
+.date_held, .name {
+    width: 125px;
+    table-layout: fixed;
+}
+
 /* -------------------------------------------------------------- */
