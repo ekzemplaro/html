@@ -1,0 +1,3050 @@
+{
+  " 青木 洋子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "1の2",
+        "title": "ホットケーキ"
+      }
+    ]
+  },
+  "三橋\n美恵子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "3の2",
+        "title": "三びきの子ブタ"
+      }
+    ]
+  },
+  "三橋美恵子": {
+    "times": 14,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "5の2",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "6の2",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "6の1",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の5",
+        "title": "シカのお告げ"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "3の2",
+        "title": "ラプンツェル"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "6の2",
+        "title": "ラプンツェル"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の3",
+        "title": "リンゴ娘ニーナ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-06-05",
+        "target": "1年",
+        "title": "世界でいちばんきれいな声"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "1の4",
+        "title": "世界でいちばんきれいな声"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の3",
+        "title": "十二のつきのおくりもの"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "5年",
+        "title": "十二のつきのおくりもの"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "4の1",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "8の2",
+        "title": "木のまたアンティ"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "3の3",
+        "title": "火の鳥と王女ワシリーサ"
+      }
+    ]
+  },
+  "三橋美惠子": {
+    "times": 5,
+    "records": [
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "5年生",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "3の2",
+        "title": "がちょう番の娘"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-4",
+        "title": "シカのお告げ"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-11-12",
+        "target": "6年生",
+        "title": "ラプンツェル"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "6年生",
+        "title": "三つのオレンジ"
+      }
+    ]
+  },
+  "伊藤 理恵": {
+    "times": 3,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "1の1",
+        "title": "ついでにペロリ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "1の3",
+        "title": "ついでにペロリ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "1の1",
+        "title": "ふたりのあさごはん"
+      }
+    ]
+  },
+  "伊藤理恵": {
+    "times": 18,
+    "records": [
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "2年",
+        "title": "なら梨とり"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "2の3",
+        "title": "なら梨とり"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-06-18",
+        "target": "1年1組",
+        "title": "ねずみじょうど"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "1の3",
+        "title": "ねずみじょうど"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "2年",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "すずかぜ1",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-4",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の2",
+        "title": "みそ買い橋"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の3",
+        "title": "北風に会いに行った少年"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "4の3",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "6の3",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の2",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "4の4",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "1の1",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-10-08",
+        "target": "5年1組",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の2",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-4",
+        "title": "犬とねことうろこ玉"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の1",
+        "title": "犬とねことうろこ玉"
+      }
+    ]
+  },
+  "佐藤 恵子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "1の1",
+        "title": "ホットケーキ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "6の1",
+        "title": "死神の名付け親"
+      }
+    ]
+  },
+  "佐藤恵子": {
+    "times": 16,
+    "records": [
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "4年生",
+        "title": "かちかち山"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "1の1",
+        "title": "こすずめのぼうけん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "2の4",
+        "title": "なら梨とり"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "1の4",
+        "title": "ぬか福と米福"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の1",
+        "title": "ぬか福と米福"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-2",
+        "title": "ぬか福と米福"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "8の3",
+        "title": "ぬか福と米福"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "2の1",
+        "title": "クジラの島"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の1",
+        "title": "クジラの島"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-2",
+        "title": "クジラの島"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "8の3",
+        "title": "クジラの島船乗りシンドバードの冒険"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "3年",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "2の2",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "4の2",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "6の1",
+        "title": "森の家"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-11-12",
+        "target": "4年生",
+        "title": "森の家"
+      }
+    ]
+  },
+  "作山 昌子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "6の3",
+        "title": "ルンペルシュティルツヘン"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "6の3",
+        "title": "名づけ親になった死に神"
+      }
+    ]
+  },
+  "作山昌子": {
+    "times": 25,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "4の3",
+        "title": "おやふこうなあおがえる"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "4年生",
+        "title": "おやふこうなあおがえる"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "6の2",
+        "title": "おやふこうなあおがえる"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-4",
+        "title": "つぐみひげの王さま"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "9の3",
+        "title": "つぐみひげの王さま"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "4年生",
+        "title": "はらぺこピエトリン"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "4年",
+        "title": "はらぺこピエトリン"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "3年生",
+        "title": "はらぺこピエトリン"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の2",
+        "title": "へっぴり嫁ご"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "1の3",
+        "title": "ホットケーキ"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "3の4",
+        "title": "ヨリンデとヨリンゲル"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "3の4",
+        "title": "ラピンさんとシチメンチョウ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の2",
+        "title": "十二のつきのおくりもの"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "9の3",
+        "title": "名づけ親になった死に神"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "4の3",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "4の1",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "3の3",
+        "title": "王さまの裁判"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-4",
+        "title": "王さまの裁判"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の2",
+        "title": "王さまの裁判"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-06-05",
+        "target": "3年",
+        "title": "瓜こひめこ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "6の2",
+        "title": "緑色の服を着た悪魔"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "3の3",
+        "title": "羊飼いの娘と王さま"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "2の1",
+        "title": "羊飼いの娘と王さま"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "2の2",
+        "title": "赤ずきん"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "2ー2",
+        "title": "赤ずきん"
+      }
+    ]
+  },
+  "内田 敏子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "5の1",
+        "title": "十二のつきのおくりもの"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "4の4",
+        "title": "屋根がチーズでできた家"
+      }
+    ]
+  },
+  "内田 雅智": {
+    "times": 4,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "6の2",
+        "title": "おんどりときつね"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "4の4",
+        "title": "ブレーメンの音楽隊"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "4の4",
+        "title": "星の銀貨"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "6の2",
+        "title": "死神の名付け親"
+      }
+    ]
+  },
+  "内田敏子": {
+    "times": 26,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "5の3",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "6年",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の1",
+        "title": "かちかち山"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "1の3",
+        "title": "こすずめのぼうけん"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "3の3",
+        "title": "ねこのお客"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の2",
+        "title": "ねこのお客"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-1",
+        "title": "ねこのお客"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "9の2",
+        "title": "ねこのお客"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "5の3",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "4年",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "2の2",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-10-22",
+        "target": "6年生",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "2の2",
+        "title": "りこうなおきさき"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の2",
+        "title": "わらしべ長者"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-1",
+        "title": "わらしべ長者"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "9の2",
+        "title": "わらしべ長者"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "5の1",
+        "title": "クルミわりのケイト"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "4の1",
+        "title": "ホレおばさん"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の1",
+        "title": "ホレおばさん"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-06-18",
+        "target": "3年1組",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "3の4",
+        "title": "三まいのお札"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-07-02",
+        "target": "6年生",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "3の2",
+        "title": "山の上の火"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "6の2",
+        "title": "犬ッコと猫とうろこ玉"
+      },
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "4年",
+        "title": "王子さまの耳は、ロバの耳"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の1",
+        "title": "王子さまの耳は、ロバの耳"
+      }
+    ]
+  },
+  "内田雅智": {
+    "times": 24,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "4の3",
+        "title": "いうことをきかないうなぎ"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "2の3",
+        "title": "いうことをきかないうなぎ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "4の2",
+        "title": "おやふこうなあおがえる"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "4の1",
+        "title": "おやふこうなあおがえる」"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "6年",
+        "title": "おんどりときつね"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の6",
+        "title": "おんどりときつね"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-06-18",
+        "target": "5年2組",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "6の2",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "6の3",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "3の3",
+        "title": "はちの女王"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "4の1",
+        "title": "ブレーメンの音楽隊"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "4の2",
+        "title": "ブレーメンの音楽隊"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "4の3",
+        "title": "ブレーメンの音楽隊"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "6年",
+        "title": "ラプンツェル"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の6",
+        "title": "六人男、世界をのし歩く"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-2",
+        "title": "六人男、世界をのし歩く"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "6の2",
+        "title": "文福茶釜"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "6の3",
+        "title": "文福茶釜"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の6",
+        "title": "文福茶釜"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-2",
+        "title": "文福茶釜"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "6年",
+        "title": "星の銀貨"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "3の3",
+        "title": "死神の名付け親"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "6年",
+        "title": "死神の名付け親"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "2の3",
+        "title": "羊飼いの娘と王さま"
+      }
+    ]
+  },
+  "前田\n登志子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "支援",
+        "title": "ふたりのあさごはん"
+      }
+    ]
+  },
+  "前田登志子": {
+    "times": 11,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "1の2",
+        "title": "おいしいおかゆ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の3",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "3年生",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "2の3",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "支援学級",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "3の3",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "5年生",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "3の3",
+        "title": "七わのからす"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "4の2",
+        "title": "七羽のからす"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "5年生",
+        "title": "十二のつきのおくりもの"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "2の3",
+        "title": "赤ずきん"
+      }
+    ]
+  },
+  "國分\n美津江": {
+    "times": 2,
+    "records": [
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "6の1",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "1の2",
+        "title": "山の上の火"
+      }
+    ]
+  },
+  "國分美津江": {
+    "times": 21,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "5の1",
+        "title": "おどってすりきれた靴"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-06-05",
+        "target": "5年",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-06-18",
+        "target": "5年1組",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "3の1",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の1",
+        "title": "かん太さまのいびき"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "9の1",
+        "title": "かん太さまのいびき"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の1",
+        "title": "がちょう番のむすめ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "1年",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "6の1",
+        "title": "ラプンツェル"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "3年",
+        "title": "三枚の鳥の羽"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "3の1",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "3の2",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "3の4",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-3",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "5の1",
+        "title": "十二のつきのおくりもの"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "9の1",
+        "title": "山の上の火"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-12-03",
+        "target": "6年1組",
+        "title": "赤鬼エティン"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "3の1",
+        "title": "金の腕"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "3の2",
+        "title": "金の腕"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の1",
+        "title": "金の腕"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-3",
+        "title": "金の腕"
+      }
+    ]
+  },
+  "堀本 貴子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "4の2",
+        "title": "三枚の鳥の羽"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "5の3",
+        "title": "十二のつきのおくりもの"
+      }
+    ]
+  },
+  "堀本貴子": {
+    "times": 19,
+    "records": [
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "1ー1",
+        "title": "おおかみと七匹の子やぎ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "3の2",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "1の2",
+        "title": "こすずめのぼうけん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "3の4",
+        "title": "なまくらトック"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-10-08",
+        "target": "1年1組",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "5年生6年生合同",
+        "title": "びんぼうこびと"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の3",
+        "title": "ものいうたまご"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-5",
+        "title": "ものいうたまご"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "5の3",
+        "title": "エパミナンダス"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "2の3",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の3",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-5",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "3の2",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-12-03",
+        "target": "2年1組",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "1年",
+        "title": "三枚のお札"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "4の1",
+        "title": "三枚の鳥の羽"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "4年",
+        "title": "舌きり雀"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "5年生6年生合同",
+        "title": "舌切り雀"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の3",
+        "title": "金の腕"
+      }
+    ]
+  },
+  "安倍\n久美子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "2の2",
+        "title": "雪女"
+      }
+    ]
+  },
+  "安倍久美子": {
+    "times": 10,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "1の1",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "1の4",
+        "title": "こすずめのぼうけん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "2の1",
+        "title": "やまなしもぎ"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-10-22",
+        "target": "3年生",
+        "title": "やまなしもぎ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "2の3",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の2",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "2の1",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "2の3",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "1の3",
+        "title": "頭の大きな男の話"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "5の3",
+        "title": "頭の大きな男の話"
+      }
+    ]
+  },
+  "宗川みつ子": {
+    "times": 5,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "5の4",
+        "title": "お話を知らなった若者"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "5の2",
+        "title": "お話を知らなった若者"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "5の1",
+        "title": "お話を知らなった若者"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "3の1",
+        "title": "カラスととげ"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "3の5",
+        "title": "フォックス氏"
+      }
+    ]
+  },
+  "宮坂善子": {
+    "times": 4,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の2",
+        "title": "クルミわりのケイト"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の5",
+        "title": "赤鬼エティン"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の2",
+        "title": "赤鬼エティン"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "支援",
+        "title": "馬方やまんば"
+      }
+    ]
+  },
+  "小倉 優子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "5の2",
+        "title": "十二のつきのおくりもの"
+      }
+    ]
+  },
+  "小倉優子": {
+    "times": 4,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "1の3",
+        "title": "おおかみと七ひきの子ヤギ"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-07-02",
+        "target": "5年生",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "3の3",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "4の1",
+        "title": "犬とねことうろこ玉"
+      }
+    ]
+  },
+  "岩本 智子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "5の1",
+        "title": "小鳥になった美しい妹"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "4の2",
+        "title": "馬方やまんば"
+      }
+    ]
+  },
+  "岩本智子": {
+    "times": 19,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の2",
+        "title": "あしのうら"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "6の3",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "3の3",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "3の3",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "3の3",
+        "title": "はらぺこピエトリン"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "3の3",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-06-05",
+        "target": "6年",
+        "title": "ものいうたまご"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "2の1",
+        "title": "ものいうたまご"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の2",
+        "title": "ものいうたまご"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "2の1",
+        "title": "りこうなおきさき"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "2の2",
+        "title": "りこうなおきさき"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の1",
+        "title": "りこうなおきさき"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-2",
+        "title": "りこうなおきさき"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の2",
+        "title": "りこうなおきさき"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の1",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "5の3",
+        "title": "クルミわりのケイト"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "4の3",
+        "title": "七羽のからす"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "3の1",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の1",
+        "title": "馬方やまんば"
+      }
+    ]
+  },
+  "村瀬\n由美子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "支援",
+        "title": "アナンシと五"
+      }
+    ]
+  },
+  "村瀬由美子": {
+    "times": 6,
+    "records": [
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "すずかぜ2組",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-10-08",
+        "target": "3年2組",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "すずかぜ 2",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "特別支援学級",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の3",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "すずかぜ2組  ",
+        "title": "三まいの鳥の羽"
+      }
+    ]
+  },
+  "桑原貴子": {
+    "times": 5,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "1の4",
+        "title": "おいしいおかゆ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "2の4",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "2の2",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "3の1",
+        "title": "ホレおばさん"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の3",
+        "title": "ホレおばさん"
+      }
+    ]
+  },
+  "梅原聡子": {
+    "times": 5,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "6の3",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "1年",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "3の1",
+        "title": "ガチョウ番の娘"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の3",
+        "title": "ガチョウ番の娘"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の3",
+        "title": "風の神と子ども"
+      }
+    ]
+  },
+  "森口以久子": {
+    "times": 6,
+    "records": [
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "2年生",
+        "title": "おばあさあんとブタ"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-07-02",
+        "target": "3年生",
+        "title": "おばあさんとブタ"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-10-08",
+        "target": "3年1組",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の2",
+        "title": "三つの金曜日"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-6",
+        "title": "三つの金曜日"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の3",
+        "title": "歌うふくろ"
+      }
+    ]
+  },
+  "田中 正代": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "5の3",
+        "title": "チモとかしこいおひめさま"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "1の4",
+        "title": "ホットケーキ"
+      }
+    ]
+  },
+  "田中正代": {
+    "times": 5,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "1の4",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "5の2",
+        "title": "エパミナンダス"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-11-12",
+        "target": "5年生",
+        "title": "エパミナンダス"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "5の4",
+        "title": "チモとかしこいおひめさま"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-12-03",
+        "target": "2年2組",
+        "title": "三枚のお札"
+      }
+    ]
+  },
+  "町田 晴美": {
+    "times": 1,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "2の4",
+        "title": "アナンシと五"
+      }
+    ]
+  },
+  "町田　晴美": {
+    "times": 1,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "2の2",
+        "title": "アナンシと五"
+      }
+    ]
+  },
+  "町田晴美": {
+    "times": 14,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "6の1",
+        "title": "かえるの王さま"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-3",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の1",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "1の2",
+        "title": "ドシュマンとドゥースト"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-3",
+        "title": "ドシュマンとドゥースト"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "2の4",
+        "title": "ドシュマンドゥースト"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "1の2",
+        "title": "ババヤガーの白い鳥"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "  2年",
+        "title": "ババヤガーの白い鳥"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "4の3",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "4の2",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "2年",
+        "title": "屋根がチーズでできた家"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "4の2",
+        "title": "犬と猫とうろこ玉"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-06-05",
+        "target": "4年",
+        "title": "王子さまの耳はロバの耳"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "2年",
+        "title": "赤ずきん"
+      }
+    ]
+  },
+  "畠山 奈奈": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "5の4",
+        "title": "クルミわりのケイト"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "4の1",
+        "title": "馬方やまんば"
+      }
+    ]
+  },
+  "畠山奈奈": {
+    "times": 33,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "3の1",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "3年",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-12-03",
+        "target": "4年1組",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "3の1",
+        "title": "ねこっ皮"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の4",
+        "title": "ねこっ皮"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-5",
+        "title": "ねこっ皮"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "3の1",
+        "title": "ねこっ皮"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "8の1",
+        "title": "ねこっ皮"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "3の1",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "6年生",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の3",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "4の4",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-10-22",
+        "target": "5年生",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "6の1",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "6の2",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "8の1",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "5の2",
+        "title": "クルミわりのケイト"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "6の2",
+        "title": "仙人のおしえ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の1",
+        "title": "山伏ときつね"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "3の4",
+        "title": "指輪"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "3-5",
+        "title": "指輪"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "8の1",
+        "title": "指輪"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の3",
+        "title": "犬と猫とうろこ玉"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "6の1",
+        "title": "犬と猫とうろこ玉"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "6の3",
+        "title": "緑色の服を着た悪魔"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "6年生",
+        "title": "赤鬼エティン"
+      },
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "6年",
+        "title": "赤鬼エティン"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の1",
+        "title": "赤鬼エティン"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の3",
+        "title": "金の腕"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "6の1",
+        "title": "金の腕"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の1",
+        "title": "金の腕"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "4の4",
+        "title": "馬方やまんば"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "1の2",
+        "title": "魔法の馬"
+      }
+    ]
+  },
+  "石川 順子": {
+    "times": 3,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の1",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の1",
+        "title": "ついでにペロリ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の1",
+        "title": "ふたりのあさごはん"
+      }
+    ]
+  },
+  "石川順子": {
+    "times": 18,
+    "records": [
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の4",
+        "title": "お月さまのはなし"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-3",
+        "title": "お月さまの話"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の4",
+        "title": "だんまりくらべ"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-3",
+        "title": "だんまりくらべ"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "1の1",
+        "title": "だんまりくらべ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "支援学級",
+        "title": "ふしぎなたいこ"
+      },
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "5年",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "支援学級",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "3の2",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の4",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "1の1",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の4",
+        "title": "まぬけなトッケビ"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-3",
+        "title": "まぬけなトッケビ"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "支援学級",
+        "title": "サルのきも"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "3の2",
+        "title": "ミアッカどん"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "支援学級",
+        "title": "ヤギとライオン"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-06-18",
+        "target": "3年2組",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "5年",
+        "title": "小石投げの名人タオ・カム"
+      }
+    ]
+  },
+  "笹倉 利江": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "2の2",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "2の4",
+        "title": "マメ子と魔物"
+      }
+    ]
+  },
+  "笹倉利江": {
+    "times": 12,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "6の2",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "3年生",
+        "title": "うりひめ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "2の1",
+        "title": "おいしいおかゆ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "2の2",
+        "title": "ついでにペロリ"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "3年生",
+        "title": "ついでにペロリ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "2の2",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "2の1",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の1",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の1",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の1",
+        "title": "北風をたずねていった男の子"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "4年生",
+        "title": "山伏ときつね"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "2の1",
+        "title": "赤ずきん"
+      }
+    ]
+  },
+  "西巻ちず子": {
+    "times": 7,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の2",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-11-12",
+        "target": "6年生",
+        "title": "スワファムの行商人"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "2の2",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "4の4",
+        "title": "三まいの鳥の羽"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-10-22",
+        "target": "4年生",
+        "title": "三まいの鳥の羽"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "4の1",
+        "title": "三まいの鳥の羽"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "4年生",
+        "title": "三まいの鳥の羽"
+      }
+    ]
+  },
+  "鈴木 清子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "5の2",
+        "title": "小鳥になった美しい妹"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "4の3",
+        "title": "馬方やまんば"
+      }
+    ]
+  },
+  "鈴木清子": {
+    "times": 25,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "5の1",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "6の1",
+        "title": "いばら姫"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "5の2",
+        "title": "おどっておどってぼろぼろになったくつ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-11-12",
+        "target": "5年",
+        "title": "かちかち山"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-12-11",
+        "target": "1年",
+        "title": "なら梨とり"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "5の1",
+        "title": "みそ買い橋"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の4",
+        "title": "みそ買い橋"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の3",
+        "title": "みそ買い橋"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の2",
+        "title": "ホレおばさん"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-06-05",
+        "target": "2年",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "2年生",
+        "title": "マメ子と魔物"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "3の2",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "4年",
+        "title": "小鳥になった美しい妹"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "2の4",
+        "title": "小鳥になった美しい妹"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-10-22",
+        "target": "5年生",
+        "title": "小鳥になった美しい妹"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "1の3",
+        "title": "山の上の火"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "2の4",
+        "title": "赤ずきん"
+      },
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "2年",
+        "title": "赤ずきん"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "2ー1",
+        "title": "赤ずきん"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の4",
+        "title": "金の足のベルタ"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-5",
+        "title": "金の足のベルタ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-28",
+        "target": "7の3",
+        "title": "金の足のベルタ"
+      },
+      {
+        "school": "豊田小",
+        "date_held": "2024-10-08",
+        "target": "5年2組",
+        "title": "馬方やまんば"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "4の2",
+        "title": "馬方やまんば"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-10-02",
+        "target": "1の3",
+        "title": "魔法の馬"
+      }
+    ]
+  },
+  "鈴木美智子": {
+    "times": 3,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の4",
+        "title": "おいしいおかゆ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の4",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の4",
+        "title": "だめといわれてひっこむな"
+      }
+    ]
+  },
+  "長井\n久美子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "4の2",
+        "title": "ホレばあさん"
+      }
+    ]
+  },
+  "長井久美子": {
+    "times": 19,
+    "records": [
+      {
+        "school": "網戸小",
+        "date_held": "2024-10-22",
+        "target": "6年生",
+        "title": "いばら姫"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "3の2",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-11-12",
+        "target": "3年生",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "3の1",
+        "title": "かしこいモリー"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "3の1",
+        "title": "ねずみじょうど"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "2の1",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "3の4",
+        "title": "ふしぎなたいこ"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "2の2",
+        "title": "パンドラ"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "1の5",
+        "title": "パンドラ"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の5",
+        "title": "パンドラ"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-1",
+        "title": "パンドラ"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "2の2",
+        "title": "ミアッカどん"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "3の3",
+        "title": "ミアッカどん"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "2-1",
+        "title": "ミアッカどん"
+      },
+      {
+        "school": "網戸小",
+        "date_held": "2024-07-02",
+        "target": "4年生",
+        "title": "ルンペルシュティルツヒェン"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "2の5",
+        "title": "ルンペルシュティルツヒェン"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "3の1",
+        "title": "三びきの子ブタ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "4の3",
+        "title": "三枚の鳥の羽"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "3の1",
+        "title": "三枚の鳥の羽"
+      }
+    ]
+  },
+  "靍見 由佳": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "3の4",
+        "title": "塩吹き臼"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "3の1",
+        "title": "塩吹き臼"
+      }
+    ]
+  },
+  "靍見由佳": {
+    "times": 4,
+    "records": [
+      {
+        "school": "萱橋小",
+        "date_held": "2024-09-11",
+        "target": "1年",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "1の4",
+        "title": "おしまい"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "3の3",
+        "title": "塩吹き臼"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "3の2",
+        "title": "塩吹き臼"
+      }
+    ]
+  },
+  "靏見由佳": {
+    "times": 3,
+    "records": [
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "1の2",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-06-27",
+        "target": "1年",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-10-23",
+        "target": "1の1",
+        "title": "ババヤガーの白い鳥"
+      }
+    ]
+  },
+  "青木\n富美子": {
+    "times": 3,
+    "records": [
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "5の1",
+        "title": "小石投げの名人タオ・カム"
+      },
+      {
+        "school": "第三小",
+        "date_held": "2024-11-13",
+        "target": "5の1",
+        "title": "牛方やまんば"
+      },
+      {
+        "school": "桑中",
+        "date_held": "2024-11-19",
+        "target": "2の3",
+        "title": "魔法の馬"
+      }
+    ]
+  },
+  "青木 洋子": {
+    "times": 1,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "1の3",
+        "title": "世界でいちばんきれいな声"
+      }
+    ]
+  },
+  "青木富美子": {
+    "times": 17,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の2",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "2の1",
+        "title": "こぶじいさま"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "1の2",
+        "title": "ひなどりとネコ"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の1",
+        "title": "ふたりのあさごはん"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "2の1",
+        "title": "アナンシと五"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "5の4",
+        "title": "エパミナンダス"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "1の2",
+        "title": "世界でいちばんきれいな声"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-12-12",
+        "target": "2年",
+        "title": "北風をたずねていった男の子"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "5の3",
+        "title": "小石投げの名人タオ・カム"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "5の1",
+        "title": "小石投げの名人タオ・カム"
+      },
+      {
+        "school": "絹義務小",
+        "date_held": "2024-09-25",
+        "target": "5年",
+        "title": "小石投げの名人タオ・カム"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の3",
+        "title": "牛方とやまんば"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-1",
+        "title": "牛方とやまんば"
+      },
+      {
+        "school": "乙女中",
+        "date_held": "2024-07-02",
+        "target": "1の1",
+        "title": "魔法の馬"
+      },
+      {
+        "school": "小山中",
+        "date_held": "2024-10-17",
+        "target": "1の1",
+        "title": "魔法の馬"
+      },
+      {
+        "school": "大谷中",
+        "date_held": "2024-10-31",
+        "target": "1の3",
+        "title": "魔法の馬"
+      },
+      {
+        "school": "間々田中",
+        "date_held": "2024-11-14",
+        "target": "1-1",
+        "title": "魔法の馬"
+      }
+    ]
+  },
+  "青木洋子": {
+    "times": 4,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-05-22",
+        "target": "1の3",
+        "title": "おおかみと七ひきの子やぎ"
+      },
+      {
+        "school": "間々田小",
+        "date_held": "2024-06-19",
+        "target": "1の1",
+        "title": "おおかみと七ひきの子ヤギ"
+      },
+      {
+        "school": "大谷南小",
+        "date_held": "2024-09-19",
+        "target": "1年",
+        "title": "ホットケーキ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "3の4",
+        "title": "七羽のからす"
+      }
+    ]
+  },
+  "青柳美弥子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の3",
+        "title": "いばらひめ"
+      },
+      {
+        "school": "南河内小中",
+        "date_held": "2024-11-18",
+        "target": "6の3",
+        "title": "文福茶釜"
+      }
+    ]
+  },
+  "高山 幸子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-11-06",
+        "target": "3の2",
+        "title": "七わのからす"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-12-11",
+        "target": "3の3",
+        "title": "瓜こひめこ"
+      }
+    ]
+  },
+  "高山幸子": {
+    "times": 2,
+    "records": [
+      {
+        "school": "羽川小",
+        "date_held": "2024-07-03",
+        "target": "3の2",
+        "title": "おいしいおかゆ"
+      },
+      {
+        "school": "羽川小",
+        "date_held": "2024-10-16",
+        "target": "1の1",
+        "title": "おいしいおかゆ"
+      }
+    ]
+  }
+}

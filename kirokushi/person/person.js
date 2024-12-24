@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------
-//	schools.js
+//	person.js
 //
 //					Dec/24/2024
 //
@@ -10,13 +10,13 @@ var dict_aa = []
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
-	document.querySelector("#outarea_aa").innerHTML = "*** schools.js *** start ***"
+	document.querySelector("#outarea_aa").innerHTML = "*** person.js *** start ***"
 
-	const file_json = "./dict_school.json"
+	const file_json = "./dict_person.json"
 
 	read_fetch_table_proc(file_json,".contents")
 
-	document.querySelector("#outarea_hh").innerHTML = "*** schools.js *** end ***"
+	document.querySelector("#outarea_hh").innerHTML = "*** person.js *** end ***"
 }
 
 // -----------------------------------------------------------------------
