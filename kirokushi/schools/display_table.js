@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	schools/display_table.js
 //
-//					Dec/21/2024
+//					Dec/24/2024
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -50,7 +50,7 @@ function record_proc(key,value)
 		{
 //	str_out += "<td>" + bbx['school'] + "</td>"
 //	str_out += "<td>" + bbx['date_held'] + "</td>"
-	str_out += "<td>" + bbx['class'] + "</td>"
+	str_out += "<td>" + bbx['target'] + "</td>"
 	str_out += "<td>" + bbx['title'] + "</td>"
 	str_out += "<td>" + bbx['name'] + "</td>"
 	str_out += "</tr>"
