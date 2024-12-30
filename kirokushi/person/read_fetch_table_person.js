@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
-//	read_fetch_table.js
+//	read_fetch_table_person.js
 //
-//					Dec/17/2024
+//					Dec/30/2024
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -18,6 +18,15 @@ function read_fetch_table_proc(url,place)
 		return response.text()
 	}).then((data)  => {
 		dict_aa = JSON.parse(data)
+		let str_name = ""
+		for (let name in dict_aa)
+			{
+			str_name += '<button id="' + name + '" '
+			str_name += 'onclick="filter_proc(this)">' 
+			str_name += name + "</button>"
+			}
+//		console.log(str_name)
+		document.querySelector(".area_button").innerHTML = str_name
 		const str_out = display_table_proc(dict_aa)
 		document.querySelector(place).innerHTML = str_out
 	}).catch((error) => {
