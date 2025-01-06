@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	df_display.js
 //
-//					Dec/24/2024
+//					Jan/06/2025
 //
 // -----------------------------------------------------------------------
 // 'use strict'
@@ -42,17 +42,17 @@ function read_fetch_table_proc(url,place)
 // [4-6]:
 function show_table_proc(place,dict_aa)
 {
-	var str_out = ""
+	let str_out = ""
 	str_out += "<table>"
 
 	str_out += display_th()
 
-	var icount = 1
+	let icount = 1
 
 	console.log(dict_aa)
 
 //	dict_aa.forEach(function (aax)
-	for (var key in dict_aa)
+	for (let key in dict_aa)
 		{
 		const value = dict_aa[key]
 		str_out += record_proc(key,value)
@@ -70,7 +70,7 @@ function record_proc(key,value)
 {
 	const times = value['times']
 
-	var str_out = "<tr>"
+	let str_out = "<tr>"
 
 	str_out += "<td rowspan=" + times + ">" + key + "</td>"
 
@@ -90,7 +90,7 @@ function record_proc(key,value)
 // [4-6-2]:
 function display_th()
 {
-	var str_out = ""
+	let str_out = ""
 	str_out += "<tr>"
 	str_out += "<th>題名</th>"
 	str_out += "<th>場所</th>"

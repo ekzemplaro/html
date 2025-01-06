@@ -1,12 +1,12 @@
 // -----------------------------------------------------------------------
 //	grades.js
 //
-//					Dec/31/2024
+//					Jan/06/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
 
-var dict_aa = []
+let dict_aa = []
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
@@ -27,30 +27,21 @@ function filter_proc(obj)
 
 	document.querySelector("#outarea_bb").innerHTML = "obj.id = " + obj.id
 
-	var elements = document.querySelectorAll('button')
+	let elements = document.querySelectorAll('button')
 	document.querySelector("#outarea_cc").innerHTML = elements.length
 
-	for (var it=0; it<elements.length; it += 1)
+	for (let it=0; it<elements.length; it += 1)
 		{
 		document.getElementById(elements[it].id).style.color = "black"
 		}
 
 	document.getElementById(obj.id).style.color = "blue"
 
-	var str_out = ""
-	var data_new = []
+	let str_out = ""
+	let data_new = []
 
-	switch (id_select)
-		{
-	 	case "all":
-			str_out = display_table_proc(dict_aa)
-			break
-
-		default:
-			data_new = filter_school_proc(dict_aa,id_select)
-			str_out = display_table_proc(data_new)
-			break
-		}
+	data_new = filter_school_proc(dict_aa,id_select)
+	str_out = display_table_grades_proc(data_new)
 
 	document.querySelector(".contents").innerHTML = str_out
 }
@@ -58,9 +49,9 @@ function filter_proc(obj)
 // -----------------------------------------------------------------------
 function filter_school_proc (rec,id_select)
 {
-	var dict_new = {}
+	let dict_new = {}
 
-	for (var key in rec)
+	for (let key in rec)
 		{
 		const value = rec[key]
 		const dd = key.split("_")

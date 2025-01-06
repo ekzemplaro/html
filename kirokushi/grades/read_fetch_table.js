@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	read_fetch_table.js
 //
-//					Dec/17/2024
+//					Jan/06/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -18,8 +18,8 @@ function read_fetch_table_proc(url,place)
 		return response.text()
 	}).then((data)  => {
 		dict_aa = JSON.parse(data)
-		const str_out = display_table_proc(dict_aa)
-		document.querySelector(place).innerHTML = str_out
+//		const str_out = display_table_proc(dict_aa)
+//		document.querySelector(place).innerHTML = str_out
 	}).catch((error) => {
 		console.log(error)
 	})
