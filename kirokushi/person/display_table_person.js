@@ -1,13 +1,13 @@
 // -----------------------------------------------------------------------
-//	schools/display_table.js
+//	person/display_table_person.js
 //
-//					Dec/24/2024
+//					Jan/07/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
 // -----------------------------------------------------------------------
 // [4]:
-function display_table_proc (rec)
+function display_table_person_proc (rec)
 {
 	var str_out = ""
 	str_out += '<table class="fixed-table">'
@@ -40,19 +40,18 @@ function record_proc(key,value)
 {
 	const times = value['times']
 
-	const dd = key.split("_")
+//	const dd = key.split("_")
 	var str_out = "<tr>"
 
-	str_out += "<td rowspan=" + times + ">" + dd[0] + "</td>"
-	str_out += "<td rowspan=" + times + ">" + dd[1] + "</td>"
+//	str_out += "<td rowspan=" + times + ">" + key + "</td>"
 
 	value['records'].forEach(function (bbx)
 		{
-//	str_out += "<td>" + bbx['school'] + "</td>"
-//	str_out += "<td>" + bbx['date_held'] + "</td>"
-	str_out += "<td>" + bbx['target'] + "</td>"
 	str_out += "<td>" + bbx['title'] + "</td>"
-	str_out += "<td>" + bbx['name'] + "</td>"
+	str_out += "<td>" + bbx['school'] + "</td>"
+	str_out += "<td>" + bbx['target'] + "</td>"
+	str_out += "<td>" + bbx['date_held'] + "</td>"
+//	str_out += "<td>" + bbx['name'] + "</td>"
 	str_out += "</tr>"
 		})
 
@@ -64,11 +63,11 @@ function header_proc()
 {
 	var str_out = ""
 	str_out += "<tr>"
-	str_out += "<th class='school'>場所</th>"
-	str_out += "<th class='date_held'>年月日</th>"
-	str_out += "<th class='target'>対象</th>"
+//	str_out += "<th class='name'>語った人</th>"
 	str_out += "<th>題名</th>"
-	str_out += "<th class='name'>語った人</th>"
+	str_out += "<th class='school'>場所</th>"
+	str_out += "<th class='target'>対象</th>"
+	str_out += "<th class='date_held'>年月日</th>"
 	str_out += "</tr>"
 
 	return	str_out

@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	person.js
 //
-//					Dec/24/2024
+//					Jan/07/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -40,6 +40,7 @@ function filter_proc(obj)
 	var str_out = ""
 	var data_new = []
 
+/*
 	switch (id_select)
 		{
 	 	case "all":
@@ -47,10 +48,11 @@ function filter_proc(obj)
 			break
 
 		default:
-			data_new = filter_school_proc(dict_aa,id_select)
-			str_out = display_table_proc(data_new)
 			break
 		}
+*/
+	data_new = filter_school_proc(dict_aa,id_select)
+	str_out = display_table_person_proc(data_new)
 
 	document.querySelector(".contents").innerHTML = str_out
 }

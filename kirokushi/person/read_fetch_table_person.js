@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	read_fetch_table_person.js
 //
-//					Dec/30/2024
+//					Jan/07/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -27,8 +27,6 @@ function read_fetch_table_proc(url,place)
 			}
 //		console.log(str_name)
 		document.querySelector(".area_button").innerHTML = str_name
-		const str_out = display_table_proc(dict_aa)
-		document.querySelector(place).innerHTML = str_out
 	}).catch((error) => {
 		console.log(error)
 	})
