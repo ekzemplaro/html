@@ -13,7 +13,7 @@
 
     <script>
         // WebSocket エンドポイント
-        const brokerUrl = 'ws://broker.hivemq.com:8000/mqtt';
+        const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt';
 
         // MQTT クライアントの作成
         const client = mqtt.connect(brokerUrl);
@@ -33,7 +33,7 @@
         // ボタンクリック時のイベント
         document.getElementById('publishButton').addEventListener('click', () => {
             const topic = 'testaa/topic'; // トピック名
-            const message = 'Hello from Web Browser Feb/11/2025'; // メッセージ内容
+            const message = 'Hello from Web Browser Feb/12/2025';
 
             // メッセージをパブリッシュ
             client.publish(topic, message, (err) => {
@@ -47,5 +47,7 @@
             });
         });
     </script>
+<hr />
+<p>Feb/12/2025</p>
 </body>
 </html>
