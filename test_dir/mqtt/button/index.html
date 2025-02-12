@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MQTT Web Client</title>
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+<h1>MQTT Web Client</h1>
+<script>
+        // MQTTブローカーのURL (WebSocket)
+        const brokerUrl = 'ws://broker.hivemq.com:8000/mqtt';
+
+        // MQTTクライアントの作成
+        const client = mqtt.connect(brokerUrl);
+
+        // 接続時のイベント
+        client.on('connect', () => {
+            console.log('Connected to MQTT broker');
+            // トピックを購読
+            client.subscribe('testaa/topic', (err) => {
+                if (!err) {
+                    console.log('Subscribed to testaa/topic');
+                }
+            });
+        });
+
+        // メッセージ受信時のイベント
+        client.on('message', (topic, message) => {
+            console.log(`Received message on ${topic}: ${message.toString()}`);
+        });
+
+        // エラー時のイベント
+        client.on('error', (err) => {
+            console.error('Connection error:', err);
+        });
+
+        // 切断時のイベント
+        client.on('close', () => {
+            console.log('Connection closed');
+        });
+</script>
+<hr />
+<p>Feb/11/2025 PM 13:59</p>
+</body>
+</html>
