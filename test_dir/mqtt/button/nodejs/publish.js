@@ -7,11 +7,11 @@ const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
 const client = mqtt.connect(brokerUrl)
 
 client.on('connect', () => {
-  console.log('Connected to MQTT broker')
+console.log('Connected to MQTT broker')
 
   // メッセージをパブリッシュ
-  const message = 'Good Afternoon Feb/12/2025'
-  client.publish('testaa/topic', message, (err) => {
+const message = 'Good Afternoon Feb/13/2025'
+client.publish('testaa/topic', message, (err) => {
     if (!err) {
       console.log('Message published')
     } else {

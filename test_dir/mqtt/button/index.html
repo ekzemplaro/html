@@ -10,7 +10,8 @@
 <h1>MQTT Web Client</h1>
 <script>
         // MQTTブローカーのURL (WebSocket)
-        const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt';
+//        const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt';
+        const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
 
         // MQTTクライアントの作成
         const client = mqtt.connect(brokerUrl);
@@ -19,9 +20,10 @@
         client.on('connect', () => {
             console.log('Connected to MQTT broker');
             // トピックを購読
-            client.subscribe('testaa/topic', (err) => {
+const topic = '/topic/qos0'
+            client.subscribe(topic, (err) => {
                 if (!err) {
-                    console.log('Subscribed to testaa/topic');
+                    console.log('Subscribed to ' + topic);
                 }
             });
         });
@@ -41,7 +43,7 @@
             console.log('Connection closed');
         });
 </script>
-<p><a href="publish.html">Publish</a></p>
+<p><a href="publish/">Publish</a></p>
 <hr />
 <p>Feb/12/2025 PM 12:25</p>
 </body>
