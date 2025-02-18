@@ -11,7 +11,8 @@ function publish_proc(topic,message)
 	client.publish(topic, message, (err) => {
 	if (!err) {
 		console.log('Message published')
-		document.getElementById('status').innerText = `Published: ${message}`
+		document.getElementById('status').innerText = message
+//		document.getElementById('status').innerText = `${message}`
 //		document.getElementById('status').innerText = `Published: ${message} to ${topic} on ${brokerUrl}`
 		} else {
 		console.error('Publish error:', err)
