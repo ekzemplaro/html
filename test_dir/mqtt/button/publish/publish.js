@@ -2,7 +2,7 @@
 /*
 	publish.js
 
-					Feb/16/2025
+					Feb/18/2025
 */
 // -------------------------------------------------------------
 function publish_proc(topic,message)
@@ -38,7 +38,8 @@ client.on('error', (err) => {
 	})
 
 //	const topic = 'testaa/topic'
-const topic = '/topic/qos0'
+// const topic = '/topic/qos0'
+const topic = '/iwasaki/links2'
 
 document.getElementById('aa_on').addEventListener('click', () => {
 	const message = 'AA On PM 16:21'

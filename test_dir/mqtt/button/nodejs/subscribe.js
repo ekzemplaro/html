@@ -4,7 +4,8 @@ const mqtt = require('mqtt');
 // const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
 // const topic_sub = 'testaa/topic'
 const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
-const topic_sub = '/topic/qos0' 
+// const topic_sub = '/topic/qos0' 
+const topic_sub = '/iwasaki/links2' 
 // MQTT クライアントの作成
 const client = mqtt.connect(brokerUrl)
 
