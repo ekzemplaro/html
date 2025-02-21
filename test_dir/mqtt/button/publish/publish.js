@@ -69,23 +69,7 @@ document.getElementById('button_bb').addEventListener('click', () => {
 }
 
 // -------------------------------------------------------------
-function publish_proc(client,topic,message)
-{
-            // メッセージをパブリッシュ
-	client.publish(topic, message, (err) => {
-	if (!err) {
-		console.log('Message published')
-		document.getElementById('status').innerText = message
-//		document.getElementById('status').innerText = `${message}`
-//		document.getElementById('status').innerText = `Published: ${message} to ${topic} on ${brokerUrl}`
-		} else {
-		console.error('Publish error:', err)
-		document.getElementById('status').innerText = 'Publish error: ' + err.message
-		}
-	})
-}
-
-// -------------------------------------------------------------
+// [4]:
 function message_gen_proc(device,status)
 {
 	let data_aa = new Object ()
@@ -98,6 +82,7 @@ function message_gen_proc(device,status)
 }
 
 // -------------------------------------------------------------
+// [4-4]:
 function get_current_date_proc()
 {
 	const today = new Date ()
@@ -105,6 +90,22 @@ function get_current_date_proc()
 	ddx += "-" + today.getDate ()
 
 	return ddx
+}
+
+// -------------------------------------------------------------
+// [6]:
+function publish_proc(client,topic,message)
+{
+	client.publish(topic, message, (err) => {
+	if (!err) {
+		console.log('Message published')
+		document.getElementById('status').innerText = message
+		}
+	else {
+		console.error('Publish error:', err)
+		document.getElementById('status').innerText = 'Publish error: ' + err.message
+		}
+	})
 }
 
 // -------------------------------------------------------------
