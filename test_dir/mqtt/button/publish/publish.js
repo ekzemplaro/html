@@ -2,28 +2,17 @@
 /*
 	publish.js
 
-					Feb/18/2025
+					Feb/21/2025
 */
-// -------------------------------------------------------------
-function publish_proc(topic,message)
-{
-            // メッセージをパブリッシュ
-	client.publish(topic, message, (err) => {
-	if (!err) {
-		console.log('Message published')
-		document.getElementById('status').innerText = message
-//		document.getElementById('status').innerText = `${message}`
-//		document.getElementById('status').innerText = `Published: ${message} to ${topic} on ${brokerUrl}`
-		} else {
-		console.error('Publish error:', err)
-		document.getElementById('status').innerText = 'Publish error: ' + err.message
-		}
-	})
-}
-
 // -------------------------------------------------------------
 // const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
 const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
+const topic = '/iwasaki/links2'
+
+// -------------------------------------------------------------
+window.onload = ()=>
+{
+        document.querySelector("#outarea_aa").innerHTML = "*** publish.js *** start ***"
 
 const client = mqtt.connect(brokerUrl)
 
@@ -39,42 +28,62 @@ client.on('error', (err) => {
 	document.getElementById('status').innerText = 'Connection error: ' + err.message
 	})
 
-//	const topic = 'testaa/topic'
-// const topic = '/topic/qos0'
-const topic = '/iwasaki/links2'
 
-const id_aa_on = document.getElementById('aa_on')
-const id_aa_off = document.getElementById('aa_off')
-const id_bb_on = document.getElementById('bb_on')
-const id_bb_off = document.getElementById('bb_off')
-
-document.getElementById('aa_on').addEventListener('click', () => {
+document.getElementById('button_aa').addEventListener('click', () => {
 	
-	const message =  message_gen_proc('aa','on')
-	publish_proc(topic,message)
-	id_aa_on.style.color = "blue"
-	id_aa_off.style.color = "black"
+	let message = ""
+
+	if (button_aa.textContent == "OFF")
+		{
+		message =  message_gen_proc('aa','on')
+		button_aa.textContent = "ON"
+		button_aa.style.color = "red"
+		}
+	else
+		{
+		message =  message_gen_proc('aa','off')
+		button_aa.textContent = "OFF"
+		button_aa.style.color = "green"
+		}
+	publish_proc(client,topic,message)
 	})
 
-document.getElementById('aa_off').addEventListener('click', () => {
-	const message =  message_gen_proc('aa','off')
-	publish_proc(topic,message)
-	id_aa_off.style.color = "blue"
-	id_aa_on.style.color = "black"
-	})
-document.getElementById('bb_on').addEventListener('click', () => {
-	const message =  message_gen_proc('bb','on')
-	publish_proc(topic,message)
-	bb_on.style.color = "blue"
-	bb_off.style.color = "black"
-	})
+document.getElementById('button_bb').addEventListener('click', () => {
+	let message = ""
 
-document.getElementById('bb_off').addEventListener('click', () => {
-	const message =  message_gen_proc('bb','off')
-	publish_proc(topic,message)
-	bb_on.style.color = "black"
-	bb_off.style.color = "blue"
+	if (button_bb.textContent == "OFF")
+		{
+		message =  message_gen_proc('bb','on')
+		button_bb.textContent = "ON"
+		button_bb.style.color = "red"
+		}
+	else
+		{
+		message =  message_gen_proc('bb','off')
+		button_bb.textContent = "OFF"
+		button_bb.style.color = "green"
+		}
+
+	publish_proc(client,topic,message)
 	})
+}
+
+// -------------------------------------------------------------
+function publish_proc(client,topic,message)
+{
+            // メッセージをパブリッシュ
+	client.publish(topic, message, (err) => {
+	if (!err) {
+		console.log('Message published')
+		document.getElementById('status').innerText = message
+//		document.getElementById('status').innerText = `${message}`
+//		document.getElementById('status').innerText = `Published: ${message} to ${topic} on ${brokerUrl}`
+		} else {
+		console.error('Publish error:', err)
+		document.getElementById('status').innerText = 'Publish error: ' + err.message
+		}
+	})
+}
 
 // -------------------------------------------------------------
 function message_gen_proc(device,status)
