@@ -2,13 +2,12 @@
 /*
 	publish.js
 
-					Feb/25/2025
+					Feb/21/2025
 */
 // -------------------------------------------------------------
 // const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
 const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
-const topic_out = '/iwasaki/links2'
-const topic_in = '/iwasaki/links2/status'
+const topic = '/iwasaki/links2'
 
 // -------------------------------------------------------------
 window.onload = ()=>
@@ -21,18 +20,6 @@ const client = mqtt.connect(brokerUrl)
 client.on('connect', () => {
 	console.log('Connected to MQTT broker')
 	document.getElementById('status').innerText = 'Connected to MQTT broker'
-
-	client.subscribe(topic_in, (err) => {
-                if (!err) {
-                    console.log('Subscribed to ' + topic_in)
-                }
-            })
-        })
-
-	client.on('message', (topic_in, message) => {
-            console.log(`Received message on ${topic_in}: ${message.toString()}`)
-	let str_in = `${message.toString()}`
-	display_proc(str_in)
         })
 
         // エラー時のイベント
@@ -58,7 +45,7 @@ document.getElementById('button_aa').addEventListener('click', () => {
 		button_aa.textContent = "OFF"
 		button_aa.style.color = "green"
 		}
-	publish_proc(client,topic_out,message)
+	publish_proc(client,topic,message)
 	})
 
 document.getElementById('button_bb').addEventListener('click', () => {
@@ -77,7 +64,7 @@ document.getElementById('button_bb').addEventListener('click', () => {
 		button_bb.style.color = "green"
 		}
 
-	publish_proc(client,topic_out,message)
+	publish_proc(client,topic,message)
 	})
 }
 
@@ -107,9 +94,9 @@ function get_current_date_proc()
 
 // -------------------------------------------------------------
 // [6]:
-function publish_proc(client,topic_out,message)
+function publish_proc(client,topic,message)
 {
-	client.publish(topic_out, message, (err) => {
+	client.publish(topic, message, (err) => {
 	if (!err) {
 		console.log('Message published')
 		document.getElementById('status').innerText = message
@@ -119,48 +106,6 @@ function publish_proc(client,topic_out,message)
 		document.getElementById('status').innerText = 'Publish error: ' + err.message
 		}
 	})
-}
-
-// -------------------------------------------------------------
-function display_proc(str_in)
-{
-	document.querySelector("#outarea_bb").innerHTML = str_in
-	const dict_aa = JSON.parse(str_in)
-	const device = dict_aa['device']
-	const status = dict_aa['status']
-	document.querySelector("#outarea_cc").innerHTML = device
-	document.querySelector("#outarea_dd").innerHTML = status
-
-	if (device == "aa")
-		{
-		if (status == "ON")
-			{
-		document.querySelector("#outarea_ee").innerHTML = "aa ON"
-			button_aa.textContent = "ON"
-			button_aa.style.color = "red"
-			}
-		else if (status == "OFF")
-			{
-		document.querySelector("#outarea_ee").innerHTML = "aa OFF"
-			button_aa.textContent = "OFF"
-			button_aa.style.color = "green"
-			}
-		}
-	else if (device == "bb")
-		{
-		if (status == "ON")
-			{
-		document.querySelector("#outarea_ff").innerHTML = "bb ON"
-			button_bb.textContent = "ON"
-			button_bb.style.color = "red"
-			}
-		else if (status == "OFF")
-			{
-		document.querySelector("#outarea_ff").innerHTML = "bb OFF"
-			button_bb.textContent = "OFF"
-			button_bb.style.color = "green"
-			}
-		}
 }
 
 // -------------------------------------------------------------

@@ -8,7 +8,7 @@ window.onload = ()=>
 {
 //        const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
 const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
-const topic = '/iwasaki/links2/status'
+const topic_in = '/iwasaki/links2/status'
 
 document.querySelector("#outarea_aa").innerHTML = "*** button.js *** start ***"
 const client = mqtt.connect(brokerUrl)
@@ -17,16 +17,16 @@ const client = mqtt.connect(brokerUrl)
 client.on('connect', () => {
             console.log('Connected to MQTT broker')
             // トピックを購読
-            client.subscribe(topic, (err) => {
+            client.subscribe(topic_in, (err) => {
                 if (!err) {
-                    console.log('Subscribed to ' + topic)
+                    console.log('Subscribed to ' + topic_in)
                 }
             })
         })
 
         // メッセージ受信時のイベント
-        client.on('message', (topic, message) => {
-            console.log(`Received message on ${topic}: ${message.toString()}`)
+        client.on('message', (topic_in, message) => {
+            console.log(`Received message on ${topic_in}: ${message.toString()}`)
 	let str_in = `${message.toString()}`
 	display_proc(str_in)
         })
