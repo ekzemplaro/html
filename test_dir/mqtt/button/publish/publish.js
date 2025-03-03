@@ -6,7 +6,8 @@
 */
 // -------------------------------------------------------------
 // const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
-const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
+const brokerUrl = 'wss://s2.ekzemplaro.site:8883'
+// const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
 const topic_out = '/iwasaki/links2'
 const topic_in = '/iwasaki/links2/status'
 
@@ -14,6 +15,9 @@ const topic_in = '/iwasaki/links2/status'
 window.onload = ()=>
 {
         document.querySelector("#outarea_aa").innerHTML = "*** publish.js *** start ***"
+        document.querySelector("#broker").innerHTML = brokerUrl
+        document.querySelector("#topic_out").innerHTML = topic_out
+        document.querySelector("#topic_in").innerHTML = topic_in
 
 const client = mqtt.connect(brokerUrl)
 
