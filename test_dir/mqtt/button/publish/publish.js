@@ -2,11 +2,11 @@
 /*
 	publish.js
 
-					Feb/25/2025
+					Mar/05/2025
 */
 // -------------------------------------------------------------
 // const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
-const brokerUrl = 'wss://s2.ekzemplaro.site:8883'
+const brokerUrl = 'wss://s2.ekzemplaro.site:8884'
 // const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
 const topic_out = '/iwasaki/links2'
 const topic_in = '/iwasaki/links2/status'
