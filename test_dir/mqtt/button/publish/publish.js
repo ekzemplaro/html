@@ -2,12 +2,12 @@
 /*
 	publish.js
 
-					Mar/05/2025
+					Mar/09/2025
 */
 // -------------------------------------------------------------
 // const brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'
-const brokerUrl = 'wss://s2.ekzemplaro.site:8884'
 // const brokerUrl = 'wss://mqtt.eclipseprojects.io:443/mqtt'
+const brokerUrl = 'wss://s2.ekzemplaro.site:8884'
 const topic_out = '/iwasaki/links2'
 const topic_in = '/iwasaki/links2/status'
 
@@ -29,7 +29,14 @@ client.on('connect', () => {
 	client.subscribe(topic_in, (err) => {
                 if (!err) {
                     console.log('Subscribed to ' + topic_in)
-                }
+        document.querySelector("#outarea_bb").innerHTML = "Subscribed to " + topic_in
+
+	let items = ['aa','bb']
+		items.forEach(function(value){
+			let message =  message_gen_proc(value,'qq')
+			publish_proc(client,topic_out,message)
+			})
+               }
             })
         })
 
@@ -45,11 +52,19 @@ client.on('error', (err) => {
 	document.getElementById('status').innerText = 'Connection error: ' + err.message
 	})
 
+	document.getElementById('button_aa').addEventListener('click', () => {
+		button_aa_proc(client)
+	})
 
-document.getElementById('button_aa').addEventListener('click', () => {
-	
+	document.getElementById('button_bb').addEventListener('click', () => {
+		button_bb_proc(client)
+	})
+}
+
+// -------------------------------------------------------------
+function button_aa_proc(client)
+{
 	let message = ""
-
 	if (button_aa.textContent == "OFF")
 		{
 		message =  message_gen_proc('aa','on')
@@ -63,9 +78,11 @@ document.getElementById('button_aa').addEventListener('click', () => {
 		button_aa.style.color = "green"
 		}
 	publish_proc(client,topic_out,message)
-	})
+}
 
-document.getElementById('button_bb').addEventListener('click', () => {
+// -------------------------------------------------------------
+function button_bb_proc(client)
+{
 	let message = ""
 
 	if (button_bb.textContent == "OFF")
@@ -82,7 +99,6 @@ document.getElementById('button_bb').addEventListener('click', () => {
 		}
 
 	publish_proc(client,topic_out,message)
-	})
 }
 
 // -------------------------------------------------------------
