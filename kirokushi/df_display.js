@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	df_display.js
 //
-//					Jan/06/2025
+//					Apr/20/2025
 //
 // -----------------------------------------------------------------------
 // 'use strict'
@@ -47,7 +47,7 @@ function show_table_proc(place,dict_aa)
 
 	str_out += display_th()
 
-	let icount = 1
+	let icount = 0
 
 	console.log(dict_aa)
 
@@ -56,12 +56,14 @@ function show_table_proc(place,dict_aa)
 		{
 		const value = dict_aa[key]
 		str_out += record_proc(key,value)
+		icount += 1
 		}
 
 	str_out += display_th()
 	str_out += "</table>"
 
 	document.querySelector(place).innerHTML = str_out
+	document.querySelector('.count').innerText = icount
 }
 
 // -----------------------------------------------------------------------
