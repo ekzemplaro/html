@@ -1,11 +1,11 @@
 #! /usr/bin/python
+# -*- coding: utf-8 -*-
 #
 #	thanks.py
 #
-#						Jun/14/2025
+#						Dec/28/2019
 # ---------------------------------------------------------------
 print("Content-Type: text/plain")
 print("")
-for it in range(2):
-	print("Thank you.")
+print("Thank you.")
 # ---------------------------------------------------------------

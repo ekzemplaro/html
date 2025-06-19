@@ -1,0 +1,5 @@
+#
+NAME="いたずらムジナ"
+nkf -e $NAME".txt" > file_a_euc.txt
+#
+e2ps -p -nh file_a_euc.txt | ps2pdfwr - > $NAME".pdf"

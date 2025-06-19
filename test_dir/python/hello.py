@@ -1,9 +1,8 @@
 #! /usr/bin/python
-# -*- coding: utf-8 -*-
 #
 #	hello.py
 #
-#						Dec/28/2019
+#						Jun/14/2025
 # ---------------------------------------------------------------
 print("Content-Type: text/plain")
 print("")

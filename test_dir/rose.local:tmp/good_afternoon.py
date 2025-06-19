@@ -1,14 +1,11 @@
 #! /usr/bin/python
-#
-#	good_afternoon.py
-#
-#					Jun/14/2025
+# -*- coding: utf-8 -*-
 #
 # ---------------------------------------------------------------
 print("Content-Type: text/html")
 print("")
-print('<meta charset="utf-8">')
-print("<p>Good Morning</p>")
+print('<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />')
+print("Good Afternoon<p />")
 print("<h2>こんにちは</h2>")
-print("<p>Good Afternoon</p>")
+print("Good Afternoon<p />")
 # ---------------------------------------------------------------
