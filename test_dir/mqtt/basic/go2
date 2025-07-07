@@ -1,0 +1,3 @@
+#
+mosquitto_pub -d -m "Good Morning" --topic ads/voltage
+

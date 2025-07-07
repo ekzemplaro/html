@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MQTT WebSocket クライアント</title>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+  <h1>MQTT WebSocket クライアント</h1>
+  <div id="status"></div>
+  <script>
+    // MQTT.js を使って接続
+    const client = mqtt.connect('ws://127.0.0.1:8080');
+
+    client.on('connect', () => {
+      document.getElementById('status').innerText = '接続成功！';
+      console.log('MQTT 接続成功');
+    });
+
+    client.on('error', (err) => {
+      document.getElementById('status').innerText = '接続失敗';
+      console.error('MQTT 接続エラー:', err);
+    });
+
+    // メッセージの購読
+    client.subscribe('ads/voltage', (err) => {
+      if (!err) {
+        client.publish('ads/voltage', 'Hello MQTT from Browser!');
+      }
+    });
+
+    // メッセージを受け取ったときの処理
+    client.on('message', (topic, message) => {
+      console.log('メッセージ受信:', topic, message.toString());
+    });
+  </script>
+<hr />
+<p>Jul/07/2025</p>
+</body>
+</html>
+
