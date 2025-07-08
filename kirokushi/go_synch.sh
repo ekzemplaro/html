@@ -1,7 +1,7 @@
 #
-#	browser/go_sync.sh
+#	projects/oyama/kirokushi/browser/go_sync.sh
 #
-#					Jun/02/2025
+#					Jul/08/2025
 #
 SRC="./"
 TARGET="/home/uchida/html/kirokushi"
