@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------
-//	src_not_found.js
+//	question.js
 //
 //					Jul/15/2025
 //
@@ -9,15 +9,15 @@
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
-	document.querySelector("#outarea_aa").innerHTML = "*** src_not_found.js *** start ***"
+//	document.querySelector("#outarea_aa").innerHTML = "*** question.js *** start ***"
 
-	const file_json = "./file_not_found.json"
+	const file_text = "./question.txt"
 
 	const place = ".contents"
 
-	read_fetch_table_proc(file_json,place)
+	read_fetch_table_proc(file_text,place)
 
-	document.querySelector("#outarea_hh").innerHTML = "*** src_not_found.js *** end ***"
+//	document.querySelector("#outarea_hh").innerHTML = "*** question.js *** end ***"
 }
 
 // -----------------------------------------------------------------------
@@ -32,45 +32,22 @@ function read_fetch_table_proc(url,place)
 		console.log('Read ok!')
 		return response.text()
 	}).then((data)  => {
-		const array_aa = JSON.parse(data)
 
-		show_table_proc(place,array_aa)
+		show_data_proc(place,data)
 	})
-
 }
 // -----------------------------------------------------------------------
 // [4-6]:
-function show_table_proc(place,array_aa)
+function show_data_proc(place,data)
 {
 	let str_out = ""
-	str_out += "<table>"
+	str_out += "<pre>"
 
-	str_out += display_th()
+	str_out += data
 
-	let icount = 1
-
-	for (let it in array_aa)
-		{
-		const value = array_aa[it]
-		str_out += "<tr><td>" + value + "</td></tr>"
-		}
-
-	str_out += display_th()
-	str_out += "</table>"
+	str_out += "</pre>"
 
 	document.querySelector(place).innerHTML = str_out
-}
-
-// -----------------------------------------------------------------------
-// [4-6-2]:
-function display_th()
-{
-	let str_out = ""
-	str_out += "<tr>"
-	str_out += "<th>題名</th>"
-	str_out += "</tr>"
-
-	return str_out
 }
 
 // -----------------------------------------------------------------------
