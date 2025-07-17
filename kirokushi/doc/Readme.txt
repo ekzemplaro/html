@@ -1,4 +1,8 @@
-					Jul/17/2025 AM 10:46
+					Jul/17/2025 PM 14:10
+
+マウント
+
+rclone mount google-drive: ~/google-drive --daemon --vfs-cache-mode full
 
 list_spread
 	出力	title_id.json
@@ -20,13 +24,13 @@ spread_to_json
 
 convert_json
 
-	絹義務を除く
+	2020年度以降の 絹義務を除く
 
 	filter_json を呼んでいる
 
 	出力	data/*hh.json
 
-divide_rows	絹義務小,絹義務中
+divide_rows	2020年度以降の 絹義務小,絹義務中
 
 	filter_json を呼んでいる
 
