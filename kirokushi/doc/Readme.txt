@@ -1,4 +1,4 @@
-					Jul/08/2025 PM 14:13
+					Jul/17/2025 AM 10:46
 
 list_spread
 	出力	title_id.json
@@ -36,30 +36,35 @@ concat_json
 	入力	../data/*_hh.json
 	出力	data.json
 
-kana/title_kana_gen
-	入力	data.json
-	出力	dict_title.json
+kana
+	次を呼ぶ
 
-kana/name_kana_gen
-	入力	data.json
-	出力	dict_name.json
+		title_kana_gen
+			入力	data.json
+			出力	dict_title.json
+
+		name_kana_gen
+			入力	data.json
+			出力	dict_name.json
 
 dictionary
 	入力	data.json
 		dict_title.json
 		dict_name.json
 
-	to_dict
-		出力	data_dict.json
+	次を呼ぶ
 
-	to_school_dict
-		出力	dict_school.json
+		to_dict
+			出力	data_dict.json
 
-	to_person_dict
-		出力	dict_person.json
+		to_school_dict
+			出力	dict_school.json
 
-	to_grade_dict
-		出力	dict_grade.json
+		to_person_dict
+			出力	dict_person.json
+
+		to_grade_dict
+			出力	dict_grade.json
 
 assign_source
 
