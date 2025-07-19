@@ -1,4 +1,4 @@
-					Jul/17/2025 PM 14:10
+					Jul/19/2025 PM 17:21
 
 マウント
 
@@ -34,7 +34,14 @@ divide_rows	2020年度以降の 絹義務小,絹義務中
 
 	filter_json を呼んでいる
 
-	json_to_spread
+	出力	data/*hh.json
+
+		json_to_spread
+
+----------------------------------------------------------
+ここからは、次のコマンドで流れる
+
+./go_after.sh
 
 concat_json
 	入力	../data/*_hh.json
@@ -87,3 +94,9 @@ browser
 	go_list_gen.sh
 
 	http-server
+
+	確認が出来たら
+
+		 go_sync.sh
+
+----------------------------------------------------------
