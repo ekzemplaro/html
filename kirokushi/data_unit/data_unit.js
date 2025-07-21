@@ -57,6 +57,10 @@ function filter_proc(obj)
 	document.getElementById(obj.id).style.color = "blue"
 
 	show_dates_proc(dict_aa[school])
+
+	const place = ".contents"
+
+	document.querySelector(place).innerHTML = ""
 }
 
 // -----------------------------------------------------------------------
