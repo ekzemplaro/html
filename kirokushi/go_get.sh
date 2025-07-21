@@ -8,3 +8,6 @@ cp -p ../dictionary/dict_grade.json grades
 #
 cp -p ../assign_source/data_src.json titles_with_src
 cp -p ../assign_source/file_not_found.json src_not_found
+#
+rsync -avzz --delete ../data/ ./data
+#

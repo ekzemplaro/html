@@ -1,0 +1,1 @@
+./list_json_gen.py list_processed.txt list_processed.json

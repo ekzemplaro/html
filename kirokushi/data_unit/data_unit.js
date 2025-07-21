@@ -6,23 +6,23 @@
 // -----------------------------------------------------------------------
 // 'use strict'
 
+let dict_aa = []
+let school = ""
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
 	document.querySelector("#outarea_aa").innerHTML = "*** data_unit.js *** start ***"
 
-	const file_json = "./data_in.json"
+	const file_json = "./list_processed.json"
 
-	const place = ".contents"
-
-	read_fetch_table_proc(file_json,place)
+	read_json_proc(file_json)
 
 	document.querySelector("#outarea_hh").innerHTML = "*** data_unit.js *** end ***"
 }
 
 // -----------------------------------------------------------------------
 // [4]:
-function read_fetch_table_proc(url,place)
+function read_json_proc(url)
 {
 	fetch(url).then((response) => {
 		if(!response.ok) {
@@ -32,69 +32,69 @@ function read_fetch_table_proc(url,place)
 		console.log('Read ok!')
 		return response.text()
 	}).then((data)  => {
-		const array_aa = JSON.parse(data)
+		dict_aa = JSON.parse(data)
 
-		show_table_proc(place,array_aa)
 	})
 
 }
+
 // -----------------------------------------------------------------------
-// [4-6]:
-function show_table_proc(place,array_aa)
+// [8]:
+function filter_proc(obj)
 {
-	let str_out = ""
-	let icount = 0
-	str_out += "<table>"
+	school = obj.id
 
-	str_out += display_th()
+	document.querySelector("#outarea_bb").innerHTML = "school = " + school
 
-	console.log(array_aa)
+	let elements = document.querySelectorAll('button')
+	document.querySelector("#outarea_cc").innerHTML = elements.length
 
-	for (let it in array_aa)
+	for (let it=0; it<elements.length; it += 1)
 		{
-		const value = array_aa[it]
-		str_out += record_proc(value)
-		icount += 1
+		document.getElementById(elements[it].id).style.color = "black"
 		}
 
-	str_out += display_th()
-	str_out += "</table>"
+	document.getElementById(obj.id).style.color = "blue"
 
-	document.querySelector(place).innerHTML = str_out
-	document.querySelector('.count').innerText = icount
+	show_dates_proc(dict_aa[school])
 }
 
 // -----------------------------------------------------------------------
-// [4-6-4]:
-function record_proc(value)
+function show_dates_proc(array_bb)
 {
-
-	let str_out = "<tr>"
-
-	str_out += "<td>" + value['school'] + "</td>"
-	str_out += "<td>" + value['date_held'] + "</td>"
-	str_out += "<td>" + value['target'] + "</td>"
-	str_out += "<td>" + value['title'] + "</td>"
-	str_out += "<td>" + value['name'] + "</td>"
-	str_out += "</tr>"
-
-	return str_out
-}
-
-// -----------------------------------------------------------------------
-// [4-6-2]:
-function display_th()
-{
+	console.log(array_bb)
 	let str_out = ""
-	str_out += "<tr>"
-	str_out += "<th>場所</th>"
-	str_out += "<th>年月日</th>"
-	str_out += "<th>対象</th>"
-	str_out += "<th>題名</th>"
-	str_out += "<th>語った人</th>"
-	str_out += "</tr>"
+	for (let it in array_bb)
+		{
+		const value = array_bb[it]
+		const str_aa = "<button id=\"" + value + "\" class=\"date_held\" onclick=\"filter_proc2(this)\">" + value + "</button> "
+		console.log(str_aa)
+		str_out += str_aa
+		}
+	document.querySelector(".area_dates").innerHTML = str_out
+}
 
-	return str_out
+// -----------------------------------------------------------------------
+function filter_proc2(obj)
+{
+	const id_select = obj.id
+
+	document.querySelector("#outarea_dd").innerHTML = "obj.id = " + obj.id
+
+	let elements = document.querySelectorAll('button.date_held')
+	for (let it=0; it<elements.length; it += 1)
+		{
+		document.getElementById(elements[it].id).style.color = "black"
+		}
+	document.getElementById(obj.id).style.color = "blue"
+
+	const file_json = "data/" + school + "_" + obj.id + "_hh.json"
+
+	document.querySelector("#outarea_ee").innerHTML = file_json
+
+	const place = ".contents"
+
+	read_fetch_table_proc(file_json,place)
 }
 
 // -----------------------------------------------------------------------
