@@ -1,4 +1,4 @@
-					Jul/19/2025 PM 17:21
+					Jul/25/2025 PM 13:26
 
 マウント
 
@@ -24,7 +24,10 @@ spread_to_json
 
 convert_json
 
+	command_gen.sh
+
 	2020年度以降の 絹義務を除く
+
 
 	filter_json を呼んでいる
 
