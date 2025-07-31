@@ -1,4 +1,4 @@
-					Jul/31/2025 AM 11:45
+					Jul/31/2025 PM 16:24
 
 マウント
 
@@ -13,7 +13,14 @@ doc/oyama/from_hatakeyama で、ローカルに必要なデータをコピー
 
 ------------------------------------------------------------------
 list_spread
+
+	GAS を使って、年度単位で、ファイルのID を求める
+
+	json_merge
+		作成された　JSON ファイルを title_id.json にマージする
+
 	出力	title_id.json
+
 
 spread_to_json/parse_title_id
 

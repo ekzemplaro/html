@@ -36,8 +36,6 @@ function display_table_person_proc(rec,order)
 		}
 		})
 
-
-
 	if (order == "title")
 		{
 		str_out += record_proc(array_title)
@@ -46,15 +44,6 @@ function display_table_person_proc(rec,order)
 		{
 		str_out += record_proc(array_date)
 		}
-/*
-	for (let it in array_aa)
-		{
-		const value = array_aa[it]
-		str_out += record_proc(value)
-
-		count_articles += 1
-		}
-*/
 
 	str_out += header_proc()
 
@@ -75,13 +64,10 @@ console.log("*** record_proc aaa ***")
 console.log(array_in)
 console.log("*** record_proc bbb ***")
 
-//	const times = value['times']
 
 	let str_out = "<tr>"
 
 
-//	value['records'].forEach(function (bbx)
-//		{
 	for (let it in array_in)
 		{
 		let value = array_in[it]

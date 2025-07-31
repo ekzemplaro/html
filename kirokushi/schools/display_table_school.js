@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	schools/display_table_school.js
 //
-//					Jan/07/2025
+//					Jul/31/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -13,9 +13,9 @@ function display_table_school_proc (rec)
 	str_out += '<table class="fixed-table">'
 	str_out += header_proc()
 
-	var count_articles = 0
+	let count_articles = 0
 
-	for (var key in rec)
+	for (let key in rec)
 		{
 		const value = rec[key]
 		str_out += record_proc(key,value)
@@ -27,7 +27,7 @@ function display_table_school_proc (rec)
 
 	str_out += "</table>"
 
-	var str_tmp = "Items: " + count_articles + "&nbsp;&nbsp;"
+	let str_tmp = "Items: " + count_articles + "&nbsp;&nbsp;"
 
 	document.querySelector("#area_likes").innerHTML = str_tmp
 
@@ -41,7 +41,7 @@ function record_proc(key,value)
 	const times = value['times']
 
 	const dd = key.split("_")
-	var str_out = "<tr>"
+	let str_out = "<tr>"
 
 //	str_out += "<td rowspan=" + times + ">" + dd[0] + "</td>"
 	str_out += "<td rowspan=" + times + ">" + dd[1] + "</td>"
@@ -62,7 +62,7 @@ function record_proc(key,value)
 // -----------------------------------------------------------------------
 function header_proc()
 {
-	var str_out = ""
+	let str_out = ""
 	str_out += "<tr>"
 	str_out += "<th class='date_held'>年月日</th>"
 	str_out += "<th class='target'>対象</th>"
