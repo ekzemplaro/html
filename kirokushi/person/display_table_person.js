@@ -1,33 +1,66 @@
 // -----------------------------------------------------------------------
 //	person/display_table_person.js
 //
-//					Jan/07/2025
+//					Jul/31/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
 // -----------------------------------------------------------------------
 // [4]:
-function display_table_person_proc (rec)
+function display_table_person_proc(rec,order)
 {
-	var str_out = ""
+	let str_out = ""
 	str_out += '<table class="fixed-table">'
 	str_out += header_proc()
 
-	var count_articles = 0
+	let count_articles = 0
 
-	for (var key in rec)
+	let array_aa = []
+
+	for (let key in rec)
 		{
 		const value = rec[key]
-		str_out += record_proc(key,value)
+		array_aa.push(value)
+		}
+
+	let array_title = Array.from(array_aa[0]['records'])
+
+	let array_date = Array.from(array_aa[0]['records'])
+	array_date.sort(function(first, second){
+ 		if (first['date_held'] < second['date_held']){
+			return -1;
+		}else if (first['date_held'] > second['date_held']){
+		return 1;
+		}else{
+		return 0;
+		}
+		})
+
+
+
+	if (order == "title")
+		{
+		str_out += record_proc(array_title)
+		}
+	else
+		{
+		str_out += record_proc(array_date)
+		}
+/*
+	for (let it in array_aa)
+		{
+		const value = array_aa[it]
+		str_out += record_proc(value)
 
 		count_articles += 1
 		}
+*/
 
 	str_out += header_proc()
 
 	str_out += "</table>"
 
-	var str_tmp = "Items: " + count_articles + "&nbsp;&nbsp;"
+	let str_tmp = "Items: " + count_articles + "&nbsp;&nbsp;"
 
 	document.querySelector("#area_likes").innerHTML = str_tmp
 
@@ -36,24 +69,31 @@ function display_table_person_proc (rec)
 
 // -----------------------------------------------------------------------
 // [4-6-4]:
-function record_proc(key,value)
+function record_proc(array_in)
 {
-	const times = value['times']
+console.log("*** record_proc aaa ***")
+console.log(array_in)
+console.log("*** record_proc bbb ***")
 
-//	const dd = key.split("_")
-	var str_out = "<tr>"
+//	const times = value['times']
 
-//	str_out += "<td rowspan=" + times + ">" + key + "</td>"
+	let str_out = "<tr>"
 
-	value['records'].forEach(function (bbx)
+
+//	value['records'].forEach(function (bbx)
+//		{
+	for (let it in array_in)
 		{
-	str_out += "<td>" + bbx['title'] + "</td>"
-	str_out += "<td>" + bbx['school'] + "</td>"
-	str_out += "<td>" + bbx['target'] + "</td>"
-	str_out += "<td>" + bbx['date_held'] + "</td>"
-//	str_out += "<td>" + bbx['name'] + "</td>"
+		let value = array_in[it]
+ 
+	str_out += "<td>" + value['title'] + "</td>"
+	str_out += "<td>" + value['school'] + "</td>"
+	str_out += "<td>" + value['target'] + "</td>"
+	str_out += "<td>" + value['date_held'] + "</td>"
 	str_out += "</tr>"
-		})
+		}
+
+console.log(str_out)
 
 	return str_out
 }
@@ -61,9 +101,8 @@ function record_proc(key,value)
 // -----------------------------------------------------------------------
 function header_proc()
 {
-	var str_out = ""
+	let str_out = ""
 	str_out += "<tr>"
-//	str_out += "<th class='name'>語った人</th>"
 	str_out += "<th>題名</th>"
 	str_out += "<th class='school'>場所</th>"
 	str_out += "<th class='target'>対象</th>"

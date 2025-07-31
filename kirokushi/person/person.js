@@ -1,12 +1,12 @@
 // -----------------------------------------------------------------------
 //	person.js
 //
-//					Jan/07/2025
+//					Jul/31/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
 
-var dict_aa = []
+let dict_aa = []
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
@@ -27,32 +27,24 @@ function filter_proc(obj)
 
 	document.querySelector("#outarea_bb").innerHTML = "obj.id = " + obj.id
 
-	var elements = document.querySelectorAll('button')
+	let elements = document.querySelectorAll('button')
 	document.querySelector("#outarea_cc").innerHTML = elements.length
 
-	for (var it=0; it<elements.length; it += 1)
+	for (let it=0; it<elements.length; it += 1)
 		{
 		document.getElementById(elements[it].id).style.color = "black"
 		}
 
 	document.getElementById(obj.id).style.color = "blue"
 
-	var str_out = ""
-	var data_new = []
+	let order = order_get_proc()
 
-/*
-	switch (id_select)
-		{
-	 	case "all":
-			str_out = display_table_proc(dict_aa)
-			break
+	let str_out = ""
+	let data_new = []
 
-		default:
-			break
-		}
-*/
 	data_new = filter_school_proc(dict_aa,id_select)
-	str_out = display_table_person_proc(data_new)
+
+	str_out = display_table_person_proc(data_new,order)
 
 	document.querySelector(".contents").innerHTML = str_out
 }
@@ -60,9 +52,9 @@ function filter_proc(obj)
 // -----------------------------------------------------------------------
 function filter_school_proc (rec,id_select)
 {
-	var dict_new = {}
+	let dict_new = {}
 
-	for (var key in rec)
+	for (let key in rec)
 		{
 		const value = rec[key]
 		const dd = key.split("_")
@@ -73,6 +65,20 @@ function filter_school_proc (rec,id_select)
 		}
 
 	return	dict_new
+}
+
+// -----------------------------------------------------------------------
+function order_get_proc()
+{
+	let order = "title"
+	let checked = document.getElementById("date").checked
+	if (checked)
+		{
+		order = "date"
+		}
+	document.querySelector("#outarea_dd").innerHTML = "order = " + order
+
+	return order
 }
 
 // -----------------------------------------------------------------------

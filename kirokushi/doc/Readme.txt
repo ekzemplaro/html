@@ -1,9 +1,17 @@
-					Jul/25/2025 PM 13:26
+					Jul/31/2025 AM 11:45
 
 マウント
 
 rclone mount google-drive: ~/google-drive --daemon --vfs-cache-mode full
 
+rclone mount google-drive: ~/google-drive-shared \
+  --daemon --drive-shared-with-me --vfs-cache-mode full
+
+doc/oyama/from_hatakeyama で、ローカルに必要なデータをコピー
+
+ローカルから、年度別のドライブにアップロード
+
+------------------------------------------------------------------
 list_spread
 	出力	title_id.json
 
@@ -96,10 +104,18 @@ browser
 
 	go_list_gen.sh
 
+	ここまでは、
+		./go_after.sh
+		が行う。
+
 	http-server
 
 	確認が出来たら
 
 		 go_sync.sh
+
+			http://localhost/uchida/kirokushi
+			に同期する。
+
 
 ----------------------------------------------------------
