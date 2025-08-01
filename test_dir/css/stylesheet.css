@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.NavigationMenu{
+    height: 150px;
+    text-align: center;
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    min-height: 70vh;
+    margin: 15px 0 30px 0;
+}
+.LeftContent{
+//    flex: 1;
+    background-color: #909090;
+    text-align: center;
+    margin-right: 15px;
+width: 25%;
+float: left;
+}
+.RightContent{
+    flex: 1;
+    background-color: #90ee90;
+    text-align: center;
+    margin-right: 15px;
+}
