@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	person/display_table_person.js
 //
-//					Jul/31/2025
+//					Aug/15/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -24,25 +24,32 @@ function display_table_person_proc(rec,order)
 		}
 
 	let array_title = Array.from(array_aa[0]['records'])
-
 	let array_date = Array.from(array_aa[0]['records'])
+	let array_school = Array.from(array_aa[0]['records'])
+
 	array_date.sort(function(first, second){
  		if (first['date_held'] < second['date_held']){
 			return -1;
 		}else if (first['date_held'] > second['date_held']){
-		return 1;
+			return 1;
 		}else{
-		return 0;
+			return 0;
 		}
 		})
+
+	array_school.sort(sort_school_date_proc)
 
 	if (order == "title")
 		{
 		str_out += record_proc(array_title)
 		}
-	else
+	else if (order == "date")
 		{
 		str_out += record_proc(array_date)
+		}
+	else
+		{
+		str_out += record_proc(array_school)
 		}
 
 	str_out += header_proc()
@@ -57,16 +64,44 @@ function display_table_person_proc(rec,order)
 }
 
 // -----------------------------------------------------------------------
+function sort_school_date_proc(first,second)
+{
+	let rvalue = 0
+
+ 	if (first['school'] < second['school']){
+		rvalue = -1
+	}else if (first['school'] > second['school']){
+		rvalue = 1
+	}else{
+		rvalue = sort_date_proc(first,second)
+	}
+
+	return rvalue
+}
+
+// -----------------------------------------------------------------------
+function sort_date_proc(first,second)
+{
+ 	if (first['date_held'] < second['date_held']){
+		return -1;
+	}else if (first['date_held'] > second['date_held']){
+		return 1;
+	}else{
+		return 0;
+	}
+}
+
+// -----------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
 // [4-6-4]:
 function record_proc(array_in)
 {
-console.log("*** record_proc aaa ***")
-console.log(array_in)
-console.log("*** record_proc bbb ***")
-
+// console.log("*** record_proc aaa ***")
+// console.log(array_in)
+// console.log("*** record_proc bbb ***")
 
 	let str_out = "<tr>"
-
 
 	for (let it in array_in)
 		{

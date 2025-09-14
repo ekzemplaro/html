@@ -1,4 +1,4 @@
-					Jul/31/2025 PM 16:24
+					Aug/14/2025 PM 17:13
 
 マウント
 
@@ -12,9 +12,19 @@ doc/oyama/from_hatakeyama で、ローカルに必要なデータをコピー
 ローカルから、年度別のドライブにアップロード
 
 ------------------------------------------------------------------
+出典
+
+	gen_source
+
+		入力	source_2025-03-25.xlsx
+		出力	sources.json
+
+------------------------------------------------------------------
 list_spread
 
 	GAS を使って、年度単位で、ファイルのID を求める
+
+		get_file_ids
 
 	json_merge
 		作成された　JSON ファイルを title_id.json にマージする
@@ -39,6 +49,8 @@ spread_to_json
 
 convert_json
 
+	make
+
 	command_gen.sh
 
 	2020年度以降の 絹義務を除く
@@ -50,12 +62,18 @@ convert_json
 
 divide_rows	2020年度以降の 絹義務小,絹義務中
 
+	make
+
 	filter_json を呼んでいる
 
 	出力	data/*hh.json
 
 		json_to_spread
 
+----------------------------------------------------------
+この段階で、単体データの確認をするには、
+
+	public/go_list_gen.sh を実行する必要がある。
 ----------------------------------------------------------
 ここからは、次のコマンドで流れる
 
@@ -83,11 +101,17 @@ dictionary
 
 	次を呼ぶ
 
+		add_kana
+			出力	data2.json
+
 		to_dict
 			出力	data_dict.json
 
 		to_school_dict
 			出力	dict_school.json
+
+		to_fiscal_dict
+			出力	dict_fiscal.json
 
 		to_person_dict
 			出力	dict_person.json
@@ -125,4 +149,8 @@ browser
 			に同期する。
 
 
+----------------------------------------------------------
+'//' で始まるコラムは、コメント扱いにする。
+
+例	絹義務小_2023-09-20 4年
 ----------------------------------------------------------

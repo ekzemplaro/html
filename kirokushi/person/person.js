@@ -1,12 +1,13 @@
 // -----------------------------------------------------------------------
 //	person.js
 //
-//					Jul/31/2025
+//					Aug/15/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
 
 let dict_aa = []
+let name_selected = ""
 // -----------------------------------------------------------------------
 window.onload = ()=>
 {
@@ -25,6 +26,8 @@ function filter_proc(obj)
 {
 	const id_select = obj.id
 
+	name_selected = obj.id
+
 	document.querySelector("#outarea_bb").innerHTML = "obj.id = " + obj.id
 
 	let elements = document.querySelectorAll('button')
@@ -39,10 +42,16 @@ function filter_proc(obj)
 
 	let order = order_get_proc()
 
+	display_exec_proc(name_selected,order)
+}
+
+// -----------------------------------------------------------------------
+function display_exec_proc(name,order)
+{
 	let str_out = ""
 	let data_new = []
 
-	data_new = filter_school_proc(dict_aa,id_select)
+	data_new = filter_name_proc(dict_aa,name)
 
 	str_out = display_table_person_proc(data_new,order)
 
@@ -50,7 +59,7 @@ function filter_proc(obj)
 }
 
 // -----------------------------------------------------------------------
-function filter_school_proc (rec,id_select)
+function filter_name_proc (rec,id_select)
 {
 	let dict_new = {}
 
@@ -71,14 +80,32 @@ function filter_school_proc (rec,id_select)
 function order_get_proc()
 {
 	let order = "title"
-	let checked = document.getElementById("date").checked
-	if (checked)
+	if (document.getElementById("date").checked)
 		{
 		order = "date"
+		}
+	else if (document.getElementById("school").checked)
+		{
+		order = "school"
 		}
 	document.querySelector("#outarea_dd").innerHTML = "order = " + order
 
 	return order
 }
 
+// -----------------------------------------------------------------------
+function check_radio(obj)
+{
+	let order = obj.id
+	let str_out = "<p>*** check_radio() obj.id = " + obj.id + "</p>"
+
+	if (name_selected != "")
+		{
+		display_exec_proc(name_selected,order)
+
+		str_out +=  "<p>name_selected = " + name_selected + "</p>"
+		}
+
+	document.querySelector("#outarea_ee").innerHTML = str_out
+}
 // -----------------------------------------------------------------------

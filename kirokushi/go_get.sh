@@ -1,13 +1,18 @@
 #
-#						Jun/02/2025
+#	go_get.sh
+#						Aug/13/2025
 #
-cp -p ../dictionary/data_dict.json titles
-cp -p ../dictionary/dict_school.json schools
-cp -p ../dictionary/dict_person.json person
-cp -p ../dictionary/dict_grade.json grades
+DICTIONARY="../process/dictionary"
+ASSIGN_SOURCE="../process/assign_source"
 #
-cp -p ../assign_source/data_src.json titles_with_src
-cp -p ../assign_source/file_not_found.json src_not_found
+cp -p $DICTIONARY/data_dict.json titles
+cp -p $DICTIONARY/dict_school.json schools
+cp -p $DICTIONARY/dict_fiscal.json fiscal
+cp -p $DICTIONARY/dict_person.json person
+cp -p $DICTIONARY/dict_grade.json grades
 #
-rsync -avzz --delete ../data/ ./data
+cp -p $ASSIGN_SOURCE/data_src.json titles_with_src
+cp -p $ASSIGN_SOURCE/file_not_found.json src_not_found
+#
+# rsync -avzz --delete ../data/ ./data
 #

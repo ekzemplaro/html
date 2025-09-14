@@ -56,6 +56,8 @@ function filter_proc(obj)
 
 	document.getElementById(obj.id).style.color = "blue"
 
+	console.log('school = ' + school)
+
 	show_dates_proc(dict_aa[school])
 
 	const place = ".contents"
@@ -66,6 +68,7 @@ function filter_proc(obj)
 // -----------------------------------------------------------------------
 function show_dates_proc(array_bb)
 {
+	console.log('*** show_dates_proc ***')
 	console.log(array_bb)
 	let str_out = ""
 	for (let it in array_bb)

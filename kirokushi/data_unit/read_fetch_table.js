@@ -1,19 +1,11 @@
 // -----------------------------------------------------------------------
 //	read_fetch_table.js
 //
-//					Jul/21/2025
+//					Aug/11/2025
 //
 // -----------------------------------------------------------------------
 // 'use strict'
 
-// -----------------------------------------------------------------------
-/*
-	const file_json = "./data_in.json"
-
-	const place = ".contents"
-
-	read_fetch_table_proc(file_json,place)
-*/
 // -----------------------------------------------------------------------
 // [4]:
 function read_fetch_table_proc(url,place)
@@ -65,8 +57,8 @@ function record_proc(value)
 
 	let str_out = "<tr>"
 
-	str_out += "<td>" + value['school'] + "</td>"
-	str_out += "<td>" + value['date_held'] + "</td>"
+//	str_out += "<td>" + value['school'] + "</td>"
+//	str_out += "<td>" + value['date_held'] + "</td>"
 	str_out += "<td>" + value['target'] + "</td>"
 	str_out += "<td>" + value['title'] + "</td>"
 	str_out += "<td>" + value['name'] + "</td>"
@@ -81,8 +73,8 @@ function display_th()
 {
 	let str_out = ""
 	str_out += "<tr>"
-	str_out += "<th>場所</th>"
-	str_out += "<th>年月日</th>"
+//	str_out += "<th>場所</th>"
+//	str_out += "<th>年月日</th>"
 	str_out += "<th>対象</th>"
 	str_out += "<th>題名</th>"
 	str_out += "<th>語った人</th>"

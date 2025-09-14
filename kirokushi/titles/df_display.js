@@ -1,10 +1,10 @@
 // -----------------------------------------------------------------------
 //	df_display.js
 //
-//					Apr/20/2025
+//					Aug/16/2025
 //
 // -----------------------------------------------------------------------
-// 'use strict'
+'use strict'
 
 // -----------------------------------------------------------------------
 window.onload = ()=>
@@ -49,9 +49,8 @@ function show_table_proc(place,dict_aa)
 
 	let icount = 0
 
-	console.log(dict_aa)
+//	console.log(dict_aa)
 
-//	dict_aa.forEach(function (aax)
 	for (let key in dict_aa)
 		{
 		const value = dict_aa[key]
@@ -74,7 +73,8 @@ function record_proc(key,value)
 
 	let str_out = "<tr>"
 
-	str_out += "<td rowspan=" + times + ">" + key + "</td>"
+	str_out += "<td rowspan=" + times + ' class="title">'
+	str_out += '<div class="bold">' + key + "</div></td>"
 
 	value['records'].forEach(function (bbx)
 		{
@@ -96,7 +96,7 @@ function display_th()
 	str_out += "<tr>"
 	str_out += "<th>題名</th>"
 	str_out += "<th>場所</th>"
-	str_out += "<th>対象</th>"
+	str_out += '<th class="target">対象</th>'
 	str_out += "<th>年月日</th>"
 	str_out += "<th>語った人</th>"
 	str_out += "</tr>"

@@ -2,7 +2,7 @@
 /*
 	df_display.css
 
-						Dec/04/2024
+						Aug/16/2025
 */
 /* -------------------------------------------------------------- */
 table.main,td,th {
@@ -21,6 +21,11 @@ th {
     table-layout: fixed;
 }
 
+.title {
+	vertical-align: top;
+    table-layout: fixed;
+}
+
 .school, .target {
     width: 100px;
     table-layout: fixed;
@@ -31,4 +36,12 @@ th {
     table-layout: fixed;
 }
 
+input[type="radio"] {
+	inline-size: 20px; /* 幅 */
+	block-size: 20px;  /* 高さ */
+}
+
+.bold {
+  font-weight: bold;
+}
 /* -------------------------------------------------------------- */

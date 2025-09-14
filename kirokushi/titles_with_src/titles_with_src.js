@@ -1,10 +1,10 @@
 // -----------------------------------------------------------------------
 //	titles_with_src.js
 //
-//					Jun/02/2025
+//					Aug/16/2025
 //
 // -----------------------------------------------------------------------
-// 'use strict'
+'use strict'
 
 // -----------------------------------------------------------------------
 window.onload = ()=>
@@ -49,7 +49,7 @@ function show_table_proc(place,dict_aa)
 
 	let icount = 0
 
-	console.log(dict_aa)
+//	console.log(dict_aa)
 
 	for (let key in dict_aa)
 		{
@@ -77,23 +77,37 @@ function record_proc(key,value)
 		src += value['src']
 		}
 
+	let array_src = src.split(",")
+	let llx_src = array_src.length
+
 	let str_out = "<tr>"
 
+	let title_out = '<div class="bold">' + key + '</div>'
+
+	if (0 < llx_src)
+		{
+		title_out += "<blockquote>"
+		for (let it in array_src)
+			{
+			title_out += array_src[it] + "<br />"
+			}
+		title_out += "</blockquote>"
+		}
+	str_out += "<td rowspan=" + times + ' class="title">'  + title_out + "</td>"
+/*
 	str_out += "<td rowspan=" + times + ">" + key + "</td>"
 	str_out += "<td rowspan=" + times + ">"
 
-	let array_src = src.split(",")
-	let llx = array_src.length
-
-	if (0 < llx)
+	if (0 < llx_src)
 		{
 		for (let it in array_src)
 			{
-			str_out += "<p>" + array_src[it] + "</p>"
+			str_out += array_src[it] + "<br />"
 			}
 		}
 
 	str_out += "</td>"
+*/
 
 	value['records'].forEach(function (bbx)
 		{
@@ -114,9 +128,9 @@ function display_th()
 	let str_out = ""
 	str_out += "<tr>"
 	str_out += "<th>題名</th>"
-	str_out += "<th>出典</th>"
+//	str_out += "<th>出典</th>"
 	str_out += "<th>場所</th>"
-	str_out += "<th>対象</th>"
+	str_out += '<th class="target">対象</th>'
 	str_out += "<th>年月日</th>"
 	str_out += "<th>語った人</th>"
 	str_out += "</tr>"
