@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	person/display_table_person.js
 //
-//					Aug/15/2025
+//					Sep/12/2025
 //
 // -----------------------------------------------------------------------
 'use strict'
@@ -11,7 +11,6 @@ function display_table_person_proc(rec,order)
 {
 	let str_out = ""
 	str_out += '<table class="fixed-table">'
-	str_out += header_proc()
 
 	let count_articles = 0
 
@@ -47,12 +46,14 @@ function display_table_person_proc(rec,order)
 		{
 		str_out += record_proc(array_date)
 		}
-	else
+	else if (order == "school")
 		{
 		str_out += record_proc(array_school)
 		}
-
-	str_out += header_proc()
+	else
+		{
+		str_out += record_title_only_proc(array_title)
+		}
 
 	str_out += "</table>"
 
@@ -64,6 +65,7 @@ function display_table_person_proc(rec,order)
 }
 
 // -----------------------------------------------------------------------
+// [4-4]:
 function sort_school_date_proc(first,second)
 {
 	let rvalue = 0
@@ -80,6 +82,7 @@ function sort_school_date_proc(first,second)
 }
 
 // -----------------------------------------------------------------------
+// [4-4-6]:
 function sort_date_proc(first,second)
 {
  	if (first['date_held'] < second['date_held']){
@@ -92,20 +95,15 @@ function sort_date_proc(first,second)
 }
 
 // -----------------------------------------------------------------------
-
-// -----------------------------------------------------------------------
-// [4-6-4]:
+// [4-6]:
 function record_proc(array_in)
 {
-// console.log("*** record_proc aaa ***")
-// console.log(array_in)
-// console.log("*** record_proc bbb ***")
-
-	let str_out = "<tr>"
+	let str_out = header_proc()
 
 	for (let it in array_in)
 		{
 		let value = array_in[it]
+	str_out += "<tr>"
  
 	str_out += "<td>" + value['title'] + "</td>"
 	str_out += "<td>" + value['school'] + "</td>"
@@ -114,7 +112,7 @@ function record_proc(array_in)
 	str_out += "</tr>"
 		}
 
-console.log(str_out)
+	str_out += header_proc()
 
 	return str_out
 }
@@ -128,6 +126,45 @@ function header_proc()
 	str_out += "<th class='school'>場所</th>"
 	str_out += "<th class='target'>対象</th>"
 	str_out += "<th class='date_held'>年月日</th>"
+	str_out += "</tr>"
+
+	return	str_out
+}
+
+// -----------------------------------------------------------------------
+// [4-6-4]:
+function record_title_only_proc(array_in)
+{
+	let str_out = header_title_only_proc()
+
+	let title_before = ""
+	for (let it in array_in)
+		{
+		let value = array_in[it]
+
+		let title = value['title']
+
+		if (title != title_before)
+			{ 
+			str_out += "<tr>"
+			str_out += "<td>" + title + "</td>"
+			str_out += "</tr>"
+
+			title_before = title
+			}
+		}
+
+	str_out += header_title_only_proc()
+
+	return str_out
+}
+
+// -----------------------------------------------------------------------
+function header_title_only_proc()
+{
+	let str_out = ""
+	str_out += "<tr>"
+	str_out += "<th>題名</th>"
 	str_out += "</tr>"
 
 	return	str_out

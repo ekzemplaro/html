@@ -1,6 +1,17 @@
-					Aug/14/2025 PM 17:13
+					Nov/08/2025 PM 13:16
+------------------------------------------------------------------
+ソースコードは、
 
-マウント
+	/home/uchida/projects/oyama/kirokushi
+
+	に置く
+
+バックアップは、以下にあります。
+
+	https://gitlab.com/pandas1070451/kirokushi
+------------------------------------------------------------------
+
+Google Drive のマウント
 
 rclone mount google-drive: ~/google-drive --daemon --vfs-cache-mode full
 
@@ -79,11 +90,11 @@ divide_rows	2020年度以降の 絹義務小,絹義務中
 
 ./go_after.sh
 
-concat_json
+process/concat_json
 	入力	../data/*_hh.json
 	出力	data.json
 
-kana
+process/kana
 	次を呼ぶ
 
 		title_kana_gen
@@ -94,7 +105,7 @@ kana
 			入力	data.json
 			出力	dict_name.json
 
-dictionary
+process/dictionary
 	入力	data.json
 		dict_title.json
 		dict_name.json
@@ -119,7 +130,7 @@ dictionary
 		to_grade_dict
 			出力	dict_grade.json
 
-assign_source
+process/assign_source
 
 	入力
 		dictionary/data_dict.json
@@ -129,7 +140,7 @@ assign_source
 		data_src.json
 		file_not_found.json
 
-browser
+public
 
 	go_get.sh
 

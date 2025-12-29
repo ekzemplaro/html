@@ -1,5 +1,7 @@
 #
-NAME="いたずらムジナ_sep14_2025"
+# NAME="いたずらムジナ_oct07_2025"
+#
+NAME="土塔_nov13_2025"
 nkf -e $NAME".txt" > file_a_euc.txt
 #
 e2ps -p -nh file_a_euc.txt | ps2pdfwr - > $NAME".pdf"

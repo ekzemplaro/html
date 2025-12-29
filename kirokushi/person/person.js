@@ -88,6 +88,11 @@ function order_get_proc()
 		{
 		order = "school"
 		}
+	else if (document.getElementById("title_only").checked)
+		{
+		order = "title_only"
+		}
+
 	document.querySelector("#outarea_dd").innerHTML = "order = " + order
 
 	return order

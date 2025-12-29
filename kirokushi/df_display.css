@@ -2,9 +2,19 @@
 /*
 	df_display.css
 
-						Aug/16/2025
+						Nov/06/2025
 */
 /* -------------------------------------------------------------- */
+
+/*
+div.contents
+{
+height: 800px;
+float: left;
+overflow: auto;
+}
+*/
+
 table.main,td,th {
 table-layout:fixed;
 border:1.5px #7e7e7e solid;
@@ -44,4 +54,13 @@ input[type="radio"] {
 .bold {
   font-weight: bold;
 }
+
+div.contents
+{
+height: 800px;
+/* float: left; */
+overflow: auto;
+}
+
+
 /* -------------------------------------------------------------- */
